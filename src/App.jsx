@@ -17,8 +17,9 @@ function App() {
 
   return (
     <>
+    <Navbar/>
     <Routes>   
-      <Route path="/" element={<Navbar/>}/>
+      
       <Route path="/aboutUs" element={<AboutUs/>}/>
       <Route path="/trainingPrograms" element={<TrainingPrograms/>}/>
       <Route path="/studyAbroad" element={<StudyAbroad/>}/>
