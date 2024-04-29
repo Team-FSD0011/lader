@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.bg-gradient-animation {
+    animation: gradientAnimation 5s ease infinite alternate;
+  }
+  
+  @keyframes gradientAnimation {
+    0% {
+      background: linear-gradient(45deg, #87CEFA, #64a1b5, #6fb3f7);
+    }
+    100% {
+      background: linear-gradient(45deg, #899eb3, #6eb5cc, #5fa4ce);
+    }
+  }
