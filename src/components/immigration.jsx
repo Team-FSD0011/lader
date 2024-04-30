@@ -1,7 +1,7 @@
 import  { useEffect,React, useState } from 'react';
 import image1 from "../components/assets/immigration1.jpg";
 import image2 from "../components/assets/immigration2.jpg";
-
+import Aos from 'aos';
 
 
 
@@ -17,7 +17,7 @@ useEffect(()=>{
 
 },[imagearray])
   useEffect(()=>{
-    AOS.init({duration:1000})
+    Aos.init({duration:1000})
   },[])
   return (
     <div className="gap-10  w-full h-screen">
