@@ -5,9 +5,9 @@ const Blog = () => {
   return (
     <div className="mt-16 text-center">
       <h1 className="font-serif text-gray-700">Blog</h1>
-      <div className="h-96">
+      <div className="">
         <img
-          className="mt-8 mx-auto w-full h-" // Removed max-w-lg, added w-full
+          className="mt-8 mx-auto w-full h-10px" // Removed max-w-lg, added w-full
           src="src/components/assets/blog7.jpg"
           alt=""
         />
