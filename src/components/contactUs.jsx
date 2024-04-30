@@ -3,15 +3,23 @@ import React from "react";
 const ContactUs = () => {
   return (
     <section className="bg-gradient-animation bg-center">
-      <div className="flex justify-center">
+      <div className="flex items-center justify-center">
         <div className="max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
-            <div className="rounded-lg bg-white p-8 shadow-lg lg:col-span-3 lg:p-12">
-              <form action="#" className="space-y-4">
+          <div className="flex flex-col lg:flex-row">
+            <div className="rounded-lg bg-white text-center mx-auto shadow-lg lg:w-2/3 lg:mr-8 lg:ml-auto lg:p-12">
+              <form action="#" className="space-y-4 text-left">
                 <div>
-                  <label className="sr-only" htmlFor="name">Name</label>
+                  <p className="text-xl text-sky-800 font-semibold italic">
+                    Interested in studying overseas with First Ladder? 
+                    Fill in your details and we'll call you back!
+                  </p>
+                </div>
+                <div>
+                  <label className="sr-only" htmlFor="name">
+                    Name
+                  </label>
                   <input
-                    className="w-full rounded-lg border-gray-200 p-3 text-sm"
+                    className="w-full rounded-lg border-2 p-3 text-sm"
                     placeholder="Name"
                     type="text"
                     id="name"
@@ -19,18 +27,22 @@ const ContactUs = () => {
                 </div>
                 <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                   <div>
-                    <label className="sr-only" htmlFor="email">Email</label>
+                    <label className="sr-only" htmlFor="email">
+                      Email
+                    </label>
                     <input
-                      className="w-full rounded-lg border-gray-200 p-3 text-sm"
+                      className="w-full rounded-lg border-2 p-3 text-sm"
                       placeholder="Email address"
                       type="email"
                       id="email"
                     />
                   </div>
                   <div>
-                    <label className="sr-only" htmlFor="phone">Phone</label>
+                    <label className="sr-only" htmlFor="phone">
+                      Phone 
+                    </label>
                     <input
-                      className="w-full rounded-lg border-gray-200 p-3 text-sm"
+                      className="w-full rounded-lg border-2 p-3 text-sm "
                       placeholder="Phone Number"
                       type="tel"
                       id="phone"
@@ -38,9 +50,11 @@ const ContactUs = () => {
                   </div>
                 </div>
                 <div>
-                  <label className="sr-only" htmlFor="message">Message</label>
+                  <label className="sr-only border-2" htmlFor="message">
+                    Message
+                  </label>
                   <textarea
-                    className="w-full rounded-lg border-gray-200 p-3 text-sm"
+                    className="w-full rounded-lg border-2 p-3 text-sm"
                     placeholder="Message"
                     rows="8"
                     id="message"
@@ -51,16 +65,23 @@ const ContactUs = () => {
                     type="submit"
                     className="inline-block w-full rounded-lg bg-sky-400 px-5 py-3 font-medium text-white sm:w-auto"
                   >
-                    Send Inquiry
+                    Send
                   </button>
                 </div>
               </form>
+            </div>
+            <div className="lg:w-1/3 lg:ml-8 pt-40">
+              <img
+                src="https://futureofedu.co/wp-content/uploads/2022/07/FOE-Header.jpg"
+                alt="Future of Edu Header"
+                className="w-full h-auto rounded-lg shadow-lg"
+              />
             </div>
           </div>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
 export default ContactUs;
