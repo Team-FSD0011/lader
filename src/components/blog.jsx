@@ -1,4 +1,5 @@
 import React from "react";
+import "./blog.css";
 const Blog = () => 
 {
     return(
@@ -6,7 +7,9 @@ const Blog = () =>
         <div>
           <h1>Blog</h1>
           <div>
-            <img src="" alt="" />
+            <img 
+            className="headerImg"
+            src="src/components/assets/blog7.jpg" alt="" />
           </div>
         </div>
         
