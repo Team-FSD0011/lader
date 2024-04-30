@@ -4,7 +4,7 @@ import AOS from "aos";
 const Blog = () => {
   return (
     <div className="mt-16 text-center">
-      <h1 className="font-serif text-gray-700 bg-red-200">Blog</h1>
+      <h1 className="font-serif text-gray-700 text-#444-200">Blog</h1>
       <div className="">
         <img
           className="mt-8 mx-auto w-full h-70" // Set the height to h-70 (adjust as needed)
