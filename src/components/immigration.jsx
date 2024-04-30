@@ -1,6 +1,6 @@
 import  { useEffect,React, useState } from 'react';
 import image1 from "../components/assets/immigration1.jpg";
-import image2 from "../components/assets/immigration2.jpg"
+import image2 from "../components/assets/immigration2.jpg";
 
 
 
