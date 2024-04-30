@@ -6,7 +6,7 @@ const Blog = () => {
       <h1 className="font-serif text-gray-700">Blog</h1>
       <div>
         <img
-          className="mt-8 mx-auto w-full max-w-lg"
+          className="mt-8 mx-auto w-auto max-w-lg"
           src="src/components/assets/blog7.jpg"
           alt=""
         />
