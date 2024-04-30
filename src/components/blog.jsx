@@ -3,7 +3,7 @@ const Blog = () =>
 {
     return(
         <>     
-            <p>this is my project</p>
+            <p>sdfghjkl;'</p>
         </>
     )
 
