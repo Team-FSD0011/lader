@@ -1,12 +1,9 @@
 import { useEffect, React, useState } from 'react';
 import image1 from "../components/assets/immigration1.jpg";
 import image2 from "../components/assets/immigration2.jpg";
-import ImmigrationCard from "./layoutes/immigration";
-import { FaRegNewspaper } from "react-icons/fa6";
-import { MdHomeRepairService } from "react-icons/md";
-import { IoTimeOutline } from "react-icons/io5";
-import { PiPlanet } from "react-icons/pi";
-import { MdContactEmergency } from "react-icons/md";
+import Aos from 'aos';
+
+
 
 const Immigration = () => {
   const [imageindex, setimageindes] = useState(0)
