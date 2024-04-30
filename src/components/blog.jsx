@@ -2,9 +2,14 @@ import React from "react";
 const Blog = () => 
 {
     return(
-        <>     
-            <p>sdfghjkl;'</p>
-        </>
+            
+        <div>
+          <h1>Blog</h1>
+          <div>
+            <img src="" alt="" />
+          </div>
+        </div>
+        
     )
 
 }
