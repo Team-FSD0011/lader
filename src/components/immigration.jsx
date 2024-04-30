@@ -2,9 +2,6 @@ import  { useEffect,React, useState } from 'react';
 import image1 from "../components/assets/immigration1.jpg";
 import image2 from "../components/assets/immigration2.jpg";
 import Aos from 'aos';
-
-
-
 const Immigration = () => {
   const[imageindex,setimageindes]=useState(0)
   const imagearray=[image1,image2]

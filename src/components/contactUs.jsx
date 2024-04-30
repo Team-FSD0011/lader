@@ -1,86 +1,39 @@
-import React from "react";
+import React, { useState } from "react";
 
 const ContactUs = () => {
+  
+
   return (
-    <section className="bg-gradient-animation bg-center">
-      <div className="flex items-center justify-center">
-        <div className="max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
-          <div className="flex flex-col lg:flex-row">
-            <div className="rounded-lg bg-white text-center mx-auto shadow-lg lg:w-2/3 lg:mr-8 lg:ml-auto lg:p-12">
-              <form action="#" className="space-y-4 text-left">
-                <div>
-                  <p className="text-xl text-sky-800 font-semibold italic">
-                    Interested in studying overseas with First Ladder? 
-                    Fill in your details and we'll call you back!
-                  </p>
-                </div>
-                <div>
-                  <label className="sr-only" htmlFor="name">
-                    Name
-                  </label>
-                  <input
-                    className="w-full rounded-lg border-2 p-3 text-sm"
-                    placeholder="Name"
-                    type="text"
-                    id="name"
-                  />
-                </div>
-                <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-                  <div>
-                    <label className="sr-only" htmlFor="email">
-                      Email
-                    </label>
-                    <input
-                      className="w-full rounded-lg border-2 p-3 text-sm"
-                      placeholder="Email address"
-                      type="email"
-                      id="email"
-                    />
-                  </div>
-                  <div>
-                    <label className="sr-only" htmlFor="phone">
-                      Phone 
-                    </label>
-                    <input
-                      className="w-full rounded-lg border-2 p-3 text-sm "
-                      placeholder="Phone Number"
-                      type="tel"
-                      id="phone"
-                    />
-                  </div>
-                </div>
-                <div>
-                  <label className="sr-only border-2" htmlFor="message">
-                    Message
-                  </label>
-                  <textarea
-                    className="w-full rounded-lg border-2 p-3 text-sm"
-                    placeholder="Message"
-                    rows="8"
-                    id="message"
-                  ></textarea>
-                </div>
-                <div className="mt-4">
-                  <button
-                    type="submit"
-                    className="inline-block w-full rounded-lg bg-sky-400 px-5 py-3 font-medium text-white sm:w-auto"
-                  >
-                    Send
-                  </button>
-                </div>
-              </form>
-            </div>
-            <div className="lg:w-1/3 lg:ml-8 pt-40">
-              <img
-                src="https://futureofedu.co/wp-content/uploads/2022/07/FOE-Header.jpg"
-                alt="Future of Edu Header"
-                className="w-full h-auto rounded-lg shadow-lg"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <>
+    <div className="grid max-w-screen-xl grid-cols-1 gap-8 px-8  mx-auto rounded-lg md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 dark:bg-gray-100 dark:text-gray-800">
+	<div className="">
+		<div className="space-y-2">
+			<h2 className="text-4xl font-bold leading-tight mt-4 lg:text-5xl">Let's talk!</h2>
+			
+		</div>
+		<img src="src/components/assets/contactform.jpg" alt="" className="p-1 h-80 mt-8 md:h-84" />
+	</div>
+	<form noValidate="" className="space-y-6">
+		<div>
+			<label htmlFor="name" className="text-sm">Full name</label>
+			<input id="name" type="text" placeholder="" className="w-full border-2 p-3 rounded dark:bg-gray-100" />
+		</div>
+		<div>
+			<label htmlFor="email" className="text-sm">Email</label>
+			<input id="email" type="email" className="w-full p-3 border-2 rounded dark:bg-gray-100" />
+		</div>
+    <div>
+			<label htmlFor="contact" className="text-sm">Phone Number</label>
+			<input id="contact" type="contact" className="w-full p-3 border-2 rounded dark:bg-gray-100" />
+		</div>
+		<div>
+			<label htmlFor="message" className="text-sm">Message</label>
+			<textarea id="message" rows="3" className="w-full p-3 border-2 rounded dark:bg-gray-100"></textarea>
+		</div>
+		<button type="submit" className="w-full p-3 text-sm font-bold bg-sky-400 tracking-wide uppercase rounded dark:bg--600 dark:text-gray-50">Send Message</button>
+	</form>
+</div>
+    </>
   );
 };
 
