@@ -14,6 +14,7 @@ const ContactUs = () => {
 		<img src="src/components/assets/contactform.jpg" alt="" className="p-1 h-80 mt-8 md:h-84 rounded-xl" />
 	</div>
 	<form noValidate="" className="space-y-6">
+		
 		<div>
 			<label htmlFor="name" className="text-sm">Full name</label>
 			<input id="name" type="text" placeholder="" className="w-full border-2 p-3 dark:bg-gray-100" />
