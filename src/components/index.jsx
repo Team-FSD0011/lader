@@ -18,7 +18,7 @@ const Navbar = () =>{
             <li className="hover:text-gray-400 pt-2"><Link to="/blog">Blog</Link></li>
             <li className="hover:text-gray-400 pt-2"><Link to="/contactUs">Contact Us</Link></li>
             <li className="">
-            <button className=" bg-sky-500 text-white hover:text-gray-400 rounded-lg  px-2 py-2 "><Link to="/index">Explore Now</Link></button>
+            <button className=" bg-sky-500 text-white hover:bg-transparent hover:border-sky-500 hover:text-sky-500 rounded-lg px-2 py-2 border border-sky-500 "><Link to="/index">Explore Now</Link></button>
             </li>
         </ul>
         </div>
