@@ -7,7 +7,7 @@ const ContactUs = () => {
         <div className="">
           <div className="space-y-2">
             <h3 className="text-s  font-semibold italic font-bold leading-tight mt-4 lg:text-xl text-black-500">
-              Interested in studying overseas with First Ladder?{" "}
+              Interested in studying overseas with First Ladder?
             </h3>
             <h3 className="text-s  font-semibold italic  leading-tight mt-4 lg:text-xl text-black-500">
               Fill in your details and we'll call you back!
