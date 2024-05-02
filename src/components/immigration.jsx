@@ -73,7 +73,7 @@ const Immigration = () => {
           
           <div className='absolute flex  items-end left-0 top-0 w-[80%] h-[80%] '>
             
-          <h1 className='bg-red-500 absolute h-10 ml-8 justify-center text-center w-[80%]' >Welcome to Our Company!</h1>
+          <h1 className='bg-red-500  rounded-xl absolute h-10 ml-7 justify-center text-center w-[100%]' >Welcome to Our Company!</h1>
         </div>
           
         </div>
