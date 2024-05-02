@@ -68,7 +68,7 @@ const Immigration = () => {
     <div>
       <h1 className='flex justify-center font-bold text-2xl m-6'>Immigrate with First Ladder</h1>
       <div className=' flex-row gap-5 flex justify-evenly'>
-        <img src={iman} alt="inman"  className='w-[45%] h-[40%] rounded-xl'/> <img src={iman} alt="inman" className='w-[45%] h-[40%] rounded-xl' />
+        <img src={iman} alt="iman"  className='w-[45%] h-[40%] rounded-xl'/> <img src={iman} alt="iman" className='w-[45%] h-[40%] rounded-xl' />
       </div>
     </div>
   </>
