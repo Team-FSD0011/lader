@@ -8,7 +8,7 @@ import { IoTimeOutline } from "react-icons/io5";
 import { PiPlanet } from "react-icons/pi";
 import { MdContactEmergency } from "react-icons/md";
 import img from "../components/assets/img1.jpg"
-import imman from "../components/assets/blog7.jpg"
+import iman from "../components/assets/blog7.jpg"
 
 const Immigration = () => {
   const [imageindex, setimageindes] = useState(0)
@@ -68,7 +68,7 @@ const Immigration = () => {
     <div>
       <h1 className='flex justify-center font-bold text-2xl m-6'>Immigrate with First Ladder</h1>
       <div className=' flex-row gap-5 flex justify-evenly'>
-        <img src={imman} alt="imman"  className='w-[45%] h-[40%] rounded-xl'/> <img src={imman} alt="imman" className='w-[45%] h-[40%] rounded-xl' />
+        <img src={iman} alt="inman"  className='w-[45%] h-[40%] rounded-xl'/> <img src={iman} alt="inman" className='w-[45%] h-[40%] rounded-xl' />
       </div>
     </div>
   </>
