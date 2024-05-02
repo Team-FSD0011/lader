@@ -32,10 +32,10 @@ const Immigration = () => {
     <div className="gap-10 flex items-center justify-center w-full relative">
       <img src={imagearray[imageindex]} alt="logo" className='scroll-smooth w-full h-[650px]' />
       <div className='w-full h-[650px] absolute flex justify-center items-center top-0 left-0 flex-col backdrop-brightness-50'>
-      <h1 className='text-6xl font-bold text-gray-50'>Welcome to Our Company!</h1> <br />
-      <h4 className='text-lg text-gray-50 mt-6 text-center font-serif flex justify-center items-center w-[75%]'>Are you looking for reliable immigration consultants to handle your immigration case? Our certified and reliable Immigration Consultant professionals can help you get a positive decision on your case! We provide services in all different areas of immigration.</h4>
-      <button className='w-24 h-10 bg-orange-600 rounded-lg font-bold text-white mt-6'>Service</button>
-</div>
+        <h1 className='text-6xl font-bold text-gray-50'>Welcome to Our Company!</h1> <br />
+        <h4 className='text-lg text-gray-50 mt-6 text-center font-serif flex justify-center items-center w-[75%]'>Are you looking for reliable immigration consultants to handle your immigration case? Our certified and reliable Immigration Consultant professionals can help you get a positive decision on your case! We provide services in all different areas of immigration.</h4>
+        <button className='w-24 h-10 bg-orange-600 rounded-lg font-bold text-white mt-6'>Service</button>
+      </div>
     </div>
 
     <div className=" m-5 flex flex-col lg:flex-row gap-5 pt-14">
@@ -67,11 +67,21 @@ const Immigration = () => {
     </div>
     <div>
       <h1 className='flex justify-center font-bold text-2xl m-6'>Immigrate with First Ladder</h1>
-      <div className=' flex-row gap-5 flex justify-evenly'>
-        <img src={iman} alt="iman"  className='w-[45%] h-[40%] rounded-xl'/> <img src={iman} alt="iman" className='w-[45%] h-[40%] rounded-xl' />
+      <div className=' flex-row flex justify-evenly'>
+        <div className='relative w-[80%] '>
+          <img src={iman} alt="iman" className='w-[80%] h-[80%] rounded-xl ml-7' />
+          
+          <div className='absolute flex  items-end left-0 top-0 w-[80%] h-[80%] '>
+            
+          <h1 className='bg-red-500 absolute h-10 ml-8 justify-center text-center w-[80%]' >Welcome to Our Company!</h1>
+        </div>
+          
+        </div>
+        <div> <img src={iman} alt="iman" className='w-[45%] h-[40%] rounded-xl' /></div>
       </div>
     </div>
   </>
+
   )
 }
 
