@@ -1,12 +1,13 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
+const connect=require('./connection')
 
 const app = express();
 const PORT = process.env.PORT || 5000;
 
 app.use(bodyParser.json());
-
+connect();
 app.post('/api/contact', (req, res) => {
   const { name, email, phone, message } = req.body;
 
