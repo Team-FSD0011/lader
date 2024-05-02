@@ -73,11 +73,19 @@ const Immigration = () => {
           
           <div className='absolute flex  items-end left-0 top-0 w-[80%] h-[80%] '>
             
-          <h1 className='bg-red-500  rounded-xl absolute h-10 ml-7 justify-center text-center w-[100%]' >Welcome to Our Company!</h1>
+          <h1 className='bg-red-500  rounded-b-lg absolute h-10 ml-7 justify-center items-center text-center w-[100%] pt-2' >Welcome to Our Company!</h1>
         </div>
           
         </div>
-        <div> <img src={iman} alt="iman" className='w-[45%] h-[40%] rounded-xl' /></div>
+        <div className='relative w-[80%] '>
+          <img src={iman} alt="iman" className='w-[80%] h-[80%] rounded-xl ml-7' />
+          
+          <div className='absolute flex  items-end left-0 top-0 w-[80%] h-[80%] '>
+            
+          <h1 className='bg-red-500  rounded-b-lg absolute h-10 ml-7 justify-center items-center text-center w-[100%] pt-2' >Welcome to Our Company!</h1>
+        </div>
+          
+        </div>
       </div>
     </div>
   </>
