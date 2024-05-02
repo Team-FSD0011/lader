@@ -38,7 +38,7 @@ const ContactUs = () => {
         />
       </div>
 
-      <div className="container bg-gradient-animation grid max-w-screen-xl grid-cols-1 gap-8 px-8 mx-auto rounded-lg md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 dark:bg-gray-100 dark:text-gray-800 relative z-20">
+      <div className="bg-gradient-animation grid max-w-screen-xl grid-cols-1 gap-8 px-8 mx-auto rounded-lg md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 dark:bg-gray-100 dark:text-gray-800 relative z-20">
         <div className="relative z-20">
           <div className="space-y-2">
             <h3 className="text-lg font-semibold italic font-bold leading-tight mt-4 lg:text-xl text-black-500">
