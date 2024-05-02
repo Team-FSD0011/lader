@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import { FaMapMarkedAlt } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
+import { FaPhoneSquareAlt } from "react-icons/fa";
 const ContactUs = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -111,18 +112,20 @@ const ContactUs = () => {
       <div className="flex">
       <div className="card mt-10 ml-16 card-content p-5">
       
-      <FaMapMarkedAlt className="h-16 w-10 text-sky-500" />
+      <FaMapMarkedAlt className="h-16 w-12 text-sky-500" />
  
-      <h1 className="text-sky-500 mt-4">Head Quarter</h1><br />
+      <h1 className="text-sky-500 mt-4"><b>Head Quarter</b></h1><br />
       <h1>714A, 7th floor, Phase II, Spencer Plaza, Anna Salai, Chennai 600 002.</h1>
       </div>
       <div className="card mt-10 ml-24 card-content p-5">
-      <IoMdMail  className="h-16 w-10 text-sky-500" /><br />
-        <h1 className="text-sky-500 mt-4">Mailing Address</h1><br />
+      <IoMdMail  className="h-16 w-12 text-sky-500" /><br />
+        <h1 className="text-sky-500 mt-0.5"><b>Mailing Address</b></h1><br />
         <h1>hr@firstladder.com</h1>
       </div>
       <div className="card mt-10 ml-24 card-content p-5">
-        <h1>phone</h1>
+      <FaPhoneSquareAlt className="h-16 w-10 text-sky-500" /><br />
+        <h1 className="text-sky-500 mt-0.5"><b>Business Talk</b></h1>
+        <h1 className="mt-5">+91 83009 41219</h1>
       </div>
       </div>
       <div className="map">
