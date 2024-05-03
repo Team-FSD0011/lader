@@ -7,7 +7,7 @@ const AboutUs = () =>
     return(
         <>  
             <div className="relative ">
-                <img src={grp2} alt="" className="h-72 w-full  relative opacity-70" />
+                <img src={grp2} alt="" className="h-72 w-full rounded-xl relative opacity-70" />
             <div className="absolute inset-0 text-center font-bold text-3xl top-44">
                <h1 className="font-serif block  w-60 ml-[500px] rounded-lg p-2 text-white">ABOUT US</h1>
             </div>
