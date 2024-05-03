@@ -8,4 +8,4 @@ const BlogsDetails = () => {
   )
 }
 
-export default BlogsDetails
+export default BlogsDetails;
