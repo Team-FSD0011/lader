@@ -127,6 +127,7 @@ const Immigration = () => {
 
            </select>
           </div>
+          <button className='ml-[22%] m-5 w-24 h-10 bg-sky-500 rounded-lg font-bold text-white'>Submit</button>
       </form>
     </div>
   </>
