@@ -7,6 +7,7 @@ import { MdHomeRepairService } from "react-icons/md";
 import { IoTimeOutline } from "react-icons/io5";
 import { PiPlanet } from "react-icons/pi";
 import { MdContactEmergency } from "react-icons/md";
+import { MdMedicalServices } from "react-icons/md";
 import img from "../components/assets/img1.jpg";
 import iman from "../components/assets/blog7.jpg";
 import mans from "../components/assets/Australia.jpg"
@@ -25,12 +26,11 @@ const Immigration = () => {
   }, [imagearray])
   const icon1 = (<FaRegNewspaper size={35} className=" text-backgroundColor" />);
   const icon2 = (<MdHomeRepairService size={35} className=" text-backgroundColor" />);
-  const icon3 = (<IoTimeOutline size={35} className=" text-backgroundColor" />);
+  const icon3 = (<MdMedicalServices size={35} className=" text-backgroundColor" />);
   const icon4 = (<IoTimeOutline size={35} className=" text-backgroundColor" />);
   const icon5 = (<PiPlanet size={35} className=" text-backgroundColor" />);
   const icon6 = (<MdContactEmergency size={35} className=" text-backgroundColor" />);
   return (<>
-
     <div className="gap-10 flex items-center justify-center w-full relative">
       <img src={imagearray[imageindex]} alt="logo" className='scroll-smooth w-full h-[650px]' />
       <div className='w-full h-[650px] absolute flex justify-center items-center top-0 left-0 flex-col backdrop-brightness-50'>
@@ -39,15 +39,13 @@ const Immigration = () => {
         <button className='w-24 h-10 bg-orange-600 rounded-lg font-bold text-white mt-6'>Service</button>
       </div>
     </div>
-
-    <div className=" m-5 flex flex-col lg:flex-row gap-5 pt-14">
+    <div className=" flex flex-col lg:flex-row gap-5 pt-14">
       <ImmigrationCard icon={icon1} title="Consultation per Hour" />
       <ImmigrationCard icon={icon2} title="Consultation per Question" />
       <ImmigrationCard icon={icon3} title="Full Package Service" />
       <ImmigrationCard icon={icon4} title="Immigration Plan " />
       <ImmigrationCard icon={icon5} title="Application Review " />
       <ImmigrationCard icon={icon6} title="Settlement Advising" />
-
     </div>
     <div className=" min-h-screen flex flex-col lg:flex-row justify-between items-center lg:px-32 gap-8">
       <div className=" w-full lg:w-3/4 space-y-4">
@@ -130,6 +128,7 @@ const Immigration = () => {
           <button className='ml-[22%] m-5 w-24 h-10 bg-sky-500 rounded-lg font-bold text-white'>Submit</button>
       </form>
     </div>
+    <div></div>
   </>
 
   )

@@ -43,7 +43,7 @@ const ContactUs = () => {
       <div class="mt-10 bg-gradient-animation grid max-w-screen-xl grid-cols-1 gap-8 px-8 mx-auto rounded-lg md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 dark:bg-gray-100 dark:text-gray-800 relative z-20">
         <div class="relative z-20 bg-white rounded-xl shadow-lg">
           <div class="space-y-2 p-6">
-            <h3 class="text-lg font-semibold italic font-bold leading-tight mt-4 lg:text-xl text-black-500">
+            <h3 class="text-lg font-semibold italic leading-tight mt-4 lg:text-xl text-black-500">
               Interested in studying overseas with First Ladder?
             </h3>
             <h3 class="text-lg font-semibold italic leading-tight mt-4 lg:text-xl text-black-500">
