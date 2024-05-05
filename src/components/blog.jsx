@@ -1,5 +1,5 @@
 import React from 'react'
-import BlogsComp from '../commponents/Blogs/BlogsComp'
+import BlogsComp from './Blogs/BlogsComp.jsx'
 const Blogs = () => {
   return (
     <div className='min-h-[650px] pt-20

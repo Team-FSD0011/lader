@@ -1,6 +1,6 @@
 import React from 'react'
 import { useLocation } from 'react-router-dom';
-import BlogsComp from "../commponents/Blogs/BlogsComp";
+import BlogsComp from './Blogs/BlogsComp.jsx';
 
 const BlogsDetails = () => {
    const location = useLocation();
