@@ -1,12 +1,13 @@
-import React from "react";
-
-
-const Blog = () => {
+import React from 'react'
+import BlogsComp from '../commponents/Blogs/BlogsComp'
+const Blogs = () => {
   return (
-    <div>
-      <img src="" alt="" />
+    <div className='min-h-[650px] pt-20
+    bg-gray-100'>
+      <BlogsComp/>
     </div>
-  );
-};
+  )
+}
 
-export default Blog;
+export default Blogs
+
