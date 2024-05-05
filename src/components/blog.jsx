@@ -1,11 +1,13 @@
 import React from 'react'
+import BlogsComp from './Blogs/BlogsComp.jsx'
 
-const blog = () => {
+const Blog = () => {
   return (
-    <div>
-      fghjk
+    <div className='min-h-scree pt-14
+    bg-gray-100'>
+      <BlogsComp/>
     </div>
   )
 }
 
-export default blog
+export default Blog
