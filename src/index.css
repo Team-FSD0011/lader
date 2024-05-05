@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.head_img{
+  object-fit: cover;
+  width: 100%;
+  height: 50vh;
+  
+}
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(84, 82, 82, 0.1);
+  width: 300px;
+}
