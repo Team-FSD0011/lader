@@ -1,10 +1,16 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
-const BlogsCard = () => {
+const BlogsCard = ({images, date, title, description, author}) => {
   return (
-    <div>
-      
-    </div>
+    <Link>
+      <div className='p-4'>
+        <div>
+          <img src={images} alt="" 
+          className=''/>
+        </div>
+      </div>
+    </Link>
   )
 }
 
