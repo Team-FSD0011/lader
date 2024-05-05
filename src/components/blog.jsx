@@ -3,8 +3,7 @@ import BlogsComp from './Blogs/BlogsComp.jsx'
 
 const Blog = () => {
   return (
-    <div className='min-h-scree pt-14
-    bg-gray-100'>
+    <div className='min-h-scree pt-14'>
       <BlogsComp/>
     </div>
   )

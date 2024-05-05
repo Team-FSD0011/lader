@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
 
-const BlogsCard = () => {
-  return (
-    <div>
-      fghjk
-    </div>
-  )
+const BlogsCard = ({image, date, title, description, author}) =>{
+    return(
+        <Link>
+          <div></div>
+        </Link>
+    )
 }
 
 export default BlogsCard
