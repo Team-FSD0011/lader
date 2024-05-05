@@ -19,6 +19,7 @@ function App() {
   return (
     <>
     <Navbar/>
+    <Footer/>
     <Routes>   
       
       <Route path="/aboutUs" element={<AboutUs/>}/>
