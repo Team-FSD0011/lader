@@ -1,12 +1,12 @@
-
 import React from "react";
+const Blog = () => 
+{
+    return(
+        <>     
+            <p>contactUs</p>
+        </>
+    )
 
-
-const Blog = () => {
-  return (
-    <div>
-    </div>
-  );
-};
+}
 
 export default Blog;

@@ -7,9 +7,11 @@ import { MdHomeRepairService } from "react-icons/md";
 import { IoTimeOutline } from "react-icons/io5";
 import { PiPlanet } from "react-icons/pi";
 import { MdContactEmergency } from "react-icons/md";
+import { MdMedicalServices } from "react-icons/md";
 import img from "../components/assets/img1.jpg";
 import iman from "../components/assets/blog7.jpg";
-import mans from "../components/assets/Australia.jpg"
+import mans from "../components/assets/Australia.jpg";
+import Footer from "../components/Footer/Footer"
 
 
 const Immigration = () => {
@@ -25,12 +27,11 @@ const Immigration = () => {
   }, [imagearray])
   const icon1 = (<FaRegNewspaper size={35} className=" text-backgroundColor" />);
   const icon2 = (<MdHomeRepairService size={35} className=" text-backgroundColor" />);
-  const icon3 = (<IoTimeOutline size={35} className=" text-backgroundColor" />);
+  const icon3 = (<MdMedicalServices size={35} className=" text-backgroundColor" />);
   const icon4 = (<IoTimeOutline size={35} className=" text-backgroundColor" />);
   const icon5 = (<PiPlanet size={35} className=" text-backgroundColor" />);
   const icon6 = (<MdContactEmergency size={35} className=" text-backgroundColor" />);
   return (<>
-
     <div className="gap-10 flex items-center justify-center w-full relative">
       <img src={imagearray[imageindex]} alt="logo" className='scroll-smooth w-full h-[650px]' />
       <div className='w-full h-[650px] absolute flex justify-center items-center top-0 left-0 flex-col backdrop-brightness-50'>
@@ -39,15 +40,13 @@ const Immigration = () => {
         <button className='w-24 h-10 bg-orange-600 rounded-lg font-bold text-white mt-6'>Service</button>
       </div>
     </div>
-
-    <div className=" m-5 flex flex-col lg:flex-row gap-5 pt-14">
+    <div className=" flex flex-col lg:flex-row gap-5 pt-14">
       <ImmigrationCard icon={icon1} title="Consultation per Hour" />
       <ImmigrationCard icon={icon2} title="Consultation per Question" />
       <ImmigrationCard icon={icon3} title="Full Package Service" />
       <ImmigrationCard icon={icon4} title="Immigration Plan " />
       <ImmigrationCard icon={icon5} title="Application Review " />
       <ImmigrationCard icon={icon6} title="Settlement Advising" />
-
     </div>
     <div className=" min-h-screen flex flex-col lg:flex-row justify-between items-center lg:px-32 gap-8">
       <div className=" w-full lg:w-3/4 space-y-4">
@@ -75,7 +74,7 @@ const Immigration = () => {
 
           <div className='absolute flex  items-end left-0 top-0 w-[80%] h-[80%] '>
 
-            <h1 className='rounded-b-lg absolute h-10 ml-24 bg-gray-500 text-white justify-center items-center text-center w-[100%] pt-2' >Welcome to Our Company!</h1>
+            <h1 className='rounded-b-lg absolute h-10 ml-24 bg-gray-500 text-white justify-center items-center text-center w-[100%] pt-2' >Welcome to Our Landon!</h1>
           </div>
 
         </div>
@@ -116,8 +115,8 @@ const Immigration = () => {
           </div>
         </div>
         <div>
-          <h5 className='ml-[22.5%] font-semibold m-2'>Choose Services</h5>
-           <select className='ml-[22%] block justify-center appearance-none w-[56%] bg-white border border-gray-400 hover:border-gray-500 px-4 py-4 pr-8 rounded-lg shadow leading-tight focus:outline-none '>
+          <h5 className='ml-[23.3%] font-semibold m-2'>Choose Services</h5>
+           <select className='ml-[23%] block justify-center appearance-none w-[54%] bg-white border border-gray-400 hover:border-gray-500 px-4 py-4 pr-8 rounded-lg shadow leading-tight focus:outline-none '>
             <option value="">Select</option>
             <option value="Overseas Education">Overseas Education</option>
             <option value="Engineering Jobs">Engineering Jobs</option>
@@ -127,8 +126,10 @@ const Immigration = () => {
 
            </select>
           </div>
+          <button className='ml-[22%] m-5 w-24 h-10 bg-sky-500 rounded-lg font-bold text-white'>Submit</button>
       </form>
     </div>
+    <Footer/>
   </>
 
   )
