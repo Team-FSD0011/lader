@@ -84,8 +84,7 @@ const AboutUs = () => {
 
         </div>
 
-=======
->>>>>>> ac0bfc4a27f44a5bdf906621cc56752f22edb4d7
+
             <div className="text-blue-900 font-bold text-2xl text-center mt-20 font-serif">
                 <h2>Change Your Life Now!</h2>
                 <p className="text-black mt-5">Reach out to us</p>
