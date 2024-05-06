@@ -4,10 +4,11 @@ import {
   FaFacebook,
   FaInstagram,
   FaLinkedin,
-  FaLocationArrow,
+  FaEnvelope,
   FaMobileAlt,
+  FaMapMarkedAlt,
 } from "react-icons/fa";
-import StudeVid from "../assets/video/videos.mp4"
+import Australia from "../assets/Australia.jpg"
 import { Link } from "react-router-dom";
 
 const FooterLinks = [
@@ -18,18 +19,6 @@ const FooterLinks = [
   {
     title: "About Us",
     link: "/about us",
-  },
-  {
-    title: "Training Programs",
-    link: "/training programs",
-  },
-  {
-    title: "Study Abroad",
-    link: "/study abroad",
-  },
-  {
-    title: "Immigration",
-    link: "/immigration",
   },
   {
     title: "Blog",
@@ -44,14 +33,7 @@ const FooterLinks = [
 const Footer = () => {
   return (
     <div className="dark:bg-gray-950 py-10 relative overflow-hidden">
-        <video
-        autoPlay
-        loop
-        muted
-        className="absolute right-0 top-0 h-full overflow-hidden w-full object-cover z-[-1]">
-
-<source src={StudeVid} type="video/mp4" />  
-        </video>
+       <img src={Australia} alt=""  className="absolute right-0 top-0 h-full overflow-hidden w-full object-cover z-[-1]"/>
         <div className="container">
           <div className="grid md:grid-cols-3 py-5 bg-white/80 backdrop-blur-sm rounded-t-xl">
             <div className="py-8 px-4">
@@ -60,19 +42,99 @@ const Footer = () => {
                 {/* TravelloGo */}
               </h1>
               <p className="text-sm">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
-                facere ab hic accusamus omnis dolor voluptatibus illo, tempore
-                eum tenetur.
+              First-Ladder is an International Education, Immigration, and Recruitment Consulting 
+              Company headquartered in Chennai, India.
               </p>
               <br />
-              <div className="flex items-center gap-3 ">
-                <FaLocationArrow />
-                <p>Noida, Uttar Pradesh</p>
+              {/* <div className="flex items-center gap-3 ">
+                <FaEnvelope />
+                <p>hr@firstladder.com</p>
+              </div> */}
+              {/* <div className="flex items-center gap-3 mt-3">
+                <FaMobileAlt />
+                <p>+91 123456789</p>
+              </div> */}
+              {/* <div className="flex items-center gap-3 mt-3">
+                <FaMapMarkedAlt />
+                <p>714A, 7th floor, Phase II, Spencer Plaza, Anna Salai, Chennai 600
+                  002.</p>
+              </div> */}
+              
+              {/* social handles */}
+              {/* <div>
+                <div className="flex items-center gap-3 mt-6">
+                  <a href="#">
+                    <FaInstagram className="text-3xl" />
+                  </a>
+                  <a href="#">
+                    <FaFacebook className="text-3xl" />
+                  </a>
+                  <a href="#">
+                    <FaLinkedin className="text-3xl" />
+                  </a>
+                </div>
+              </div> */}
+            </div>
+            <div className="grid grid-cols-2 sm:grid-cols-3 col-span-2 md:pl-10">
+              <div>
+                <div className="py-8 px-4">
+                  <h1 className="text-xl font-bold text-justify sm:text-left mb-3 text-sky-600">
+                    Important Links
+                  </h1>
+                  <ul className="flex flex-col gap-3">
+                    {FooterLinks.map((link) => (
+                      <li className="cursor-pointer hover:translate-x-1 duration-300 hover:!text-primary space-x-1 text-gray-700 dark:text-gray-200">
+                        <Link
+                          to={link.link}
+                          onClick={() => window.scrollTo(0, 0)}
+                        >
+                          <span>&#11162;</span>
+                          <span>{link.title}</span>
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+              <div>
+                <div className="py-8 px-4">
+                  <h1 className="text-xl font-bold text-justify sm:text-left mb-3 text-sky-600">
+                    Services
+                  </h1>
+                  <ul className="flex flex-col gap-3">
+                    {FooterLinks.map((link) => (
+                      <li className="cursor-pointer hover:translate-x-1 duration-300 hover:!text-primary space-x-1 text-gray-700 dark:text-gray-200">
+                        <Link
+                          to={link.link}
+                          onClick={() => window.scrollTo(0, 0)}
+                        >
+                          <span>&#11162;</span>
+                          <span>{link.title}</span>
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+              <div>
+                <div className="py-8 px-4">
+                  <h1 className="text-xl font-bold text-justify sm:text-left mb-3 text-sky-600">
+                    Contact Us
+                  </h1>
+                  <div className="flex items-center gap-3 ">
+                <FaEnvelope />
+                <p>hr@firstladder.com</p>
               </div>
               <div className="flex items-center gap-3 mt-3">
                 <FaMobileAlt />
                 <p>+91 123456789</p>
               </div>
+              <div className="flex items-center gap-3 mt-3">
+                <FaMapMarkedAlt />
+                <p>714A, 7th floor, Phase II, Spencer Plaza, Anna Salai, Chennai 600
+                  002.</p>
+              </div>
+              
               {/* social handles */}
               <div>
                 <div className="flex items-center gap-3 mt-6">
@@ -87,72 +149,13 @@ const Footer = () => {
                   </a>
                 </div>
               </div>
-            </div>
-            <div className="grid grid-cols-2 sm:grid-cols-3 col-span-2 md:pl-10">
-              <div>
-                <div className="py-8 px-4">
-                  <h1 className="text-xl font-bold text-justify sm:text-left mb-3">
-                    Important Links
-                  </h1>
-                  <ul className="flex flex-col gap-3">
-                    {FooterLinks.map((link) => (
-                      <li className="cursor-pointer hover:translate-x-1 duration-300 hover:!text-primary space-x-1 text-gray-700 dark:text-gray-200">
-                        <Link
-                          to={link.link}
-                          onClick={() => window.scrollTo(0, 0)}
-                        >
-                          <span>&#11162;</span>
-                          <span>{link.title}</span>
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-              <div>
-                <div className="py-8 px-4">
-                  <h1 className="text-xl font-bold text-justify sm:text-left mb-3">
-                    Important Links
-                  </h1>
-                  <ul className="flex flex-col gap-3">
-                    {FooterLinks.map((link) => (
-                      <li className="cursor-pointer hover:translate-x-1 duration-300 hover:!text-primary space-x-1 text-gray-700 dark:text-gray-200">
-                        <Link
-                          to={link.link}
-                          onClick={() => window.scrollTo(0, 0)}
-                        >
-                          <span>&#11162;</span>
-                          <span>{link.title}</span>
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-              <div>
-                <div className="py-8 px-4">
-                  <h1 className="text-xl font-bold text-justify sm:text-left mb-3">
-                    Important Links
-                  </h1>
-                  <ul className="flex flex-col gap-3">
-                    {FooterLinks.map((link) => (
-                      <li className="cursor-pointer hover:translate-x-1 duration-300 hover:!text-primary space-x-1 text-gray-700 dark:text-gray-200">
-                        <Link
-                          to={link.link}
-                          onClick={() => window.scrollTo(0, 0)}
-                        >
-                          <span>&#11162;</span>
-                          <span>{link.title}</span>
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
+            
                 </div>
               </div>
             </div>
           </div>
           <div>
-            <div className="text-center py-5 border-t-2 border-gray-300/50 bg-primary text-white">
+            <div className="text-center py-5 border-t-2 border-gray-300/50 bg-sky-600 text-white">
               @copyright 2024 All rights reserved || Made with ❤️ by Dilshad
             </div>
           </div>
