@@ -10,7 +10,6 @@
 // } from "react-icons/fa";
 // import Australia from "../assets/Australia.jpg";
 // import { Link } from "react-router-dom";
-
 // const FooterLinks = [
 //   {
 //     title: "Home",
