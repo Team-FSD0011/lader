@@ -12,7 +12,7 @@ const BlogsDetails = () => {
     <div className=' min-h-[550px] pt-20'>
       <div className='h-[300px] overflow-hidden'>
         <img src={image} alt="" 
-        className='mx-auto h-[300px] w-full object-cover
+        className='mx-auto h-[300px]  object-cover
         transition duration-700 hover:scale-110' />
       </div>
        <div className='container'>
