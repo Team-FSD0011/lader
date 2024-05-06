@@ -1,6 +1,5 @@
 import { useEffect, React, useState } from 'react';
 import BlogsComp from './Blogs/BlogsComp.jsx'
-import Footer from './Footer/Footer.jsx'
 import Img1 from "../components/assets/studentsimag1.png";
 import Img2 from "../components/assets/studentsimag2.png";
 import Img3 from "../components/assets/studentsimag3.png";
@@ -30,7 +29,6 @@ const Blog = () => {
     </div>
     <div className='min-h-[650px] pt-20 '>
       <BlogsComp/>
-      <Footer/>
     </div>
     </>
   )

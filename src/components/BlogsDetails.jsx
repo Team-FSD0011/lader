@@ -1,7 +1,6 @@
 import React from 'react'
 import { useLocation } from 'react-router-dom';
 import BlogsCard from './Blogs/BlogsCard';
-import Footer from './Footer/Footer';
 import BlogsComp from './Blogs/BlogsComp';
 
 const BlogsDetails = () => {
@@ -21,7 +20,6 @@ const BlogsDetails = () => {
        <p className='mt-[21px]'>{description}</p>
        </div>
        <BlogsComp/>
-       <Footer/>
     </div>
   )
 }
