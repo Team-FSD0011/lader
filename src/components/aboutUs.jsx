@@ -31,9 +31,8 @@ const AboutUs = () => {
                     </ul>
                 </div>
             </div>
-<<<<<<< HEAD
+
         <div className="bg-grey-400">
-=======
 
 
            <div className="flex ">
