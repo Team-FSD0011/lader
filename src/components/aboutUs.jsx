@@ -2,6 +2,7 @@ import React from "react";
 import grp2 from '../components/assets/grp2.png';
 import welcome1 from '../components/assets/welcome1.png';
 import vision from '../components/assets/vision.jpg';
+import Footer from "./Footer/Footer";
 const AboutUs = () => 
 {
     return(
@@ -78,6 +79,7 @@ const AboutUs = () =>
 </div>
 
         </div>
+<Footer/>
 
         </>
 

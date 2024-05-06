@@ -10,7 +10,8 @@ import { MdContactEmergency } from "react-icons/md";
 import { MdMedicalServices } from "react-icons/md";
 import img from "../components/assets/img1.jpg";
 import iman from "../components/assets/blog7.jpg";
-import mans from "../components/assets/Australia.jpg"
+import mans from "../components/assets/Australia.jpg";
+import Footer from "../components/Footer/Footer"
 
 
 const Immigration = () => {
@@ -73,7 +74,7 @@ const Immigration = () => {
 
           <div className='absolute flex  items-end left-0 top-0 w-[80%] h-[80%] '>
 
-            <h1 className='rounded-b-lg absolute h-10 ml-24 bg-gray-500 text-white justify-center items-center text-center w-[100%] pt-2' >Welcome to Our Company!</h1>
+            <h1 className='rounded-b-lg absolute h-10 ml-24 bg-gray-500 text-white justify-center items-center text-center w-[100%] pt-2' >Welcome to Our Landon!</h1>
           </div>
 
         </div>
@@ -114,8 +115,8 @@ const Immigration = () => {
           </div>
         </div>
         <div>
-          <h5 className='ml-[22.5%] font-semibold m-2'>Choose Services</h5>
-           <select className='ml-[22%] block justify-center appearance-none w-[56%] bg-white border border-gray-400 hover:border-gray-500 px-4 py-4 pr-8 rounded-lg shadow leading-tight focus:outline-none '>
+          <h5 className='ml-[23.3%] font-semibold m-2'>Choose Services</h5>
+           <select className='ml-[23%] block justify-center appearance-none w-[54%] bg-white border border-gray-400 hover:border-gray-500 px-4 py-4 pr-8 rounded-lg shadow leading-tight focus:outline-none '>
             <option value="">Select</option>
             <option value="Overseas Education">Overseas Education</option>
             <option value="Engineering Jobs">Engineering Jobs</option>
@@ -128,7 +129,7 @@ const Immigration = () => {
           <button className='ml-[22%] m-5 w-24 h-10 bg-sky-500 rounded-lg font-bold text-white'>Submit</button>
       </form>
     </div>
-    <div></div>
+    <Footer/>
   </>
 
   )
