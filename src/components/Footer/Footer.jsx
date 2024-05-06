@@ -122,15 +122,15 @@ const Footer = () => {
                     Contact Us
                   </h1>
                   <div className="flex items-center gap-3 ">
-                <FaEnvelope />
+                <FaEnvelope size={20}/>
                 <p>hr@firstladder.com</p>
               </div>
               <div className="flex items-center gap-3 mt-3">
-                <FaMobileAlt />
+                <FaMobileAlt size={25} />
                 <p>+91 123456789</p>
               </div>
               <div className="flex items-center gap-3 mt-3">
-                <FaMapMarkedAlt />
+                <FaMapMarkedAlt  size={50}/>
                 <p>714A, 7th floor, Phase II, Spencer Plaza, Anna Salai, Chennai 600
                   002.</p>
               </div>

@@ -11,7 +11,7 @@ import { MdMedicalServices } from "react-icons/md";
 import img from "../components/assets/img1.jpg";
 import iman from "../components/assets/blog7.jpg";
 import mans from "../components/assets/Australia.jpg";
-import Footer from "../components/Footer/Footer"
+
 
 
 const Immigration = () => {
@@ -129,7 +129,7 @@ const Immigration = () => {
           <button className='ml-[22%] m-5 w-24 h-10 bg-sky-500 rounded-lg font-bold text-white'>Submit</button>
       </form>
     </div>
-    <Footer/>
+   
   </>
 
   )
