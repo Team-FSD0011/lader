@@ -8,7 +8,7 @@ const AboutUs = () => {
         <>
             <div className="relative">
                 <img src={abt} alt="" className=" h-96  rounded-xl w-full relative " />
-                <div className="absolute inset-0 text-center font-bold text-6xl md:mt-52">
+                <div className="absolute inset-0 text-center font-bold text-5xl md:mt-56">
                     <h1 className="font-serif block  rounded-lg p-2 text-white">ABOUT US</h1>
                 </div>
             </div>
@@ -47,7 +47,7 @@ const AboutUs = () => {
 
             {/* SUBMIT */}
             <div className="mt-10 ">
-                <div className="w-96 mx-auto bg-white rounded-xl shadow-md overflow-hidden">
+                <div className="w-1/2 mx-auto bg-white rounded-xl shadow-md overflow-hidden">
                     <div className="p-6">
                         <form action="">
                             <div>
@@ -69,7 +69,7 @@ const AboutUs = () => {
                                     <option value="Campus Recruitment">Campus Recruitment</option>
                                 </select>
                             </div>
-                            <div className="mt-6 md:ml-20">
+                            <div className="mt-6 md:ml-48">
                                 <button type="submit" className="w-40 py-2 bg-blue-500 text-white font-bold rounded-lg hover:bg-blue-700">Submit</button>
                             </div>
                         </form>
