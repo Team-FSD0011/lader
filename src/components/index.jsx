@@ -12,9 +12,6 @@ import logo5 from "./assets/logo5.jpg";
 import logo6 from "./assets/logo6.jpg";
 import logo7 from "./assets/logo7.jpg";
 import grp from "./assets/grp.png"
-
-
-
 const Navbar = () => {
   return (
     <>

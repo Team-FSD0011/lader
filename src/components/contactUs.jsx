@@ -28,6 +28,7 @@ const ContactUs = () => {
 
   return (
     <>
+      
       <div>
         <div className="relative z-20 rounded-xl">
           <h1 className="text-white font-serif text-blue absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-4xl md:text-7xl italic z-10">
