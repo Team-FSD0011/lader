@@ -87,7 +87,7 @@ const AboutUs = () => {
                 <h2>Change Your Life Now!</h2>
                 <p className="text-black mt-5">Reach out to us</p>
             </div>
->>>>>>> 8c93d9d41d634f8c69c3127dd8b98279e85d4eb0
+
 
             {/* SUBMIT */}
             <div className="mt-10">
