@@ -10,6 +10,7 @@ import StudyAbroad from './components/studyAbroad';
 import TrainingPrograms from './components/trainingPrograms';
 import Immigration from './components/immigration';
 import { Route, Routes } from 'react-router-dom';
+import Footer from './components/Footer/Footer';
 
 
 
@@ -30,6 +31,7 @@ function App() {
       <Route path="/Blogs/:id" element={<BlogsDetails/>}/>
       <Route path="/contactUs" element={<ContactUs/>}/>
     </Routes> 
+    <Footer/>
     </>
   )
 }
