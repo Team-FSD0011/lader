@@ -31,14 +31,14 @@ const AboutUs = () => {
                     </ul>
                 </div>
             </div>
-
+        <div className="bg-grey-400">
             <div className="text-blue-900 font-bold text-2xl text-center mt-20 font-serif">
                 <h2>Change Your Life Now!</h2>
                 <p className="text-black mt-5">Reach out to us</p>
             </div>
 
             {/* SUBMIT */}
-            <div className="mt-10">
+            <div className="mt-10 ">
                 <div className="w-96 mx-auto bg-white rounded-xl shadow-md overflow-hidden">
                     <div className="p-6">
                         <form action="">
@@ -61,10 +61,11 @@ const AboutUs = () => {
                                     <option value="Campus Recruitment">Campus Recruitment</option>
                                 </select>
                             </div>
-                            <div className="mt-6">
+                            <div className="mt-6 md:ml-20">
                                 <button type="submit" className="w-40 py-2 bg-blue-500 text-white font-bold rounded-lg hover:bg-blue-700">Submit</button>
                             </div>
                         </form>
+                    </div>
                     </div>
                 </div>
             </div>
