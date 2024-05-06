@@ -44,7 +44,7 @@ const ContactUs = () => {
       <div className="mt-10 grid max-w-screen-xl grid-cols-1 gap-8 px-4 md:grid-cols-2 md:px-8 lg:px-12 xl:px-16 dark:bg-gray-100 dark:text-gray-800 relative z-20">
         <div className="bg-white rounded-xl shadow-lg">
           <div className="space-y-2 p-4 md:p-6">
-            <h3 className="text-lg font-semibold italic font-bold leading-tight mt-4 lg:text-xl text-black-500">
+            <h3 className="text-lg font-semibold italic leading-tight mt-4 lg:text-xl text-black-500">
               Interested in studying overseas with First Ladder?
             </h3>
             <h3 className="text-lg font-semibold italic leading-tight mt-4 lg:text-xl text-black-500">
@@ -151,4 +151,4 @@ const ContactUs = () => {
   );
 };
 
-export default ContactUs;
+export default ContactUs;
