@@ -9,7 +9,7 @@ import StudyAbroad from './components/studyAbroad';
 import TrainingPrograms from './components/trainingPrograms';
 import Immigration from './components/immigration';
 import { Route, Routes } from 'react-router-dom';
-import Footer from './components/footer';
+import Footer from './components/Footer/Footer.jsx';
 
 
 
