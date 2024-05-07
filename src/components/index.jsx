@@ -115,7 +115,7 @@ const Home = () => {
       </div>
       {/* <div className="relative flex items-center justify-center text-center p-24 rounded-lg mt-8 bg-gray-200 md:scroll-sm ">
         <div className="absolute">
-          <img src={grp} alt="Study Abroad" className="rounded-lg" />
+          <img src={grp} alt="Study Abroad" className="w-full h-full rounded-lg" />
         </div>
         <div className="relative mt-28">
           <h2 className="text-xl font-bold text-white mb-2">Start your Study Abroad journey</h2>

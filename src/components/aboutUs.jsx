@@ -7,9 +7,9 @@ const AboutUs = () => {
     return (
         <>
             <div className="relative">
-                <img src={abt} alt="" className="h-96 rounded-xl w-full relative" />
+                <img src={abt} alt="" className=" h-full rounded-xl object-cover  w-full" />
                 <div className="absolute inset-0 text-center font-bold text-5xl md:mt-56">
-                    <h1 className="font-serif block rounded-lg p-2 text-white">ABOUT US</h1>
+                    <h1 className="font-serif block rounded-lg p-2 text-white pt-60">ABOUT US</h1>
                 </div>
             </div>
             <div className="flex flex-col md:flex-row">
@@ -33,42 +33,7 @@ const AboutUs = () => {
                     </div>
                 </div>
 
-                <div className="text-blue-900 font-bold text-2xl text-center md:mt-20 font-serif">
-                    <h2>Change Your Life Now!</h2>
-                    <p className="text-black md:mt-5">Reach out to us</p>
-                </div>
-
-                {/* SUBMIT */}
-                <div className="md:mt-10">
-                    <div className="w-full md:w-1/2 mx-auto bg-white rounded-xl shadow-md overflow-hidden">
-                        <div className="p-6">
-                            <form action="">
-                                <div>
-                                    <label htmlFor="name" className="block text-xl font-serif">Name</label>
-                                    <input type="text" name="name" id="name" className="md:mt-2 border rounded-lg h-10 w-full" />
-                                </div>
-                                <div className="md:mt-4">
-                                    <label htmlFor="email" className="block text-xl font-serif">Email</label>
-                                    <input type="text" name="email" id="email" className="md:mt-2 border rounded-lg h-10 w-full" />
-                                </div>
-                                <div className="md:mt-4">
-                                    <label htmlFor="services" className="block text-xl font-serif">Choose Services</label>
-                                    <select name="services" id="services" className="md:mt-2 border rounded-lg h-12 w-full">
-                                        <option value="">Select</option>
-                                        <option value="Overseas Education">Overseas Education</option>
-                                        <option value="Engineering jobs">Engineering jobs</option>
-                                        <option value="Training & placement">Training & placement</option>
-                                        <option value="Immigration">Immigration</option>
-                                        <option value="Campus Recruitment">Campus Recruitment</option>
-                                    </select>
-                                </div>
-                                <div className="md:mt-6 md:ml-48">
-                                    <button type="submit" className="w-40 py-2 bg-blue-500 text-white font-bold rounded-lg hover:bg-blue-700">Submit</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
+                
             </div>
         </>
     )
