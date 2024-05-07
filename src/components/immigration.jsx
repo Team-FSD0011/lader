@@ -90,36 +90,37 @@ const Immigration = () => {
     </div>
     <h1 className='flex justify-center font-bold text-2xl text-sky-500'>Change Your Life Now!</h1>
 
-    <div className="mt-3">
-      <div className="w-3/4 mx-auto bg-white rounded-xl shadow-md overflow-hidden">
-        <div className="p-6">
-          <form action="">
-            <div>
-              <label htmlFor="name" className="block text-xl font-serif">Name</label>
-              <input type="text" name="name" id="name" className="mt-2 border rounded-lg h-10 w-full" />
-            </div>
-            <div className="mt-4">
-              <label htmlFor="email" className="block text-xl font-serif">Email</label>
-              <input type="text" name="email" id="email" className="mt-2 border rounded-lg h-10 w-full" />
-            </div>
-            <div className="mt-4">
-              <label htmlFor="services" className="block text-xl font-serif">Choose Services</label>
-              <select name="services" id="services" className="mt-2 border rounded-lg h-12 w-full">
-                <option value="">Select</option>
-                <option value="Overseas Education">Overseas Education</option>
-                <option value="Engineering jobs">Engineering jobs</option>
-                <option value="Training & placement">Training & placement</option>
-                <option value="Immigration">Immigration</option>
-                <option value="Campus Recruitment">Campus Recruitment</option>
-              </select>
-            </div>
-            <div className="mt-6">
-              <button type="submit" className="w-full py-3 bg-blue-500 text-white font-bold rounded-lg hover:bg-blue-700">Submit</button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
+    <div className="mt-10 ">
+                <div className="w-1/2 mx-auto bg-white rounded-xl shadow-md overflow-hidden">
+                    <div className="p-6">
+                        <form action="">
+                            <div>
+                                <label htmlFor="name" className="block text-xl font-serif">Name</label>
+                                <input type="text" name="name" id="name" className="mt-2 border rounded-lg h-10 w-full" />
+                            </div>
+                            <div className="mt-4">
+                                <label htmlFor="email" className="block text-xl font-serif">Email</label>
+                                <input type="text" name="email" id="email" className="mt-2 border rounded-lg h-10 w-full" />
+                            </div>
+                            <div className="mt-4">
+                                <label htmlFor="services" className="block text-xl font-serif">Choose Services</label>
+                                <select name="services" id="services" className="mt-2 border rounded-lg h-12 w-full">
+                                    <option value="">Select</option>
+                                    <option value="Overseas Education">Overseas Education</option>
+                                    <option value="Engineering jobs">Engineering jobs</option>
+                                    <option value="Training & placement">Training & placement</option>
+                                    <option value="Immigration">Immigration</option>
+                                    <option value="Campus Recruitment">Campus Recruitment</option>
+                                </select>
+                            </div>
+                            <div className='flex justify-center items-center mt-4'>
+                            <button className="w-40  py-2 bg-blue-500 text-white font-bold rounded-lg hover:bg-blue-700">Submit</button>
+
+                            </div>
+                        </form>
+                    </div>
+                    </div>
+                </div>
 
   </>
 

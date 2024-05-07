@@ -25,7 +25,7 @@ const BlogsCard = ({image, date, title, description, author}) => {
        </div>
        <div>
        <button
-          className="bg-sky-500 text-white hover:bg-transparent hover:border-sky-500 hover:text-sky-500 font-size-s border border-sky-500 p-1 rounded-full">
+          className="bg-sky-500 text-white hover:bg-transparent hover:border-sky-500 hover:text-sky-500 font-size-2 border border-sky-500 px-3 py-1 rounded-full">
             Read More 
         </button>
        </div>
