@@ -1,18 +1,4 @@
-<<<<<<< HEAD
-import React from "react";
 
- 
-const BlogsDetails = () => {
-    return (
-      <div>
-        <h1>Blog Details</h1>
-      </div>
-    );
-  };
-  
-  export default BlogsDetails; // Ensure there's a default export
-  
-=======
 import React from 'react'
 import { useLocation } from 'react-router-dom';
 import BlogsCard from './Blogs/BlogsCard';
@@ -40,4 +26,3 @@ const BlogsDetails = () => {
 }
 
 export default BlogsDetails
->>>>>>> firstLader/main
