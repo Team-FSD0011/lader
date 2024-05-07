@@ -7,8 +7,8 @@ const AboutUs = () => {
     return (
         <>
             <div className="relative">
-                <img src={abt} alt="" className=" h-80  rounded-xl w-full relative " />
-                <div className="absolute inset-0 text-center font-bold text-6xl top-36">
+                <img src={abt} alt="" className=" h-96  rounded-xl w-full relative " />
+                <div className="absolute inset-0 text-center font-bold text-5xl md:mt-56">
                     <h1 className="font-serif block  rounded-lg p-2 text-white">ABOUT US</h1>
                 </div>
             </div>
@@ -20,26 +20,34 @@ const AboutUs = () => {
                 </div>
             </div>
 
-            <div className="flex flex-col md:flex-row mt-10">
-                <img src={vision} alt="" className="md:ml-14 h-56 w-80 rounded-xl mt-20" />
-                <div className="md:ml-4 md:mr-10">
-                    <h1 className="text-3xl font-bold text-center italic mt-10 text-blue-700">Our Vision And Mission</h1>
-                    <ul className="text-lg mt-10 md:mt-5 mr-4 md:mr-10 md:ml-5 text-justify ">
-                        <li>Empower through education.</li>
-                        <li>First Ladder envisions fostering tax expertise.</li>
-                        <li>Our mission is to shape Enrolled Agents, fueling their success in the field of taxation.</li>
-                    </ul>
-                </div>
-            </div>
+           
+
+        <div className="bg-grey-400">
+
+
+           <div className="flex ">
+              
+                   <img src={vision} alt="" className="ml-14 h-64 w-80 rounded-xl mt-20 " />
+              
+              <div>
+                <h1 className="text-3xl font-bold text-center italic mt-10 text-blue-700">Our Vision And Mission</h1>
+                <li className="text-lg  mt-10  mr-10 ml-14 text-justify "> Empower through education.</li> <br /> 
+               <li className="text-lg  mr-10 ml-14 text-justify"> First Ladder envisions fostering tax expertise.</li> <br />
+               <li className="text-lg   mr-10 ml-14 text-justify">  Our mission is to shape Enrolled Agents, fueling their success in the field of taxation.</li>
+              </div>
+              </div>
+           
+
 
             <div className="text-blue-900 font-bold text-2xl text-center mt-20 font-serif">
                 <h2>Change Your Life Now!</h2>
                 <p className="text-black mt-5">Reach out to us</p>
             </div>
 
+
             {/* SUBMIT */}
-            <div className="mt-10">
-                <div className="w-96 mx-auto bg-white rounded-xl shadow-md overflow-hidden">
+            <div className="mt-10 ">
+                <div className="w-1/2 mx-auto bg-white rounded-xl shadow-md overflow-hidden">
                     <div className="p-6">
                         <form action="">
                             <div>
@@ -61,10 +69,11 @@ const AboutUs = () => {
                                     <option value="Campus Recruitment">Campus Recruitment</option>
                                 </select>
                             </div>
-                            <div className="mt-6">
+                            <div className="mt-6 md:ml-48">
                                 <button type="submit" className="w-40 py-2 bg-blue-500 text-white font-bold rounded-lg hover:bg-blue-700">Submit</button>
                             </div>
                         </form>
+                    </div>
                     </div>
                 </div>
             </div>
