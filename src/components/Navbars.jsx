@@ -199,12 +199,18 @@ const Navbar = ({handleOrderPopup}) => {
 
       {/* Book Now button */}
       <div className="flex items-center">
+      <NavLink
+              activeClassName="active"
+              to="/contactUs"
+              onClick={() => window.scrollTo(0, 0)}
+            >
         <button
           onClick={() => handleOrderPopup(true)}
           className="bg-sky-500 text-white hover:bg-transparent hover:border-sky-500 hover:text-sky-500 font-size-2 border border-sky-500 px-3 py-1 rounded-full"
         >
-          Explore Now
+          Enquire Now
         </button>
+        </NavLink>
       </div>
     </div>
   </div>
