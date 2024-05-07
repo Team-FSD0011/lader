@@ -17,7 +17,7 @@ const Home = () => {
     <>
       
       
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-32 m-8 md:scroll-sm ">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-24 md:scroll-sm ml-9 mr-9 ">
         <div className="bg-gray-200 p-4 rounded-lg">
           <img src={bg} alt="" className="max-w-full h-auto rounded-lg" />
         </div>   
@@ -36,7 +36,7 @@ const Home = () => {
 
       <div className="container md:scroll-sm">
         <h3 className="text-2xl font-semibold mt-12 text-center md:ml-36 mb-8">Why Choose First Ladder for Study Abroad?</h3>
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-8 md:ml-48">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-10">
           <div className="flex items-center bg-sky-200 p-8 rounded-lg">
             <img src={logo3} alt="" className="h-12 mr-2" />
             <p className="text-md">Interview Preparation</p>
@@ -64,12 +64,12 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16 md:cursor-pointer md:scroll-sm">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16 ml-9 mr-9 md:cursor-pointer md:scroll-sm">
         <div className="flex flex-col items-center rounded-lg p-4 shadow-md">
           <img
             src={bg4}
             alt="UK"
-            className="h-64 w-64 mb-4 rounded-md object-cover"
+            className="mb-4 rounded-md object-cover"
           />
           <h3 className="text-xl font-semibold mb-4">Study in the UK</h3>
           <p className="text-md text-gray-700">
@@ -80,7 +80,7 @@ const Home = () => {
           <img
             src={bg5}
             alt="Ireland"
-            className="h-64 w-64 mb-4 rounded-md object-cover"
+            className=" mb-4 rounded-md object-cover"
           />
           <h3 className="text-xl font-semibold mb-4">Study in Ireland</h3>
           <p className="text-md text-gray-700">
@@ -91,7 +91,7 @@ const Home = () => {
           <img
             src={bg6}
             alt="US"
-            className="h-64 w-64 mb-4 rounded-md object-cover"
+            className="mb-4 rounded-md object-cover"
           />
           <h3 className="text-xl font-semibold mb-4">Study in the US</h3>
           <p className="text-md text-gray-700">
@@ -100,7 +100,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="flex flex-col justify-center items-center m-4 md:cursor-pointer bg-gray-100 rounded-lg shadow-lg md:scroll-sm">
+      <div className="flex mb-8 flex-col justify-center items-center  mt-4 ml-9 mr-9 bg-gray-100 rounded-lg shadow-lg md:scroll-sm">
         <p className="text-md text-gray-700 mt-12 mb-2 text-center">
           We are a leading global career consulting firm, providing innovative and customized solutions to students, job seekers and employers.
         </p>
@@ -113,36 +113,10 @@ const Home = () => {
           </button>
         </Link>
       </div>
-      {/* <div className="relative flex items-center justify-center text-center p-24 rounded-lg mt-8 bg-gray-200 md:scroll-sm ">
-        <div className="absolute">
-          <img src={grp} alt="Study Abroad" className="w-full h-full rounded-lg" />
-        </div>
-        <div className="relative mt-28">
-          <h2 className="text-xl font-bold text-white mb-2">Start your Study Abroad journey</h2>
-          <p className="text-md mb-2 text-white">Consultancy Services Provided</p>
-          <Link to="/contactUs">
-            <button className="text-md font-semibold text-white bg-sky-500 py-3 px-8 mb-2 rounded-lg shadow-lg hover:bg-sky-600 focus:outline-none focus:ring focus:ring-sky-400">
-              Make an Appointment
-            </button>
-          </Link>
-        </div>
-      </div> */}
-      <div className="relative flex items-center justify-center text-center  rounded-lg mt-8 md:scroll-sm">
-  <div className="w-screen relative">
-    <img src={grp} alt="Study Abroad" className="rounded-lg w-[100%] h-[80%]" />
-    <div className="absolute top-0 left-0 w-screen h-full bg-black opacity-50 rounded-lg"></div>
-  </div>
-  <div className="absolute flex flex-col items-center mt-28">
-    <h2 className="text-4xl font-bold text-white mb-4">Start your Study Abroad journey</h2>
-    <p className="text-xl font-semibold text-white mb-4">Consultancy Services Provided</p>
-    <Link to="/contactUs">
-      <button className="text-md font-semibold text-white bg-sky-500 py-3 px-8 mb-2 rounded-lg shadow-lg hover:bg-white  hover:text-black hover:font-bold hover:ring hover:ring-sky-400">
-        Make an Appointment
-      </button>
-    </Link>
-  </div>
-</div>
+      <div className='absolute bg-gray-500 h-[7%] w-[96%] mb-10 flex justify-center items-center ml-9 border-sky-500 rounded-lg'>
+    <h1 className='font-semibold text-2xl text-white'>Change Your Life Now!</h1>
 
+    </div>
     </>
   );
 };

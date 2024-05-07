@@ -1,4 +1,5 @@
 import { useEffect, React, useState } from 'react';
+import { Link } from "react-router-dom";
 import image1 from "../components/assets/immigration1.jpg";
 import image2 from "../components/assets/immigration2.jpg";
 import ImmigrationCard from "./layoutes/immigration";
@@ -37,7 +38,9 @@ const Immigration = () => {
       <div className='w-full h-[600px] absolute flex justify-center items-center top-0 left-0 flex-col backdrop-brightness-50'>
         <h1 className='text-5xl font-bold text-gray-50'>Welcome to First Ladder Company!</h1> <br />
         <h4 className='text-lg text-gray-50 mt-6 text-center font-serif flex justify-center items-center w-[75%]'>Are you looking for reliable immigration consultants to handle your immigration case? Our certified and reliable Immigration Consultant professionals can help you get a positive decision on your case! We provide services in all different areas of immigration.</h4>
+        <Link to="/contactUs">
         <button className='w-32 h-12 bg-white rounded-lg font-bold text-sky-600 mt-6  hover:bg-[#36b7eb] hover:text-white'>Service</button>
+        </Link>
       </div>
     </div>
     <div className=" flex flex-col-3 flex-wrap lg:flex-row justify-center items-center gap-10 pt-14">
