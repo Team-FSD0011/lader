@@ -90,9 +90,9 @@ const Footer = () => {
               </div>
               <div>
                 <div className="py-8 px-4">
-                  <h1 className="text-xl font-bold text-justify sm:text-left mb-3 text-sky-600">
+                  <Link to="/contactUs"><h1 className="text-xl font-bold text-justify sm:text-left mb-3 text-sky-600">
                     Contact Us
-                  </h1>
+                  </h1></Link>
                   <div className="flex items-center gap-3 ">
                 <FaEnvelope size={20}/>
                 <p>hr@firstladder.com</p>

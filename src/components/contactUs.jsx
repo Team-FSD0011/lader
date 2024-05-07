@@ -34,7 +34,7 @@ const ContactUs = () => {
             CONTACT US
           </h1>
           <img
-            src="/src/components/assets/handshakecontact.jpg"
+            src="src/components/assets/handshake.jpeg"
             alt=""
             className="head_img rounded-lg opacity-80"
           />
@@ -116,27 +116,29 @@ const ContactUs = () => {
           <h1 className="text-sky-500 mt-2 md:mt-4">
             <b>Head Quarter</b>
           </h1>
-          <p className="text-sm md:text-base">
-            714A, 7th floor, Phase II, Spencer Plaza, Anna Salai, Chennai 600
-            002.
-          </p>
+          <a href="https://maps.app.goo.gl/b5aD54gnkmN9Ug89A" className="text-sm md:text-base">
+  714A, 7th floor, Phase II, Spencer Plaza, Anna Salai, Chennai 600002
+</a>
+
         </div>
         <div className="card mt-10 md:mt-0 md:ml-16 card-content p-4 md:p-5">
           <IoMdMail className="h-12 w-10 text-sky-500" />
           <h1 className="text-sky-500 mt-2 md:mt-4">
             <b>Mailing Address</b>
           </h1>
-          <p className="text-sm md:text-base">hr@firstladder.com</p>
+          <a href="mailto:hr@firstladder.com" className="text-sm md:text-base">hr@firstladder.com</a>
+
         </div>
         <div className="card mt-10 md:mt-0 md:ml-16 card-content p-4 md:p-5">
           <FaPhoneSquareAlt className="h-12 w-10 text-sky-500" />
           <h1 className="text-sky-500 mt-2 md:mt-4">
             <b>Business Talk</b>
           </h1>
-          <p className="text-sm md:text-base">+91 83009 41219</p>
+          <a href="tel:+918300941219" className="text-sm md:text-base">+91 83009 41219</a>
+
         </div>
       </div>
-      <div className="map mt-8">
+      <div className=" mt-8">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d62186.64274524278!2d80.1792213!3d13.056972!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5267e0c38c5381%3A0x405ededf7e643c76!2sFirst-Ladder%20Management%20Solutions%20Private%20Limited!5e0!3m2!1sen!2sin!4v1714646303749!5m2!1sen!2sin"
           width="100%"
