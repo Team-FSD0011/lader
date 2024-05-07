@@ -3,6 +3,7 @@ import axios from "axios";
 import { FaMapMarkedAlt } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
 import { FaPhoneSquareAlt } from "react-icons/fa";
+import handshake from './assets/handshake.jpeg'
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
@@ -34,7 +35,7 @@ const ContactUs = () => {
             CONTACT US
           </h1>
           <img
-            src="src/components/assets/handshake.jpeg"
+            src={handshake}
             alt=""
             className="head_img rounded-lg opacity-80"
           />
