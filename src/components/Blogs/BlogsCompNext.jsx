@@ -2,7 +2,7 @@ import React from 'react'
 
 const BlogsCompNext = () => {
   return (
-    <div>
+    <div>vbnm,
       
     </div>
   )
