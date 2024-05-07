@@ -16,7 +16,7 @@ const BlogsDetails = () => {
         transition duration-700 hover:scale-110' />
       </div>
        <div className='container'>
-       <h1 className='text-2xl font-semibold items-center text-center mt-[21px] text-sky-600'>{title}</h1>
+       <h1 className='text-3xl font-bold text-center italic mt-10 text-blue-700'>{title}</h1>
        <p className='mt-[21px]'>{description}</p>
        </div>
        <BlogsComp/>

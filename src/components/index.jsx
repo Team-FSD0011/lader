@@ -14,7 +14,7 @@ import grp from "./assets/grp.png"
 const Home = () => {
   return (
     <>
-      {/* Navbar */}
+      
       
       <div class="grid grid-cols-1 md:grid-cols-2 gap-32 m-8 scroll-smooth ">
    <div class="bg-gray-200 p-4 items-center justify-center rounded-lg">
