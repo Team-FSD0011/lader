@@ -111,13 +111,13 @@ const Footer = () => {
               <div>
                 <div className="flex items-center gap-3 mt-6">
                   <a href="#">
-                    <FaInstagram className="text-3xl" />
+                    <FaInstagram className="h-9 w-9 text-white bg-sky-500" />
                   </a>
                   <a href="#">
-                    <FaFacebook className="text-3xl" />
+                    <FaFacebook className="h-9 w-9 text-sky-500" />
                   </a>
                   <a href="#">
-                    <FaLinkedin className="text-3xl" />
+                    <FaLinkedin className="h-9 w-9 text-sky-500 " />
                   </a>
                 </div>
               </div>
