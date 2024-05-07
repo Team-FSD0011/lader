@@ -17,7 +17,7 @@ const navbarLinks = [
      },
      {
         name: "Study Abroad",
-        link:"/study abroad", 
+        link:"/studyAbroad", 
      },
      {
         name: "Immigration",
@@ -29,7 +29,7 @@ const navbarLinks = [
      },
      {
         name: "Contact Us",
-        link:"/contact s", 
+        link:"/contact us", 
      },
 ] 
 
