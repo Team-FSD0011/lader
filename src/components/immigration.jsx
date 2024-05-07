@@ -113,7 +113,10 @@ const Immigration = () => {
                                     <option value="Campus Recruitment">Campus Recruitment</option>
                                 </select>
                             </div>
-                            <button className="w-40 mr-5 py-2 bg-blue-500 text-white font-bold rounded-lg hover:bg-blue-700">Submit</button>
+                            <div className='flex justify-center items-center mt-4'>
+                            <button className="w-40  py-2 bg-blue-500 text-white font-bold rounded-lg hover:bg-blue-700">Submit</button>
+
+                            </div>
                         </form>
                     </div>
                     </div>

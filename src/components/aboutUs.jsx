@@ -113,9 +113,17 @@ const AboutUs = () => {
                                     <option value="Campus Recruitment">Campus Recruitment</option>
                                 </select>
                             </div>
+<<<<<<< HEAD
                             <div className="mt-6">
                                 <button type="submit" className="w-40 py-2 bg-blue-500 text-white font-bold rounded-lg hover:bg-blue-700">Submit</button>
+=======
+                            
+                            <div className='flex justify-center items-center mt-4'>
+                            <button className="w-40  py-2 bg-blue-500 text-white font-bold rounded-lg hover:bg-blue-700">Submit</button>
+
+>>>>>>> 3bb74a4a0b50bf45e6d850cf03e9101b8d455ada
                             </div>
+                          
                         </form>
                     </div>
                 </div>
