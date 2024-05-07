@@ -34,7 +34,7 @@ const ContactUs = () => {
             CONTACT US
           </h1>
           <img
-            src="/src/components/assets/handshakecontact.jpg"
+            src="src\components\assets\handshakecontact.jpg"
             alt=""
             className="head_img rounded-lg opacity-80"
           />
