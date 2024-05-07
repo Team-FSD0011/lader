@@ -106,34 +106,16 @@ const Navbar = ({handleOrderPopup}) => {
                 <li className="py-4">
                   <NavLink
                     activeClassName="active"
-                    to="/blogs"
+                    to="/aboutUs"
                     onClick={() => window.scrollTo(0, 0)}
                   >
-                    Blogs
-                  </NavLink>
-                </li>
-                <li className="py-4">
-                  <NavLink
-                    activeClassName="active"
-                    to="/places"
-                    onClick={() => window.scrollTo(0, 0)}
-                  >
-                    Best Places
-                  </NavLink>
-                </li>
-                <li className="py-4">
-                  <NavLink
-                    activeClassName="active"
-                    to="/about"
-                    onClick={() => window.scrollTo(0, 0)}
-                  >
-                    About
+                    About Us
                   </NavLink>
                 </li>
                 {/* Dropdown section */}
-                <li className="py-4 relative group cursor-pointer">
+                 <li className="py-4 relative group cursor-pointer">
                   <div className="dropdown flex items-center">
-                    <span>Quick Links</span>
+                    <span>Training Programs</span>
                     <span>
                       <FaCaretDown className="transition-all duration-200 group-hover:rotate-180" />
                     </span>
@@ -155,7 +137,44 @@ const Navbar = ({handleOrderPopup}) => {
                     </ul>
                   </div>
                 </li>
-              </ul>
+                <li className="py-4">
+                  <NavLink
+                    activeClassName="active"
+                    to="/studyAbroad"
+                    onClick={() => window.scrollTo(0, 0)}
+                  >
+                   Study Abroad
+                  </NavLink>
+                </li>
+                
+                <li className="py-4">
+                  <NavLink
+                    activeClassName="active"
+                    to="/immigration"
+                    onClick={() => window.scrollTo(0, 0)}
+                  >
+                   Immigration 
+                  </NavLink>
+                </li>
+                <li className="py-4">
+                  <NavLink
+                    activeClassName="active"
+                    to="/blog"
+                    onClick={() => window.scrollTo(0, 0)}
+                  >
+                    Blog
+                  </NavLink>
+                </li>
+                <li className="py-4">
+                  <NavLink
+                    activeClassName="active"
+                    to="/contactUs"
+                    onClick={() => window.scrollTo(0, 0)}
+                  >
+                   Contact Us 
+                  </NavLink>
+                </li>
+                </ul>
             </div>
 
             {/* Book Now button */}
