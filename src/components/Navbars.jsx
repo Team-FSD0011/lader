@@ -47,24 +47,31 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import logo from "../components/assets/logo.png";
-import { FaCaretDown } from "react-icons/fa";
 import { HiMenuAlt1, HiMenuAlt3 } from "react-icons/hi";
+import { FaPhoneSquareAlt } from "react-icons/fa";
+import { IoMdMail } from "react-icons/io";
+import {
+  FaFacebook,
+  FaInstagram,
+  FaLinkedin,
+  
+} from "react-icons/fa";
 import ResponsiveMenu from "./ResponsiveMenu"
 
-const dropdownLinks = [
-  {
-    name: "Eraining Programs",
-    link: "/#eraining programs",
-  },
-  {
-    name: "Full Stack Developer",
-    link: "/#full stack developer",
-  },
-  {
-    name: "Data Science",
-    link: "/#data science",
-  },
-];
+// const dropdownLinks = [
+//   {
+//     name: "Eraining Programs",
+//     link: "/#eraining programs",
+//   },
+//   {
+//     name: "Full Stack Developer",
+//     link: "/#full stack developer",
+//   },
+//   {
+//     name: "Data Science",
+//     link: "/#data science",
+//   },
+// ];
 
 const Navbar = ({handleOrderPopup}) => {
   const [showMenu, setShowMenu] = useState(false);
@@ -77,9 +84,21 @@ const Navbar = ({handleOrderPopup}) => {
 <nav className="fixed top-0 right-0 w-full z-50 bg-white backdrop-blur-sm text-black shadow-md z-[99999]">
   <div className="bg-gradient-to-r from-primary to-secondary text-white ">
     <div className="container py-[2px] sm:block hidden">
-      <div className="flex items-center justify-between">
-        <p className="text-sm">20% off on next booking</p>
-        <p>mobile no. +91 123456789</p>
+  
+      <div className="flex items-center">
+        <div className="flex flex-row ">
+      <FaPhoneSquareAlt/>
+        <p className=" mr-4">+91123456789</p>
+        <IoMdMail className="ml-3"/>
+        <p>hr@firstladder.com</p>
+      </div>
+      <div className="container py-[2px] sm:block hidden ">
+        <div className="flex items-center justify-center ml-[90%]">
+        <FaInstagram className="mx-1"/>
+        <FaFacebook className="mx-1"/>
+        <FaLinkedin className="mx-1"/>
+        </div> 
+        </div>
       </div>
     </div>
   </div>
@@ -129,30 +148,14 @@ const Navbar = ({handleOrderPopup}) => {
               About Us
             </NavLink>
           </li>
-          {/* Dropdown section */}
-          <li className="py-4 relative group cursor-pointer">
-            <div className="dropdown flex items-center">
-              <span>Training Programs</span>
-              <span>
-                <FaCaretDown className="transition-all duration-200 group-hover:rotate-180" />
-              </span>
-            </div>
-            <div className="absolute -left-9 z-[9999] hidden group-hover:block shadow-md text-black w-[150px] bg-white p-2">
-              <ul>
-                {dropdownLinks.map((data) => {
-                  return (
-                    <li key={data.name}>
-                      <a
-                        className="inline-block w-full rounded-md p-2 hover:bg-primary/20"
-                        href={data.link}
-                      >
-                        {data.name}
-                      </a>
-                    </li>
-                  );
-                })}
-              </ul>
-            </div>
+          <li className="py-4">
+            <NavLink
+              activeClassName="active"
+              to="/trainingPrograms"
+              onClick={() => window.scrollTo(0, 0)}
+            >
+             Training Programs
+            </NavLink>
           </li>
           <li className="py-4">
             <NavLink
@@ -200,7 +203,7 @@ const Navbar = ({handleOrderPopup}) => {
           onClick={() => handleOrderPopup(true)}
           className="bg-gradient-to-r from-primary to-secondary hover:bg-bg-gradient-to-r hover:from-secondary hover:bg-primary transition-all duration-600 text-white px-3 py-1 rounded-full"
         >
-          Book Now
+          
         </button>
       </div>
     </div>
