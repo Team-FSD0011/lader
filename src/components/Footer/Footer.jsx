@@ -38,7 +38,7 @@ const Footer = () => {
           <div className="grid md:grid-cols-3  bg-white/80 backdrop-blur-sm rounded-t-xl">
             <div className="py-8 px-4">
               <h1 className="flex items-center gap-3 text-xl sm:text-3xl font-bold text-justify sm:text-left">
-                <img src={logo} alt="" className="max-h-[60px]" />
+                <img src={logo} alt="" height="90%" className="" />
                 {/* TravelloGo */}
               </h1>
               <p className="text-sm">
@@ -111,13 +111,13 @@ const Footer = () => {
               <div>
                 <div className="flex items-center gap-3 mt-6">
                   <a href="#">
-                    <FaInstagram className="text-3xl" />
+                    <FaInstagram className="h-9 w-9 text-white bg-sky-500 rounded" />
                   </a>
                   <a href="#">
-                    <FaFacebook className="text-3xl" />
+                    <FaFacebook className="h-9 w-9 text-sky-500" />
                   </a>
                   <a href="#">
-                    <FaLinkedin className="text-3xl" />
+                    <FaLinkedin className="h-9 w-9 text-sky-500 " />
                   </a>
                 </div>
               </div>
@@ -127,9 +127,7 @@ const Footer = () => {
             </div>
           </div>
           <div>
-            <div className="text-center py-5 border-t-2 border-gray-300/50 bg-sky-600 text-white">
-              @copyright 2024 All rights reserved || Made with ❤️ by Dilshad
-            </div>
+           
           </div>
         </div>
     </div>
