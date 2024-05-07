@@ -113,20 +113,36 @@ const Home = () => {
           </button>
         </Link>
       </div>
-      <div className="relative flex items-center justify-center text-center p-24 rounded-lg mt-8 bg-gray-200 md:scroll-sm">
+      {/* <div className="relative flex items-center justify-center text-center p-24 rounded-lg mt-8 bg-gray-200 md:scroll-sm ">
         <div className="absolute">
-          <img src={grp} alt="Study Abroad" className="w-full h-full rounded-lg" />
+          <img src={grp} alt="Study Abroad" className="rounded-lg" />
         </div>
         <div className="relative mt-28">
           <h2 className="text-xl font-bold text-white mb-2">Start your Study Abroad journey</h2>
+          <p className="text-md mb-2 text-white">Consultancy Services Provided</p>
           <Link to="/contactUs">
             <button className="text-md font-semibold text-white bg-sky-500 py-3 px-8 mb-2 rounded-lg shadow-lg hover:bg-sky-600 focus:outline-none focus:ring focus:ring-sky-400">
               Make an Appointment
             </button>
           </Link>
-          <p className="text-md text-white">Consultancy Services Provided</p>
         </div>
-      </div>
+      </div> */}
+      <div className="relative flex items-center justify-center text-center  rounded-lg mt-8 md:scroll-sm">
+  <div className="w-screen relative">
+    <img src={grp} alt="Study Abroad" className="rounded-lg w-[100%] h-[80%]" />
+    <div className="absolute top-0 left-0 w-screen h-full bg-black opacity-50 rounded-lg"></div>
+  </div>
+  <div className="absolute flex flex-col items-center mt-28">
+    <h2 className="text-4xl font-bold text-white mb-4">Start your Study Abroad journey</h2>
+    <p className="text-xl font-semibold text-white mb-4">Consultancy Services Provided</p>
+    <Link to="/contactUs">
+      <button className="text-md font-semibold text-white bg-sky-500 py-3 px-8 mb-2 rounded-lg shadow-lg hover:bg-white  hover:text-black hover:font-bold hover:ring hover:ring-sky-400">
+        Make an Appointment
+      </button>
+    </Link>
+  </div>
+</div>
+
     </>
   );
 };

@@ -25,28 +25,29 @@ const Immigration = () => {
     return () => clearInterval(interval)
 
   }, [imagearray])
-  const icon1 = (<FaRegNewspaper size={35} className=" text-backgroundColor" />);
-  const icon2 = (<MdHomeRepairService size={35} className=" text-backgroundColor" />);
-  const icon3 = (<MdMedicalServices size={35} className=" text-backgroundColor" />);
-  const icon4 = (<IoTimeOutline size={35} className=" text-backgroundColor" />);
-  const icon5 = (<PiPlanet size={35} className=" text-backgroundColor" />);
-  const icon6 = (<MdContactEmergency size={35} className=" text-backgroundColor" />);
+  const icon1 = (<FaRegNewspaper size={40} className=" text-backgroundColor" />);
+  const icon2 = (<MdHomeRepairService size={40} className=" text-backgroundColor" />);
+  const icon3 = (<MdMedicalServices size={40} className=" text-backgroundColor" />);
+  const icon4 = (<IoTimeOutline size={40} className=" text-backgroundColor" />);
+  const icon5 = (<PiPlanet size={40} className=" text-backgroundColor" />);
+  const icon6 = (<MdContactEmergency size={40} className=" text-backgroundColor" />);
   return (<>
     <div className="gap-10 flex items-center justify-center w-full relative">
       <img src={imagearray[imageindex]} alt="logo" className='scroll-smooth w-full h-[600px]' />
       <div className='w-full h-[600px] absolute flex justify-center items-center top-0 left-0 flex-col backdrop-brightness-50'>
-        <h1 className='text-5xl font-bold text-gray-50'>Welcome to Our Company!</h1> <br />
+        <h1 className='text-5xl font-bold text-gray-50'>Welcome to First Ladder Company!</h1> <br />
         <h4 className='text-lg text-gray-50 mt-6 text-center font-serif flex justify-center items-center w-[75%]'>Are you looking for reliable immigration consultants to handle your immigration case? Our certified and reliable Immigration Consultant professionals can help you get a positive decision on your case! We provide services in all different areas of immigration.</h4>
-        <button className='w-24 h-10 bg-orange-600 rounded-lg font-bold text-white mt-6'>Service</button>
+        <button className='w-32 h-12 bg-white rounded-lg font-bold text-sky-600 mt-6  hover:bg-[#36b7eb] hover:text-white'>Service</button>
       </div>
     </div>
-    <div className=" flex flex-col lg:flex-row gap-5 pt-14">
+    <div className=" flex flex-col-3 flex-wrap lg:flex-row justify-center items-center gap-10 pt-14">
       <ImmigrationCard icon={icon1} title="Consultation per Hour" />
       <ImmigrationCard icon={icon2} title="Consultation per Question" />
       <ImmigrationCard icon={icon3} title="Full Package Service" />
       <ImmigrationCard icon={icon4} title="Immigration Plan " />
       <ImmigrationCard icon={icon5} title="Application Review " />
       <ImmigrationCard icon={icon6} title="Settlement Advising" />
+    
     </div>
     <div className="flex flex-col lg:flex-row justify-between items-center lg:px-32 gap-8 m-10">
       <div className=" w-full lg:w-3/4 space-y-4">
@@ -72,8 +73,7 @@ const Immigration = () => {
           <img src={iman} alt="iman" className='w-[80%] h-[80%] rounded-xl ml-24' />
 
           <div className='absolute flex  items-end left-0 top-0 w-[80%] h-[80%] '>
-
-            <h1 className='rounded-b-lg absolute h-10 ml-24 bg-gray-500 text-white justify-center items-center text-center w-[100%] pt-2' >Welcome to Our Landon!</h1>
+            <h1 className='rounded-b-lg absolute h-10 ml-24 bg-gray-500 text-white justify-center items-center text-center w-[100%] pt-2' >Welcome to Our London!</h1>
           </div>
 
         </div>
@@ -88,40 +88,10 @@ const Immigration = () => {
         </div>
       </div>
     </div>
-    <h1 className='flex justify-center font-bold text-2xl text-sky-500'>Change Your Life Now!</h1>
+    <div className='absolute bg-gray-500 h-[6%] w-[90%] mb-10 flex justify-center items-center ml-20 border-sky-500 rounded-lg'>
+    <h1 className='font-semibold text-2xl text-white'>Change Your Life Now!</h1>
 
-    <div className="mt-10 ">
-                <div className="w-1/2 mx-auto bg-white rounded-xl shadow-md overflow-hidden">
-                    <div className="p-6">
-                        <form action="">
-                            <div>
-                                <label htmlFor="name" className="block text-xl font-serif">Name</label>
-                                <input type="text" name="name" id="name" className="mt-2 border rounded-lg h-10 w-full" />
-                            </div>
-                            <div className="mt-4">
-                                <label htmlFor="email" className="block text-xl font-serif">Email</label>
-                                <input type="text" name="email" id="email" className="mt-2 border rounded-lg h-10 w-full" />
-                            </div>
-                            <div className="mt-4">
-                                <label htmlFor="services" className="block text-xl font-serif">Choose Services</label>
-                                <select name="services" id="services" className="mt-2 border rounded-lg h-12 w-full">
-                                    <option value="">Select</option>
-                                    <option value="Overseas Education">Overseas Education</option>
-                                    <option value="Engineering jobs">Engineering jobs</option>
-                                    <option value="Training & placement">Training & placement</option>
-                                    <option value="Immigration">Immigration</option>
-                                    <option value="Campus Recruitment">Campus Recruitment</option>
-                                </select>
-                            </div>
-                            <div className='flex justify-center items-center mt-4'>
-                            <button className="w-40  py-2 bg-blue-500 text-white font-bold rounded-lg hover:bg-blue-700">Submit</button>
-
-                            </div>
-                        </form>
-                    </div>
-                    </div>
-                </div>
-
+    </div>
   </>
 
   )
