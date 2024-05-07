@@ -2,9 +2,9 @@
 import React from "react";
 import k2 from "../components/assets/k2.png";
 import live from"../components/assets/live.png";
-import rec from "../components/assets/rec.png";
+import rec from "../components/assets/place.png";
 import study from "../components/assets/study.png";
-
+import fsd from "../components/assets/fsd.png"
 
 
 
@@ -67,21 +67,23 @@ const TrainingPrograms = () => {
 	<div className="container mx-auto space-y-12">
 		<div className="flex flex-col overflow-hidden rounded-md shadow-md lg:flex-row">
       
-			<img src="https://source.unsplash.com/640x480/?1" alt="" className="h-80 dark:bg-gray-500 aspect-video mr-[100px]" />
+			<img src={fsd} alt="" className="h-100 dark:bg-gray-500 aspect-video mr-[100px]" />
 			<div className="flex flex-col justify-center flex-1 p-6 dark:bg-gray-50 pb-[170px]">
 				<span className="text-xs uppercase dark:text-gray-600">Join, it's free</span>
 				<h3 className="text-3xl font-bold">FULL STACK WEB DEVOLEPMENT</h3>
 				<p className="my-6 dark:text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor aliquam possimus quas, error esse quos.</p>
-				<button type="button" className="self-start">Action</button>
+				<button type="button" className="self-start text-sky-500 border border-2 border-sky-400 rounded-3xl transition duration-300 transform hover:scale-110 p-3 hover:bg-sky-500 font-bold hover:text-white">Join</button>
 			</div>
 		</div>
+    <br />
+    <br />
 		<div className="flex flex-col overflow-hidden rounded-md shadow-md lg:flex-row-reverse">
 			<img src="https://source.unsplash.com/640x480/?2" alt="" className="h-80 dark:bg-gray-500 aspect-video ml-[100px]" />
 			<div className="flex flex-col justify-center flex-1 p-6 dark:bg-gray-50 pb-[170px]">
 				<span className="text-xs uppercase dark:text-gray-600">Join, it's free</span>
 				<h3 className="text-3xl font-bold">ENROLLED AGENT TRAINING</h3>
 				<p className="my-6 dark:text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor aliquam possimus quas, error esse quos.</p>
-				<button type="button" className="self-start">Action</button>
+				<button type="button" className="self-start text-sky-500 border border-2 border-sky-400 rounded-3xl transition duration-300 transform hover:scale-110 p-3 hover:bg-sky-500 font-bold hover:text-white">Join</button>
 			</div>
 		</div>
 		<div className="flex flex-col overflow-hidden rounded-md shadow-md lg:flex-row">
@@ -90,22 +92,41 @@ const TrainingPrograms = () => {
 				<span className="text-xs uppercase dark:text-gray-600">Join, it's free</span>
 				<h3 className="text-3xl font-bold">DATA SCIENCE</h3>
 				<p className="my-6 dark:text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor aliquam possimus quas, error esse quos.</p>
-				<button type="button" className="self-start">Action</button>
+				<button type="button" className="self-start text-sky-500 border border-2 border-sky-400 rounded-3xl transition duration-300 transform hover:scale-110 p-3 hover:bg-sky-500 font-bold hover:text-white">Join</button>
 			</div>
 		</div>
 	</div>
 </section>
    
 </div>
-<div className="pt-[60px]">        
-  <h1 className="flex justify-center font-bold text-4xl ">KEY FRAMES</h1>
-        <div className="flex justify-evenly pt-[80px]">
-          <img src={live} alt="" />
-          <img src={rec} alt="" />
-          <img src={study} alt="" />
-        </div>
-        </div>
 
+<center>
+<fieldset className="border border-4 border-sky-300 w-[1100px]">
+  <div className="pt-[30px]">        
+  <h1 className="flex justify-center font-bold text-4xl text-sky-400 ">KEY FRAMES</h1>
+  </div>
+  <div className="flex justify-evenly pt-[60px]">
+        <div>
+        <img src={live} alt="" className="h-[70px]" />
+        <h1 className="pt-[30px] font-bold">LIVE ITERACTIVE CLASSES</h1>
+        </div>
+        <div>
+        <img src={rec} alt="" className="h-[70px]"/>
+        <h1 className="pt-[30px] font-bold">  PLACEMENT ASSURED PROGRAM</h1>
+        </div>
+        <div>
+        <img src={study} alt="" className="h-[70px] "/>
+        <h1 className="pt-[30px] font-bold">COMPREHENSIVE STUDY MATERIAL</h1>
+        </div>
+        
+      
+
+        </div>
+        <div className="pt-[60px]">
+
+      </div>
+        </fieldset>
+        </center>
 </div>
   );
 };

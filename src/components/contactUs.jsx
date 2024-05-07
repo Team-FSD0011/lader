@@ -3,6 +3,8 @@ import axios from "axios";
 import { FaMapMarkedAlt } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
 import { FaPhoneSquareAlt } from "react-icons/fa";
+import handshake from "./assets/handshake.jpeg";
+import contactimg from './assets/contactform.jpg'
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
@@ -34,8 +36,8 @@ const ContactUs = () => {
             CONTACT US
           </h1>
           <img
-            src="/src/components/assets/handshakecontact.jpg"
-            alt=""
+            src={handshake}
+            alt="Contact image"
             className="head_img rounded-lg opacity-80"
           />
         </div>
@@ -52,7 +54,7 @@ const ContactUs = () => {
             </h3>
           </div>
           <img
-            src="/src/components/assets/contactform.jpg"
+            src={contactimg}
             alt=""
             className="w-full p-1 shadow-md shadow-blue-400 h-60 md:h-80 mt-2 md:mt-0 rounded-xl"
           />
@@ -116,26 +118,30 @@ const ContactUs = () => {
           <h1 className="text-sky-500 mt-2 md:mt-4">
             <b>Head Quarter</b>
           </h1>
-          <a href="https://maps.app.goo.gl/b5aD54gnkmN9Ug89A" className="text-sm md:text-base">
-  714A, 7th floor, Phase II, Spencer Plaza, Anna Salai, Chennai 600002
-</a>
-
+          <a
+            href="https://maps.app.goo.gl/b5aD54gnkmN9Ug89A"
+            className="text-sm md:text-base"
+          >
+            714A, 7th floor, Phase II, Spencer Plaza, Anna Salai, Chennai 600002
+          </a>
         </div>
         <div className="card mt-10 md:mt-0 md:ml-16 card-content p-4 md:p-5">
           <IoMdMail className="h-12 w-10 text-sky-500" />
           <h1 className="text-sky-500 mt-2 md:mt-4">
             <b>Mailing Address</b>
           </h1>
-          <a href="mailto:hr@firstladder.com" className="text-sm md:text-base">hr@firstladder.com</a>
-
+          <a href="mailto:hr@firstladder.com" className="text-sm md:text-base">
+            hr@firstladder.com
+          </a>
         </div>
         <div className="card mt-10 md:mt-0 md:ml-16 card-content p-4 md:p-5">
           <FaPhoneSquareAlt className="h-12 w-10 text-sky-500" />
           <h1 className="text-sky-500 mt-2 md:mt-4">
             <b>Business Talk</b>
           </h1>
-          <a href="tel:+918300941219" className="text-sm md:text-base">+91 83009 41219</a>
-
+          <a href="tel:+918300941219" className="text-sm md:text-base">
+            +91 83009 41219
+          </a>
         </div>
       </div>
       <div className="map mt-8">
@@ -153,4 +159,4 @@ const ContactUs = () => {
   );
 };
 
-export default ContactUs;
+export default ContactUs;
