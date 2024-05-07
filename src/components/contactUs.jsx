@@ -4,6 +4,7 @@ import { FaMapMarkedAlt } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
 import { FaPhoneSquareAlt } from "react-icons/fa";
 import handshake from "./assets/handshake.jpeg";
+import contactimg from './assets/contactform.jpg'
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
@@ -53,7 +54,7 @@ const ContactUs = () => {
             </h3>
           </div>
           <img
-            src="/src/components/assets/contactform.jpg"
+            src={contactimg}
             alt=""
             className="w-full p-1 shadow-md shadow-blue-400 h-60 md:h-80 mt-2 md:mt-0 rounded-xl"
           />
