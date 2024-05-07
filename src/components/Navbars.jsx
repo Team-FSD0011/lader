@@ -74,141 +74,140 @@ const Navbar = ({handleOrderPopup}) => {
   };
   return (
     <>
-      <nav className="fixed top-0 right-0 w-full z-50 bg-white backdrop-blur-sm text-black shadow-md z-[99999]">
-        <div className="bg-gradient-to-r from-primary to-secondary text-white ">
-          <div className="container py-[2px] sm:block hidden">
-            <div className="flex items-center justify-between">
-              <p className="text-sm">20% off on next booking</p>
-              <p>mobile no. +91 123456789</p>
+<nav className="fixed top-0 right-0 w-full z-50 bg-white backdrop-blur-sm text-black shadow-md z-[99999]">
+  <div className="bg-gradient-to-r from-primary to-secondary text-white ">
+    <div className="container py-[2px] sm:block hidden">
+      <div className="flex items-center justify-between">
+        <p className="text-sm">20% off on next booking</p>
+        <p>mobile no. +91 123456789</p>
+      </div>
+    </div>
+  </div>
+  <div className="container py-3 sm:py-0">
+    <div className="flex justify-between items-center">
+      {/* Logo section */}
+      <div>
+        <Link to="/" onClick={() => window.scrollTo(0, 0)}>
+          <img src={logo} alt="" className="h-16" />
+        </Link>
+      </div>
+      {/* Navlinks section */}
+      <div className="md:hidden block">
+        {/* Mobile Hamburger Menu */}
+        {showMenu ? (
+          <HiMenuAlt1
+            onClick={toggleMenu}
+            className="cursor-pointer transition-all"
+            size={30}
+          />
+        ) : (
+          <HiMenuAlt3
+            onClick={toggleMenu}
+            className="cursor-pointer transition-all"
+            size={30}
+          />
+        )}
+      </div>
+      <div className="hidden md:block">
+        {/* Navigation Links for medium and larger screens */}
+        <ul className="flex items-center gap-6">
+          <li className="py-4">
+            <NavLink
+              to="/"
+              activeClassName="active"
+              onClick={() => window.scrollTo(0, 0)}
+            >
+              Home
+            </NavLink>
+          </li>
+          <li className="py-4">
+            <NavLink
+              activeClassName="active"
+              to="/aboutUs"
+              onClick={() => window.scrollTo(0, 0)}
+            >
+              About Us
+            </NavLink>
+          </li>
+          {/* Dropdown section */}
+          <li className="py-4 relative group cursor-pointer">
+            <div className="dropdown flex items-center">
+              <span>Training Programs</span>
+              <span>
+                <FaCaretDown className="transition-all duration-200 group-hover:rotate-180" />
+              </span>
             </div>
-          </div>
-        </div>
-        <div className="container py-3 sm:py-0">
-          <div className="flex justify-between items-center">
-            {/* logo section */}
-            <div>
-              <Link to="/" onClick={() => window.scrollTo(0, 0)}>
-                <img src={logo} alt="" className="h-16" />
-              </Link>
+            <div className="absolute -left-9 z-[9999] hidden group-hover:block shadow-md text-black w-[150px] bg-white p-2">
+              <ul>
+                {dropdownLinks.map((data) => {
+                  return (
+                    <li key={data.name}>
+                      <a
+                        className="inline-block w-full rounded-md p-2 hover:bg-primary/20"
+                        href={data.link}
+                      >
+                        {data.name}
+                      </a>
+                    </li>
+                  );
+                })}
+              </ul>
             </div>
-            {/* Navlinks section */}
-            <div className="hidden md:block">
-              <ul className="flex items-center gap-6">
-                <li className="py-4">
-                  <NavLink
-                    to="/"
-                    activeClassName="active"
-                    onClick={() => window.scrollTo(0, 0)}
-                  >
-                    Home
-                  </NavLink>
-                </li>
-                <li className="py-4">
-                  <NavLink
-                    activeClassName="active"
-                    to="/aboutUs"
-                    onClick={() => window.scrollTo(0, 0)}
-                  >
-                    About Us
-                  </NavLink>
-                </li>
-                {/* Dropdown section */}
-                 <li className="py-4 relative group cursor-pointer">
-                  <div className="dropdown flex items-center">
-                    <span>Training Programs</span>
-                    <span>
-                      <FaCaretDown className="transition-all duration-200 group-hover:rotate-180" />
-                    </span>
-                  </div>
-                  <div className="absolute -left-9 z-[9999] hidden group-hover:block shadow-md text-black w-[150px] bg-white p-2">
-                    <ul>
-                      {dropdownLinks.map((data) => {
-                        return (
-                          <li key={data.name}>
-                            <a
-                              className="inline-block w-full rounded-md p-2 hover:bg-primary/20"
-                              href={data.link}
-                            >
-                              {data.name}
-                            </a>
-                          </li>
-                        );
-                      })}
-                    </ul>
-                  </div>
-                </li>
-                <li className="py-4">
-                  <NavLink
-                    activeClassName="active"
-                    to="/studyAbroad"
-                    onClick={() => window.scrollTo(0, 0)}
-                  >
-                   Study Abroad
-                  </NavLink>
-                </li>
-                
-                <li className="py-4">
-                  <NavLink
-                    activeClassName="active"
-                    to="/immigration"
-                    onClick={() => window.scrollTo(0, 0)}
-                  >
-                   Immigration 
-                  </NavLink>
-                </li>
-                <li className="py-4">
-                  <NavLink
-                    activeClassName="active"
-                    to="/blog"
-                    onClick={() => window.scrollTo(0, 0)}
-                  >
-                    Blog
-                  </NavLink>
-                </li>
-                <li className="py-4">
-                  <NavLink
-                    activeClassName="active"
-                    to="/contactUs"
-                    onClick={() => window.scrollTo(0, 0)}
-                  >
-                   Contact Us 
-                  </NavLink>
-                </li>
-                </ul>
-            </div>
+          </li>
+          <li className="py-4">
+            <NavLink
+              activeClassName="active"
+              to="/studyAbroad"
+              onClick={() => window.scrollTo(0, 0)}
+            >
+              Study Abroad
+            </NavLink>
+          </li>
 
-            {/* Book Now button */}
-            <div className="flex items-center"> 
-              <button
-              onClick={()=>handleOrderPopup(true)}
-              className="bg-gradient-to-r from-primary to-secondary hover:bg-bg-gradient-to-r hover:from-secondary hover:bg-primary transition-all duration-600 text-white px-3 py-1 rounded-full">
-                Book Now
-              </button>
-              {/* Mobile Hamburger Menu */}
-              <div className="md:hidden block">
-                {showMenu ? (
-                  <HiMenuAlt1
-                    onClick={toggleMenu}
-                    className="cursor-pointer
-                         transition-all"
-                    size={30}
-                  />
-                ) : (
-                  <HiMenuAlt3
-                    onClick={toggleMenu}
-                    className="cursor-pointer
-                         transition-all"
-                    size={30}
-                  />
-                )}
-              </div>
-            </div>
-          </div>
-        </div>
-        <ResponsiveMenu 
-        setShowMenu={setShowMenu} 
-        showMenu={showMenu}/>
-      </nav>
+          <li className="py-4">
+            <NavLink
+              activeClassName="active"
+              to="/immigration"
+              onClick={() => window.scrollTo(0, 0)}
+            >
+              Immigration
+            </NavLink>
+          </li>
+          <li className="py-4">
+            <NavLink
+              activeClassName="active"
+              to="/blog"
+              onClick={() => window.scrollTo(0, 0)}
+            >
+              Blog
+            </NavLink>
+          </li>
+          <li className="py-4">
+            <NavLink
+              activeClassName="active"
+              to="/contactUs"
+              onClick={() => window.scrollTo(0, 0)}
+            >
+              Contact Us
+            </NavLink>
+          </li>
+        </ul>
+      </div>
+
+      {/* Book Now button */}
+      <div className="flex items-center">
+        <button
+          onClick={() => handleOrderPopup(true)}
+          className="bg-gradient-to-r from-primary to-secondary hover:bg-bg-gradient-to-r hover:from-secondary hover:bg-primary transition-all duration-600 text-white px-3 py-1 rounded-full"
+        >
+          Book Now
+        </button>
+      </div>
+    </div>
+  </div>
+  <ResponsiveMenu setShowMenu={setShowMenu} showMenu={showMenu} />
+</nav>
+
     </>
   );
 };
