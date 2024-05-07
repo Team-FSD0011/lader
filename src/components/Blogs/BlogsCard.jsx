@@ -8,7 +8,7 @@ const BlogsCard = ({image, date, title, description, author}) => {
     onClick={()=>{
       window.scrollTo(0,0);
     }}
-    state={{image, date, title, description,author}}
+    state={{image, date, title, description,}}
     >
       <div className='p-4 shadow-lg transition-all
      duration-500 hover:shadow-xl shadow-md shadow-block-200'>

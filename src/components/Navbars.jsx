@@ -58,21 +58,6 @@ import {
 } from "react-icons/fa";
 import ResponsiveMenu from "./ResponsiveMenu"
 
-// const dropdownLinks = [
-//   {
-//     name: "Eraining Programs",
-//     link: "/#eraining programs",
-//   },
-//   {
-//     name: "Full Stack Developer",
-//     link: "/#full stack developer",
-//   },
-//   {
-//     name: "Data Science",
-//     link: "/#data science",
-//   },
-// ];
-
 const Navbar = ({handleOrderPopup}) => {
   const [showMenu, setShowMenu] = useState(false);
 
@@ -196,16 +181,12 @@ const Navbar = ({handleOrderPopup}) => {
           </li>
         </ul>
       </div>
+      <Link to="/contactUs">
+            <button className="bg-sky-500 text-white hover:bg-transparent hover:border-sky-500 hover:text-sky-500 font-size-2 border border-sky-500 px-3 py-1 rounded-full">
+            Explore Now
+            </button>
+      </Link>
 
-      {/* Book Now button */}
-      <div className="flex items-center">
-        <button
-          onClick={() => handleOrderPopup(true)}
-          className="bg-sky-500 text-white hover:bg-transparent hover:border-sky-500 hover:text-sky-500 font-size-2 border border-sky-500 px-3 py-1 rounded-full"
-        >
-          Explore Now
-        </button>
-      </div>
     </div>
   </div>
   <ResponsiveMenu setShowMenu={setShowMenu} showMenu={showMenu} />
