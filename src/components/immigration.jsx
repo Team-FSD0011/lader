@@ -36,7 +36,7 @@ const Immigration = () => {
     <div className="gap-10 flex items-center justify-center w-full relative">
       <img src={imagearray[imageindex]} alt="logo" className='scroll-smooth w-full h-[600px]' />
       <div className='w-full h-[600px] absolute flex justify-center items-center top-0 left-0 flex-col backdrop-brightness-50'>
-        <h1 className='text-5xl font-bold text-gray-50'>Welcome to First Ladder Company!</h1> <br />
+        <h1 className='text-5xl font-bold text-gray-50'>Welcome to Our Company!</h1> <br />
         <h4 className='text-lg text-gray-50 mt-6 text-center font-serif flex justify-center items-center w-[75%]'>Are you looking for reliable immigration consultants to handle your immigration case? Our certified and reliable Immigration Consultant professionals can help you get a positive decision on your case! We provide services in all different areas of immigration.</h4>
         <Link to="/contactUs">
         <button className='w-32 h-12 bg-white rounded-lg font-bold text-sky-600 mt-6  hover:bg-[#36b7eb] hover:text-white'>Service</button>

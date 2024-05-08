@@ -7,7 +7,7 @@ import Img1 from "../assets/studentsimag2.png"
 import Img2 from "../assets/studentsimag7.png"
 import Img3 from "../assets/studentsimag8.png"
 import Img4 from "../assets/studentsimag1.png"
-import Img5 from "../assets/studentsimag9.png"
+import Img5 from "../assets/studentsimag3.png"
 import Img6 from "../assets/studentsimag5.png"
 
 
@@ -77,7 +77,7 @@ const BlogsComp = () => {
          <div>
           
            <Link to="/blognext">
-            <button className='mb-5 inline-block bg-sky-500 text-white hover:bg-transparent hover:border-sky-500 hover:text-sky-500 font-size-2 border border-sky-500 px-3 py-1 ml-[1300px] mt-6'>
+            <button className='mb-5 inline-block bg-sky-500 text-white hover:bg-transparent hover:border-sky-500 hover:text-sky-500 font-size-2 border border-sky-500 px-3 py-1 ml-[1100px] mt-6'>
             Next
             </button>
       </Link>
