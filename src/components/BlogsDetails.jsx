@@ -4,6 +4,7 @@ import { useLocation } from 'react-router-dom';
 import BlogsComp from './Blogs/BlogsComp';
 
 
+
 const BlogsDetails = () => {
   const location = useLocation();
   console.log(location, "useLocation");
@@ -20,6 +21,7 @@ const BlogsDetails = () => {
        <p className='mt-[21px]'>{description}</p>
        </div>
        <BlogsComp/>
+       
       
     </div>
   )
