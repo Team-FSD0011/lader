@@ -1,12 +1,14 @@
 import React from "react";
-import logo from "../assets/logo.png"
+import logo from "../assets/logo.png";
+import { RiFacebookBoxLine } from "react-icons/ri";
+import { CiLinkedin } from "react-icons/ci";
+
 import {
-  FaFacebook,
-  FaInstagram,
   FaLinkedin,
   FaEnvelope,
   FaMobileAlt,
   FaMapMarkedAlt,
+  FaInstagram,
 } from "react-icons/fa";
 // import Australia from "../assets/Australia.jpg"
 import { Link } from "react-router-dom";
@@ -110,14 +112,15 @@ const Footer = () => {
               {/* social handles */}
               <div>
                 <div className="flex items-center gap-3 mt-6">
-                  <a href="#">
-                    <FaInstagram className="h-9 w-9 text-white bg-sky-500 rounded" />
+                <a href="#">
+                    <RiFacebookBoxLine size={30} className="h-9 w-9 text-sky-500" />
                   </a>
                   <a href="#">
-                    <FaFacebook className="h-9 w-9 text-sky-500" />
+                    <FaInstagram size={20} className="h-9 w-9 text-sky-500" />
                   </a>
+                  
                   <a href="#">
-                    <FaLinkedin className="h-9 w-9 text-sky-500 " />
+                    <CiLinkedin size={20} className="h-9 w-9 text-sky-500 " />
                   </a>
                 </div>
               </div>
