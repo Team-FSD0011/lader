@@ -9,11 +9,11 @@ const navbarLinks = [
     },
     {
         name: "About Us",
-        link:"/about", 
+        link:"/aboutUs", 
      },
      {
         name: "Training Programs",
-        link:"/training programs", 
+        link:"/trainingprograms", 
      },
      {
         name: "Study Abroad",
@@ -29,12 +29,9 @@ const navbarLinks = [
      },
      {
         name: "Contact Us",
-        link:"/contact us", 
+        link:"/contactUs", 
      },
-     {
-      name: "Next",
-      link:"/blogscompnext", 
-   },
+    
 
 ] 
 

@@ -12,6 +12,8 @@ import Immigration from './components/immigration';
 import { Route, Routes } from 'react-router-dom';
 import Footer from './components/Footer/Footer';
 import Navbars from './components/Navbars'
+import BlogsCompNext from './components/Blogs/BlogsCompNext';
+import BlogsComp from './components/Blogs/BlogsComp';
 
 
 
@@ -32,8 +34,11 @@ function App() {
       <Route path="/blog" element={<Blog/>}/>
       <Route path="/Blogs/:id" element={<BlogsDetails/>}/>
       <Route path="/contactUs" element={<ContactUs/>}/>
-    </Routes> 
+      <Route path="/blognext" element={<BlogsCompNext/>}/>
+      <Route path="/blog" element={<BlogsComp/>}/>
+    </Routes>
     <br/>
+
     <Footer/>
     </>
   )

@@ -8,7 +8,7 @@ import {
   FaMobileAlt,
   FaMapMarkedAlt,
 } from "react-icons/fa";
-import Australia from "../assets/Australia.jpg"
+// import Australia from "../assets/Australia.jpg"
 import { Link } from "react-router-dom";
 
 const FooterLinks = [
@@ -18,7 +18,7 @@ const FooterLinks = [
   },
   {
     title: "About Us",
-    link: "/about us",
+    link: "/aboutUs",
   },
   {
     title: "Blog",
@@ -26,19 +26,19 @@ const FooterLinks = [
   },
   {
     title: "Contact Us",
-    link: "/contact us",
+    link: "/contactUs",
   },
 ];
 
 const Footer = () => {
   return (
     <div className="dark:bg-gray-950 py-10 h-[50%] relative overflow-hidden">
-       <img src={Australia} alt=""  className="absolute right-0 top-0 h-full overflow-hidden w-full object-cover z-[-1]"/>
+       {/* <img src={Australia} alt=""  className="absolute right-0 top-0 h-full overflow-hidden w-full object-cover z-[-1]"/> */}
         <div className="container ">
           <div className="grid md:grid-cols-3  bg-white/80 backdrop-blur-sm rounded-t-xl">
             <div className="py-8 px-4">
               <h1 className="flex items-center gap-3 text-xl sm:text-3xl font-bold text-justify sm:text-left">
-                <img src={logo} alt="" height="90%" className="" />
+                <img src={logo} alt=""  className=" h-20 w-[100px]" />
                 {/* TravelloGo */}
               </h1>
               <p className="text-sm">
