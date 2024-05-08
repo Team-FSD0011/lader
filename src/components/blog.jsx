@@ -1,9 +1,9 @@
 import { useEffect, React, useState } from 'react';
 import BlogsComp from './Blogs/BlogsComp.jsx'
 import Img1 from "../components/assets/studentsimag1.png";
-import Img2 from "../components/assets/studentsimag2.png";
+import Img2 from "../components/assets/studentsimag11.png";
 import Img7 from "../components/assets/studentsimag7.png";
-import Img4 from "../components/assets/studentsimag4.png";
+import Img4 from "../components/assets/studentsimag10.png";
 
 
 
