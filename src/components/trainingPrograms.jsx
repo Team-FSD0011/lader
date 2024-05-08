@@ -13,19 +13,19 @@ const TrainingPrograms = () => {
   return (
     <div className="pt-24">
       {/* Banner section */}
-      <div className="relative h-64 pb-[400px] lg:h-96 mt-[20px] bg-sky-300  ">
-      {/* <img src={k2} alt="" className="bg-no-repeat bg-cover ml-[370px]"/> */}
+      <div className="relative h-64 pb-[400px] lg:h-96 mt-[20px]   ">
+          <img src={k2} alt="banner" className="w-full h-[400px]" />
 
         <div className="absolute inset-0 flex justify-start  pl-[60px] pb-[200px] pt-[80px] font-sans">
         <center>
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-current ">
+          <h1 className=" md:text-4xl lg:text-5xl font-bold text-gray-800 ">
             
-            <span className="text-black flex items-center">Explore the Toppest </span> <br />
+            <span className="text-gray-800 flex items-center text-3xl">Explore the Toppest </span> <br />
             
-            <span className="text-white flex items-center font-mono text-gradient-to-r from-sky-500 to-black">"TRENDing"</span>
+            <span className="text-white flex items-center font-mono text-gradient-to-r from-sky-500 to-black text-5xl">TRENDING</span>
            
             <br />
-            {"  "} First Ladder Courses
+            <span className="text-6xl">{"  "} First Ladder Courses</span>
              
           </h1>
           </center>
@@ -42,7 +42,7 @@ const TrainingPrograms = () => {
   href="#"
 >
   <span
-    class="absolute inset-y-0 left-0 w-[2px] bg-sky-600 transition-all group-hover:w-full group-active:bg-indigo-500"
+    class="absolute inset-y-0 left-0 w-[2px] bg-sky-600 transition-all group-hover:w-full group-active:bg-sky-500"
   ></span>
 
   <span
@@ -146,26 +146,34 @@ const TrainingPrograms = () => {
         </div>
       </div>
 
-      {/* Key features section */}
-      <div className="mt-20 flex justify-center">
-        <fieldset className="border border-4 border-sky-300 rounded-3xl w-full max-w-6xl p-8">
-          <legend className="text-4xl font-bold text-sky-400 font-mono font-semibold">Key Features</legend>
-          <div className="flex flex-col lg:flex-row justify-evenly items-center mt-8">
-            <div className="text-center">
-              <RiComputerLine size={70} className="text-sky-500" />
-              <h5 className="mt-4 text-xl font-bold">Live Interactive Classes</h5>
-            </div>
-            <div className="text-center mt-8 lg:mt-0">
-              <img src={rec} alt="Placement Assured Program" className="w-16 h-16" />
-              <h5 className="mt-4 text-xl font-bold">Placement Assured Program</h5>
-            </div>
-            <div className="text-center mt-8 lg:mt-0">
-              <IoBookSharp size={70} className="text-sky-500" />
-              <h5 className="mt-4 text-xl font-bold">Comprehensive Study Material</h5>
-            </div>
-          </div>
-        </fieldset>
+    {/* Key features section */}
+<div className="mt-20 flex justify-center">
+  <fieldset className="border border-4 border-sky-300 rounded-3xl w-full max-w-6xl p-8">
+    <legend className="text-4xl font-bold text-sky-400 font-mono font-semibold">Key Features</legend>
+    <div className="flex flex-col sm:flex-row lg:flex-row justify-evenly items-center mt-8 space-y-8 sm:space-y-0">
+      {/* Feature 1 */}
+      <div className="text-center flex flex-col items-center">
+        <RiComputerLine size={70} className="text-sky-500" />
+        <h5 className="mt-4 text-xl font-bold">Live Interactive Classes</h5>
       </div>
+
+      {/* Feature 2 */}
+      <div className="text-center flex flex-col items-center">
+        <img src={rec} alt="Placement Assured Program" className="w-16 h-16" />
+        <h5 className="mt-4 text-xl font-bold">Placement Assured Program</h5>
+      </div>
+
+      {/* Feature 3 */}
+      <div className="text-center flex flex-col items-center">
+        <IoBookSharp size={70} className="text-sky-500" />
+        <h5 className="mt-4 text-xl font-bold">Comprehensive Study Material</h5>
+      </div>
+    </div>
+    <br />
+    <br />
+  </fieldset>
+</div>
+    
     </div>
   );
 };
