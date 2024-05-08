@@ -35,7 +35,7 @@ function App() {
       <Route path="/Blogs/:id" element={<BlogsDetails/>}/>
       <Route path="/contactUs" element={<ContactUs/>}/>
       <Route path="/blognext" element={<BlogsCompNext/>}/>
-      <Route path="/blogns" element={<BlogsComp/>}/>
+      <Route path="/blog" element={<BlogsComp/>}/>
     </Routes>
     <br/>
 
