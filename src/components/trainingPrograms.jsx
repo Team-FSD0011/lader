@@ -89,7 +89,7 @@ const TrainingPrograms = () => {
                 Learn the ins and outs of full-stack web development. Build
                 modern websites with cutting-edge technology.
               </p>
-              <button className="px-4 py-2 border border-sky-400 rounded-lg text-sky-500 transition duration-300 hover:bg-sky-400 hover:text-white">
+              <button className="px-4 py-2 border border-sky-400 rounded-lg text-sky-500 bg-white transition duration-300 hover:bg-sky-400 hover:text-white">
                 Join
               </button>
             </div>
@@ -108,7 +108,7 @@ const TrainingPrograms = () => {
                 Become a certified enrolled agent. Learn about taxes, financial
                 regulations, and more.
               </p>
-              <button className="px-4 py-2 border border-sky-400 rounded-lg text-sky-500 transition duration-300 hover:bg-sky-400 hover:text-white">
+              <button className="px-4 py-2 border border-sky-400 rounded-lg bg-white text-sky-500 transition duration-300 hover:bg-sky-400 hover:text-white">
                 Join
               </button>
             </div>
@@ -128,7 +128,7 @@ const TrainingPrograms = () => {
                 to extract valuable insights.
               </p>
               <button
-                className="px-4 py-2 border border-sky-400 rounded-lg text-sky-500 transition duration-300 hover:bg-sky-400 hover:text-white"
+                className="px-4 py-2 border border-sky-400 rounded-lg text-sky-500 bg-white transition duration-300 hover:bg-sky-400 hover:text-white"
               >
                 Join
               </button>
