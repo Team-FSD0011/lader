@@ -31,6 +31,11 @@ const navbarLinks = [
         name: "Contact Us",
         link:"/contact us", 
      },
+     {
+      name: "Next",
+      link:"/blogscompnext", 
+   },
+
 ] 
 
 const ResponsiveMenu = ({showMenu, setShowMenu}) => {
