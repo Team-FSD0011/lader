@@ -74,7 +74,7 @@ const BlogsCompNext = () => {
              ))
            }
          </div>
-         <div className='flex flex-row ml-[1200px]'>
+         <div className='flex flex-row ml-[1000px]'>
   <Link to="/blog">
     <button className='mb-5 inline-block bg-sky-500 text-white hover:bg-transparent hover:border-sky-500 hover:text-sky-500 font-size-2 border border-sky-500 px-3 py-1 ml-0 mt-6'>
       Previous
