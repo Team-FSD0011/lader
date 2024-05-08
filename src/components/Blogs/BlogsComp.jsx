@@ -10,12 +10,7 @@ import Img4 from "../assets/studentsimag1.png"
 import Img5 from "../assets/studentsimag9.png"
 import Img6 from "../assets/studentsimag5.png"
 
-const Links = [
-  {
-     name: "Next",
-     link:"/blogsCompNext", 
-  },
-]
+
 
 const BlogsData = [
     { 
@@ -80,15 +75,12 @@ const BlogsComp = () => {
            }
          </div>
          <div>
-          <div className='text-black mt-12 '>
-            {Links.map(({ name, link }) => (
-              <button key={name}>
-                <Link to={link} className='mb-5 inline-block bg-sky-500 text-white hover:bg-transparent hover:border-sky-500 hover:text-sky-500 font-size-2 border border-sky-500 px-3 py-1 ml-[1100px]'>
-                  {name}
-                </Link>
-              </button>
-            ))}
-          </div>
+          
+           <Link to="/blognext">
+            <button className='mb-5 inline-block bg-sky-500 text-white hover:bg-transparent hover:border-sky-500 hover:text-sky-500 font-size-2 border border-sky-500 px-3 py-1 ml-[1300px] mt-6'>
+            Next
+            </button>
+      </Link>
         </div>
       </div>
     </div>
