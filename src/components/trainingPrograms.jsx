@@ -13,22 +13,29 @@ const TrainingPrograms = () => {
   return (
     <div className="pt-24">
       {/* Banner section */}
-      <div className="relative h-64 pb-[550px] lg:h-96 mt-[20px]   ">
-      <img src={k2} alt="" className="bg-no-repeat bg-cover ml-[370px]"/>
+      <div className="relative h-64 pb-[400px] lg:h-96 mt-[20px] bg-sky-300  ">
+      {/* <img src={k2} alt="" className="bg-no-repeat bg-cover ml-[370px]"/> */}
 
-        <div className="absolute inset-0 flex justify-start items-center pl-[10px] pb-[200px] ">
+        <div className="absolute inset-0 flex justify-start  pl-[60px] pb-[200px] pt-[80px] font-sans">
+        <center>
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-current ">
-            Explore the{" "} 
-            <span className="text-black">TOP </span>
-            <span className="text-white">{" "}"TRENDing"  FirstLadder Courses</span>
+            
+            <span className="text-black flex items-center">Explore the Toppest </span> <br />
+            
+            <span className="text-white flex items-center font-mono text-gradient-to-r from-sky-500 to-black">"TRENDing"</span>
+           
+            <br />
+            {"  "} First Ladder Courses
+             
           </h1>
+          </center>
         </div>
       </div>
      
 
 
       {/* Get Started button */}
-      <div className="flex justify-center mb-[-50px] mt-[-90px]" >
+      <div className="flex justify-center mt-[40px] mb-[-100px]" >
         <button id="c4">
       <a
   class="group relative inline-block overflow-hidden border border-sky-700 px-8 py-3 focus:outline-none focus:ring"
