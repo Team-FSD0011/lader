@@ -66,10 +66,10 @@ const TrainingPrograms = () => {
           Take pride in successful training programs
         </h2>
         <p className="mt-4">
-          Welcome to Firstladder — your gateway to career advancement and skill
+          Welcome to FirstLadder — your gateway to career advancement and skill
           enhancement. Our mission is to empower individuals with the knowledge
           and tools they need to succeed in their careers. Whether you're just
-          starting out or looking to advance to the next level, Firstladder
+          starting out or looking to advance to the next level, FirstLadder
           offers a range of courses designed to meet your needs.
         </p>
       </div>
