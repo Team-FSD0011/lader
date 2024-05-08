@@ -1,5 +1,6 @@
 import { useEffect, React, useState } from 'react';
 import BlogsComp from './Blogs/BlogsComp.jsx'
+// import BlogsCompNext from './Blogs/BlogsCompNext.jsx'
 import Img1 from "../components/assets/studentsimag1.png";
 import Img2 from "../components/assets/studentsimag11.png";
 import Img7 from "../components/assets/studentsimag7.png";
@@ -30,6 +31,7 @@ const Blog = () => {
     </div>
     <div className='min-h-[650px] pt-20 '>
       <BlogsComp/>
+      {/* <BlogsCompNext/> */}
     </div>
     </>
   )

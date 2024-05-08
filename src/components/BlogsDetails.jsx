@@ -14,7 +14,7 @@ const BlogsDetails = () => {
     <div className=' min-h-[550px] pt-20'>
       <div className='overflow-hidden '>
         <img src={image} alt="" 
-        className='  scroll-smooth pl-3 pr-3 object-cover w-full'/>
+        className='  scroll-smooth pl-3 pr-3 object-cover w-full h-80'/>
       </div>
        <div className='container'>
        <h1 className='text-3xl font-bold text-center italic mt-10 text-blue-700'>{title}</h1>

@@ -34,10 +34,10 @@ const FooterLinks = [
 
 const Footer = () => {
   return (
-    <div className="dark:bg-gray-950 py-10 h-[50%] relative overflow-hidden">
+    <div className="bg-gray-200 py-10 h-[50%] relative overflow-hidden">
        {/* <img src={Australia} alt=""  className="absolute right-0 top-0 h-full overflow-hidden w-full object-cover z-[-1]"/> */}
         <div className="container ">
-          <div className="grid md:grid-cols-3  bg-white/80 backdrop-blur-sm rounded-t-xl">
+          <div className="grid md:grid-cols-3  bg-grey/80 backdrop-blur-sm rounded-t-xl">
             <div className="py-8 px-4">
               <h1 className="flex items-center gap-3 text-xl sm:text-3xl font-bold text-justify sm:text-left">
                 <img src={logo} alt=""  className=" h-20 w-[100px]" />
