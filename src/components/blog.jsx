@@ -6,6 +6,7 @@ import Img7 from "../components/assets/studentsimag7.png";
 import Img4 from "../components/assets/studentsimag4.png";
 
 
+
 const Blog = () => {
 
   const [imageindex, setimageindes] = useState(0)
