@@ -13,24 +13,22 @@ const TrainingPrograms = () => {
   return (
     <div className="pt-24">
       {/* Banner section */}
-      <div className="relative h-64 pb-[550px] lg:h-96 mt-[20px] bg-[url('src/components/assets/k2.png')]  bg-no-repeat bg-cover ">
-    
+      <div className="relative h-64 pb-[550px] lg:h-96 mt-[20px]   ">
+      <img src={k2} alt="" className="bg-no-repeat bg-cover ml-[370px]"/>
 
-        <div className="absolute inset-0 flex justify-start items-center pl-[80px] ">
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white ">
-            Explore the{" "} <br />
-            <span className="text-white">TOP "TREND</span>
-            <span className="text-black">{" "}ing" <br /> FirstLadder Courses</span>
+        <div className="absolute inset-0 flex justify-start items-center pl-[10px] pb-[200px] ">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-current ">
+            Explore the{" "} 
+            <span className="text-black">TOP </span>
+            <span className="text-white">{" "}"TRENDing"  FirstLadder Courses</span>
           </h1>
         </div>
       </div>
      
 
-<br />
-<br />
-<br />
+
       {/* Get Started button */}
-      <div className="flex justify-center" >
+      <div className="flex justify-center mb-[-50px] mt-[-90px]" >
         <button id="c4">
       <a
   class="group relative inline-block overflow-hidden border border-sky-700 px-8 py-3 focus:outline-none focus:ring"
@@ -48,7 +46,11 @@ const TrainingPrograms = () => {
 </a>
 </button>
 </div>
-
+<br /><br /><br /><br />
+<br />
+<br />
+<div className="border border-2 h-1 border-sky-400 mx-[140px] "></div>
+<br />
 
 
       {/* Section introduction */}
@@ -77,11 +79,11 @@ const TrainingPrograms = () => {
         </h3>
         <div className="mt-8 space-y-12">
           {/* Full Stack Web Development */}
-          <div className="flex flex-col lg:flex-row items-center bg-gradient-to-r from-white to-sky-500 rounded-md shadow-lg overflow-hidden">
+          <div className="flex flex-col lg:flex-row items-center bg-gradient-to-r from-white to-sky-500 rounded-md shadow-lg overflow-hidden p-[60px]">
             <img
               src={fsd}
               alt="Full Stack Web Development"
-              className="w-full lg:w-1/2 h-64 object-cover"
+              className="w-full lg:w-1/2 h-64 object-cover mt-[-5px]"
             />
             <div className="p-6 lg:p-12">
               <h4 className="text-3xl font-bold">Full Stack Web Development</h4>
@@ -96,11 +98,11 @@ const TrainingPrograms = () => {
           </div>
 
           {/* Enrolled Agent Training */}
-          <div className="flex flex-col lg:flex-row-reverse items-center bg-gradient-to-r from-sky-500 to-white rounded-md shadow-lg overflow-hidden">
+          <div className="flex flex-col  p-[60px] lg:flex-row-reverse items-center bg-gradient-to-r from-sky-500 to-white rounded-md shadow-lg overflow-hidden">
             <img
               src={ent}
               alt="Enrolled Agent Training"
-              className="w-full lg:w-1/2 h-64 object-cover"
+              className="w-full lg:w-1/2 h-64 object-cover "
             />
             <div className="p-6 lg:p-12">
               <h4 className="text-3xl font-bold">Enrolled Agent Training</h4>
@@ -115,7 +117,7 @@ const TrainingPrograms = () => {
           </div>
 
           {/* Data Science */}
-          <div className="flex flex-col lg:flex-row items-center bg-gradient-to-r from-white to-sky-500 rounded-md shadow-lg overflow-hidden">
+          <div className="flex flex-col  p-[60px] lg:flex-row items-center bg-gradient-to-r from-white to-sky-500 rounded-md shadow-lg overflow-hidden">
             <img
               src={datas}
               alt="Data Science"
@@ -140,7 +142,7 @@ const TrainingPrograms = () => {
       {/* Key features section */}
       <div className="mt-20 flex justify-center">
         <fieldset className="border border-4 border-sky-300 rounded-3xl w-full max-w-6xl p-8">
-          <legend className="text-4xl font-bold text-sky-400">Key Features</legend>
+          <legend className="text-4xl font-bold text-sky-400 font-mono font-semibold">Key Features</legend>
           <div className="flex flex-col lg:flex-row justify-evenly items-center mt-8">
             <div className="text-center">
               <RiComputerLine size={70} className="text-sky-500" />
