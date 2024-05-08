@@ -19,28 +19,37 @@ const TrainingPrograms = () => {
         <div className="absolute inset-0 flex justify-start items-center pl-[80px] ">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white ">
             Explore the{" "} <br />
-            <span className="text-white">TOP</span>
-            <span className="text-black">{" "}"TRENDING" <br /> FirstLadder Courses</span>
+            <span className="text-white">TOP "TREND</span>
+            <span className="text-black">{" "}ing" <br /> FirstLadder Courses</span>
           </h1>
         </div>
       </div>
      
 
 <br />
+<br />
+<br />
       {/* Get Started button */}
-      <div className="flex justify-center">
-      <a className="group relative inline-block focus:outline-none focus:ring" href="#">
+      <div className="flex justify-center" >
+        <button id="c4">
+      <a
+  class="group relative inline-block overflow-hidden border border-sky-700 px-8 py-3 focus:outline-none focus:ring"
+  href="#"
+>
   <span
-    className="absolute inset-0 sm:translate-x-0 sm:translate-y-0 bg-sky-300 transition-transform group-hover:translate-x-1.5 group-hover:translate-y-1.5"
+    class="absolute inset-y-0 left-0 w-[2px] bg-sky-600 transition-all group-hover:w-full group-active:bg-indigo-500"
   ></span>
 
   <span
-    className="relative inline-block border-2 border-current sm:px-6 md:px-8 lg:px-10 sm:py-2 md:py-3 text-xs sm:text-sm md:text-base lg:text-lg font-bold uppercase tracking-widest"
+    class="relative text-sm font-medium text-sky-400 transition-colors group-hover:text-white"
   >
     Get Started
   </span>
 </a>
+</button>
 </div>
+
+
 
       {/* Section introduction */}
       <div className="mt-20 mx-4 lg:mx-16 text-center lg:text-left">
@@ -57,9 +66,14 @@ const TrainingPrograms = () => {
       </div>
 
       {/* Courses section */}
-      <div className="mt-20 mx-4 lg:mx-16">
-        <h3 className="text-center text-3xl lg:text-4xl font-bold">
-          THE 3 Courses You Must Know About
+      <div className="mt-20 mx-4 lg:mx-16" >
+        <h3 className="text-center text-3xl lg:text-4xl font-bold"
+      id="#course"
+        >
+          
+        <a href="#c4">
+         <span className="text-sky-500"> THE 3 </span> Courses You Must Know About
+          </a>
         </h3>
         <div className="mt-8 space-y-12">
           {/* Full Stack Web Development */}
