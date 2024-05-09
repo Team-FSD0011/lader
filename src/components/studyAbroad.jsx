@@ -81,8 +81,8 @@ const StudyAbroad = () =>
       <div className="flex flex-wrap justify-center mt-10">
         {/* Country Cards */}
         {[
-          { img: uk, alt: "UK", text: "Study in UK" },
-          { img: australia, alt: "Australia", text: "Study in AUSTRALIA" },
+          { img: uk, alt: "UK", text: "Study in UK",},
+          { img: australia, alt: "Australia", text: "Study in AUSTRALIA",link:"/StudyAustralia"  },
           { img: canada, alt: "Canada", text: "Study in CANADA" },
           { img: usa, alt: "USA", text: "Study in USA" },
           { img: singapore, alt: "Singapore", text: "Study in SINGAPORE" },
