@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-
-=======
->>>>>>> 68859edec50e6c9cc0a297dc1299cf8b47dc0226
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import logo from "../components/assets/logo.png";
@@ -81,7 +77,7 @@ const Navbar = ({ handleOrderPopup }) => {
             {/* Logo section */}
             <div>
               <Link to="/" onClick={() => window.scrollTo(0, 0)}>
-                <img src={logo} alt="" className="" />
+                <img src={logo} alt="" className="h-18 w-[200px]" />
               </Link>
             </div>
             {/* Navlinks section */}
