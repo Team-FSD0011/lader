@@ -25,13 +25,7 @@ const StudyAus = () => {
       return () => clearInterval(interval)
   
     }, [imagearray]);
-    useEffect(() => {
-      AOS.init({
-          duration: 1000 // Change duration as per your requirement
-      });
-  }, []);
     
-
   return (
     <>
     <div className='sm:mt'>
