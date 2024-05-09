@@ -30,17 +30,15 @@ const ContactUs = () => {
 
   return (
     <>
-      <div>
-        <div className="relative z-20 rounded-xl">
-          <h1 className="text-white font-serif text-blue absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-4xl md:text-7xl italic z-10">
-            CONTACT US
-          </h1>
-          <img
-            src={handshake}
-            alt="Contact image"
-            className="head_img rounded-lg opacity-80"
-          />
-        </div>
+      <div className="relative z-20 rounded-xl">
+        <h1 className="text-white font-serif text-blue absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-4xl md:text-7xl italic z-10">
+          CONTACT US
+        </h1>
+        <img
+          src={handshake}
+          alt="Contact image"
+          className="head_img rounded-lg opacity-80"
+        />
       </div>
 
       <div className="mt-10 grid max-w-screen-xl grid-cols-1 gap-8 px-4 md:grid-cols-2 md:px-8 lg:px-12 xl:px-16 dark:bg-gray-100 dark:text-gray-800 relative z-20">
