@@ -24,7 +24,7 @@ function App() {
   return (
     <>
     <Navbars/>
-    
+    <StudyAbroad/>
     <Routes>   
       <Route path="/" element={<Home/>}/>
       <Route path="/aboutUs" element={<AboutUs/>}/>
