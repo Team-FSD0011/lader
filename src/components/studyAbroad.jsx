@@ -1,16 +1,16 @@
 import React from "react";
-import study from "../component/assets/background.jpeg";
-import mission from "../component/assets/mission.jpg";
-import grp1 from "../component/assets/grp1.png";
-import uk from "../component/assets/uk.jpg";
-import canada from "../component/assets/canada.jpeg";
-import singapore from "../component/assets/singapore.jpg";
-import australia from "../component/assets/australia.jpeg";
-import usa from "../component/assetse/usa.jpeg";
-import swizer from "../component/assets/swizer.jpg";
-import germany from "../component/assets/germany.jpeg";
-import belgium from "../component/assets/belgium.jpeg";
-import malaysia from "../component/assets/malaysia.jpeg";
+import study from "../components/assets/background.jpeg";
+import mission from "../components/assets/mission.jpg";
+import grp1 from "../components/assets/grp1.png";
+import uk from "../components/assets/uk.jpg";
+import canada from "../components/assets/canada.jpeg";
+import singapore from "../components/assets/singapore.jpg";
+import australia from "../components/assets/australia.jpeg";
+import usa from "../components/assets/usa.jpeg";
+import swizer from "../components/assets/swizer.jpg";
+import germany from "../components/assets/germany.jpeg";
+import belgium from "../components/assets/belgium.jpeg";
+import malaysia from "../components/assets/malaysia.jpeg";
 const StudyAbroad = () => 
 {
     return(
