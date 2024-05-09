@@ -15,7 +15,7 @@ import Navbars from './components/Navbars'
 import BlogsCompNext from './components/Blogs/BlogsCompNext';
 import BlogsComp from './components/Blogs/BlogsComp';
 import StudyAus from './components/studyAus';
-
+import RootComponent from './RootComponent';
 
 
 
@@ -35,7 +35,7 @@ function App() {
     
          <Route path="/studyAUSTRALIA" element={<StudyAus/>}/>
          </Route> */}
-     <Route element={<StudyAbroad />}>
+     <Route element={<RootComponent />}>
         <Route path="/studyAbroad">
         <Route path="/studyAUSTRALIA" element={<StudyAus />} />
          {/* Other nested routes under /studyAbroad */}
