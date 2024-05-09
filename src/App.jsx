@@ -14,12 +14,11 @@ import Footer from './components/Footer/Footer';
 import Navbars from './components/Navbars'
 import BlogsCompNext from './components/Blogs/BlogsCompNext';
 import BlogsComp from './components/Blogs/BlogsComp';
-<<<<<<< HEAD
+
 import ETA from './components/enrolledAgent';
-=======
+
 import StudyAus from './components/studyAus';
 
->>>>>>> 73878e11a62b913df8e469478eae2f3424d2ed01
 
 
 
