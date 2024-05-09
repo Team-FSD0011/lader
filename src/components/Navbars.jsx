@@ -77,7 +77,7 @@ const Navbar = ({ handleOrderPopup }) => {
             {/* Logo section */}
             <div>
               <Link to="/" onClick={() => window.scrollTo(0, 0)}>
-                <img src={logo} alt="" className="" />
+                <img src={logo} alt="" className="h-18 w-[200px]" />
               </Link>
             </div>
             {/* Navlinks section */}

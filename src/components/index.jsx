@@ -12,7 +12,7 @@ import logo6 from "./assets/guidance.png";
 import logo7 from "./assets/teaching.png";
 import indeximage1 from "./assets/studentsimag7.png";
 import indeximage2 from "./assets/studentsimag2.png";
-
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Satisfy&family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet"></link>
 const Home = () => {
   const [imageindex, setimageindes] = useState(0)
   const imagearray = [indeximage1, indeximage2]
