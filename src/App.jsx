@@ -14,6 +14,7 @@ import Footer from './components/Footer/Footer';
 import Navbars from './components/Navbars'
 import BlogsCompNext from './components/Blogs/BlogsCompNext';
 import BlogsComp from './components/Blogs/BlogsComp';
+// import NewsNext from './components/news';
 
 
 
@@ -36,6 +37,7 @@ function App() {
       <Route path="/contactUs" element={<ContactUs/>}/>
       <Route path="/blognext" element={<BlogsCompNext/>}/>
       <Route path="/blogns" element={<BlogsComp/>}/>
+      {/* <Route path="/news" element={<NewsNext/>}/> */}
     </Routes>
     <br/>
 
