@@ -11,7 +11,7 @@ import swizer from "../components/assets/swizer.jpg";
 import germany from "../components/assets/germany.jpeg";
 import belgium from "../components/assets/belgium.jpeg";
 import malaysia from "../components/assets/malaysia.jpeg";
-import { Link } from "react-router-dom";
+
 const StudyAbroad = () => 
 {
     return(
@@ -96,7 +96,7 @@ const StudyAbroad = () =>
                 <img src={country.img} alt={country.alt} className="h-60 w-full sm:h-40 md:h-60 object-cover shadow-xl" />
             </div>
             <div className="text-center">
-                <h3 className="text-white text-xl mt-2 font-semibold bg-black w-full italic p-2"><Link to={country.text}>{country.text}</Link></h3>
+                <h3 className="text-white text-xl mt-2 font-semibold bg-black w-full italic p-2">{country.text}</h3>
            
             </div>
         </div>
