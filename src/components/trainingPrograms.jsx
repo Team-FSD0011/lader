@@ -8,6 +8,8 @@ import rec from "../components/assets/ic2.png";
 import fsd from "../components/assets/fsd.png";
 import datas from "../components/assets/datas.png";
 import ent from "../components/assets/ent.png";
+import { Link } from "react-router-dom";
+import ETA from "./enrolledAgent";
 
 const TrainingPrograms = () => {
   return (
@@ -48,7 +50,7 @@ const TrainingPrograms = () => {
   <span
     class="relative text-sm font-medium text-sky-400 transition-colors group-hover:text-white"
   >
-    Get Started
+    Explore
   </span>
 </a>
 </button>
@@ -98,8 +100,8 @@ const TrainingPrograms = () => {
                 Learn the ins and outs of full-stack web development. Build
                 modern websites with cutting-edge technology.
               </p>
-              <button className="px-4 py-2 border border-sky-400 rounded-lg text-sky-500 bg-white transition duration-300 hover:bg-sky-900 hover:text-white">
-                Join
+              <button className="px-4 py-2 border border-sky-400 rounded-lg text-sky-500 bg-white transition duration-300 transform hover:scale-110 hover:bg-sky-900 hover:text-white">
+                Learn
               </button>
             </div>
           </div>
@@ -117,9 +119,11 @@ const TrainingPrograms = () => {
                 Become a certified enrolled agent. Learn about taxes, financial
                 regulations, and more.
               </p>
+              <Link to={'/enrolledAgent'}>
               <button className="px-4 py-2 border border-sky-400 rounded-lg bg-white text-sky-500 transition duration-300 hover:bg-sky-900 hover:text-white">
                 Join
               </button>
+              </Link>
             </div>
           </div>
 
