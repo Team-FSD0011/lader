@@ -11,7 +11,7 @@ import swizer from "../components/assets/swizer.jpg";
 import germany from "../components/assets/germany.jpeg";
 import belgium from "../components/assets/belgium.jpeg";
 import malaysia from "../components/assets/malaysia.jpeg";
-
+import { Link } from "react-router-dom";
 const StudyAbroad = () => 
 {
     return(
@@ -56,96 +56,96 @@ const StudyAbroad = () =>
 
       {/* looking study abroad para  */}
       <div className="relative mt-10 md:mt-20">
-             <img src={grp1} alt="" className="w-full h-[400px] md:h-[350px] rounded-lg " />
+        <img src={grp1} alt="" className="w-full h-[400px] md:h-[350px] rounded-lg " />
 
-    <div className="absolute top-0 left-0 md:ml-10 md:top-10">
-        <h2 className="text-4xl md:text-6xl text-white font-serif">
+        <div className="absolute top-0 left-0 md:ml-10 md:top-10">
+          <h2 className="text-4xl md:text-6xl text-white font-serif">
             Looking To Study Abroad?
-        </h2>
-        <h3 className="mt-4 md:mt-7 text-xl md:text-3xl text-white font-bold">
+          </h2>
+          <h3 className="mt-4 md:mt-7 text-xl md:text-3xl text-white font-bold">
             You see lots of ads in magazines and on TV, but do you know if they are the right places for you?
-        </h3>
-        <h3 className="mt-2 text-lg md:text-xl text-white font-semibold">
+          </h3>
+          <h3 className="mt-2 text-lg md:text-xl text-white font-semibold">
             Study abroad is becoming more common but students are increasingly overwhelmed. The process of studying abroad is not as simple as it seems. We provide comprehensive study abroad assistance to help you make the right choices when applying for higher education programs. Our service will assist you with every step of your study abroad journey from application, information on tuition costs, locations, and course durations, as well as reviews from students currently studying there, on arrival assistance, all under one roof.
-        </h3>
-    </div>
-   </div>
+          </h3>
+        </div>
+      </div>
 
 
-     <h2 className="text-3xl md:text-4xl mt-5 md:mt-10 text-center text-blue-500 font-bold font-serif">
-    Looking To Study Abroad?
-</h2>
+      <h2 className="text-3xl md:text-4xl mt-5 md:mt-10 text-center text-blue-500 font-bold font-serif">
+        Looking To Study Abroad?
+      </h2>
 
 
 
-<div className="flex flex-wrap justify-center mt-10">
-    {/* Country Cards */}
-    {[
-        { img: uk, alt: "UK", text: "Study in UK" },
-        { img: australia, alt: "Australia", text: "Study in AUSTRALIA" },
-        { img: canada, alt: "Canada", text: "Study in CANADA" },
-        { img: usa, alt: "USA", text: "Study in USA" },
-        { img: singapore, alt: "Singapore", text: "Study in SINGAPORE" },
-        { img: swizer, alt: "Switzerland", text: "Study in SWIZERLAND" },
-        { img: germany, alt: "Germany", text: "Study in GERMANY" },
-        { img: belgium, alt: "Belgium", text: "Study in BELGIUM" },
-        { img: malaysia, alt: "Malaysia", text: "Study in MALAYSIA" }
-    ].map((country, index) => (
-        <div key={index} className="mt-8 mx-4 sm:w-72 md:w-96">
+      <div className="flex flex-wrap justify-center mt-10">
+        {/* Country Cards */}
+        {[
+          { img: uk, alt: "UK", text: "Study in UK" },
+          { img: australia, alt: "Australia", text: "Study in AUSTRALIA" },
+          { img: canada, alt: "Canada", text: "Study in CANADA" },
+          { img: usa, alt: "USA", text: "Study in USA" },
+          { img: singapore, alt: "Singapore", text: "Study in SINGAPORE" },
+          { img: swizer, alt: "Switzerland", text: "Study in SWIZERLAND" },
+          { img: germany, alt: "Germany", text: "Study in GERMANY" },
+          { img: belgium, alt: "Belgium", text: "Study in BELGIUM" },
+          { img: malaysia, alt: "Malaysia", text: "Study in MALAYSIA" }
+        ].map((country, index) => (
+          <div key={index} className="mt-8 mx-4 sm:w-72 md:w-96">
             <div className="relative">
-                <img src={country.img} alt={country.alt} className="h-60 w-full sm:h-40 md:h-60 object-cover shadow-xl" />
+              <img src={country.img} alt={country.alt} className="h-60 w-full sm:h-40 md:h-60 object-cover shadow-xl" />
             </div>
             <div className="text-center">
-                <h3 className="text-white text-xl mt-2 font-semibold bg-black w-full italic p-2">{country.text}</h3>
+                <h3 className="text-white text-xl mt-2 font-semibold bg-black w-full italic p-2"><Link to={country.text}>{country.text}</Link></h3>
            
             </div>
-        </div>
-    ))}
-</div>
+          </div>
+        ))}
+      </div>
 
 
 
 
       {/* CHANGE YOUR LIFE  */}
       <div class="text-blue-500 font-bold text-3xl text-center mt-20 font-serif md:mt-10 md:text-4xl">
-  <h2>Change Your Life Now!</h2>
-  <p class="text-black mt-5">Reach out to us</p>
-</div>
+        <h2>Change Your Life Now!</h2>
+        <p class="text-black mt-5">Reach out to us</p>
+      </div>
 
       {/* SUBMIT */}
       <div class="bg-gray-100 mt-10 md:mt-5 h-80">
-  <form action="" class="flex flex-col items-center">
-    <div class="flex flex-col md:flex-row justify-center items-center">
-      <label for="name" class="ml-5 md:ml-20 mt-5 md:mt-10 p-2 text-2xl font-serif">Name</label>
-      <input type="text" name="name" id="name" class="mt-5 md:mt-10 rounded-lg h-10 w-80 md:ml-5" />
+        <form action="" class="flex flex-col items-center">
+          <div class="flex flex-col md:flex-row justify-center items-center">
+            <label for="name" class="ml-5 md:ml-20 mt-5 md:mt-10 p-2 text-2xl font-serif">Name</label>
+            <input type="text" name="name" id="name" class="mt-5 md:mt-10 rounded-lg h-10 w-80 md:ml-5" />
 
-      <label for="email" class=" md:ml-10 mt-5 md:mt-10 p-2 text-2xl font-serif">Email</label>
-      <input type="text" name="email" id="email" class="mt-5 md:mt-10 rounded-lg h-10 w-60 md:ml-5" />
-    </div>
+            <label for="email" class=" md:ml-10 mt-5 md:mt-10 p-2 text-2xl font-serif">Email</label>
+            <input type="text" name="email" id="email" class="mt-5 md:mt-10 rounded-lg h-10 w-60 md:ml-5" />
+          </div>
 
-    <div class="flex flex-col md:flex-row justify-center items-center mt-5">
-      <label for="services" class="ml-5 md:ml-20 mt-5 md:mt-10 p-2 text-2xl font-serif">Choose Services</label>
-      <select name="services" id="services" class="mt-5 md:mt-10 rounded-lg h-12 md:w-[600px] md:ml-5">
-        <option value="">select</option>
-        <option value="Overseas Education">Overseas Education</option>
-        <option value="Engineering jobs">Engineering jobs</option>
-        <option value="Training & placement">Training & placement</option>
-        <option value="Immigration">Immigration</option>
-        <option value="Campus Recruitment">Campus Recruitment</option>
-      </select>
-    </div>
+          <div class="flex flex-col md:flex-row justify-center items-center mt-5">
+            <label for="services" class="ml-5 md:ml-20 mt-5 md:mt-10 p-2 text-2xl font-serif">Choose Services</label>
+            <select name="services" id="services" class="mt-5 md:mt-10 rounded-lg h-12 md:w-[600px] md:ml-5">
+              <option value="">select</option>
+              <option value="Overseas Education">Overseas Education</option>
+              <option value="Engineering jobs">Engineering jobs</option>
+              <option value="Training & placement">Training & placement</option>
+              <option value="Immigration">Immigration</option>
+              <option value="Campus Recruitment">Campus Recruitment</option>
+            </select>
+          </div>
 
-    <div class="h-20 flex justify-center items-center">
-      <div class="bg-sky-500 mt-5 md:mt-10 w-48 text-black text-center hover:text-white h-12 cursor-pointer rounded-lg">
-        <input type="button" value="Submit" class="mt-2 text-2xl" />
+          <div class="h-20 flex justify-center items-center">
+            <div class="bg-sky-500 mt-5 md:mt-10 w-48 text-black text-center hover:text-white h-12 cursor-pointer rounded-lg">
+              <input type="button" value="Submit" class="mt-2 text-2xl" />
+            </div>
+          </div>
+        </form>
       </div>
-    </div>
-  </form>
-</div>
 
-      <br /> 
-        </>
-    )
+      <br />
+    </>
+  )
 
 }
 
