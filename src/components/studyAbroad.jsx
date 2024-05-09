@@ -17,7 +17,7 @@ const StudyAbroad = () =>
         <>     
               {/* study abroad  */}
       <div className="relative">
-        <img src={study} alt="" className="w-full h-[200px] object-cover" />
+        <img src={study} alt="" className="w-full h-[300px] object-cover" />
       </div>
       <div className="px-4 md:px-0 md:max-w-2xl md:mx-auto">
         <h2 className="text-blue-500 font-bold text-2xl md:text-3xl text-center mt-5 font-serif">
