@@ -12,7 +12,49 @@ import {
   FaLinkedin,
   
 } from "react-icons/fa";
-import ResponsiveMenu from "./ResponsiveMenu"
+import ResponsiveMenu from "./ResponsiveMenu";
+import { FaCaretDown } from "react-icons/fa";
+
+
+const dropdownLinks = [
+  {
+    name: "Study Abroad",
+    link: "/#studyAbroad",
+  },
+  {
+    name: "Study in UK",
+    link: "/#studyinUK",
+  },
+  {
+    name: "Study in AUSTRALIA",
+    link: "/#studyinAUSTRALIA",
+  },
+  {
+    name: "Study in CANADA",
+    link: "/#studyinCANADA",
+  },
+  {
+    name: "Study in USA",
+    link: "/#studyinUSA",
+  },
+  {
+    name: "Study in SINGAPORE",
+    link: "/#studyinSINGAPORE",
+  },
+  {
+    name: "Study in SWIZERLAND",
+    link: "/#studyinSWIZERLAND",
+  },
+  {
+    name: "Study in GERMANY",
+    link: "/#studyinGERMANY",
+  },
+  {
+    name: "Study in BELGIUM",
+    link: "/#studyinBELGIUM",
+  },
+
+];
 
 const Navbar = ({handleOrderPopup}) => {
   const [showMenu, setShowMenu] = useState(false);
@@ -98,7 +140,7 @@ const Navbar = ({handleOrderPopup}) => {
              Training Programs
             </NavLink>
           </li>
-          <li className="py-4 hover:text-sky-500">
+          {/* <li className="py-4 hover:text-sky-500">
             <NavLink
               activeClassName="active"
               to="/studyAbroad"
@@ -106,7 +148,32 @@ const Navbar = ({handleOrderPopup}) => {
             >
               Study Abroad
             </NavLink>
-          </li>
+          </li> */}
+           {/* Dropdown section */}
+          <li className="py-4 relative group cursor-pointer">
+                  <div className="dropdown flex items-center">
+                    <span>Study Abroad</span>
+                    <span>
+                      <FaCaretDown className="transition-all duration-200 group-hover:rotate-180" />
+                    </span>
+                  </div>
+                  <div className="absolute -left-9 z-[9999] hidden group-hover:block shadow-md text-black w-[150px] bg-white p-2">
+                    <ul>
+                      {dropdownLinks.map((data) => {
+                        return (
+                          <li key={data.name}>
+                            <a
+                              className="inline-block w-full rounded-md p-2 hover:bg-primary/20"
+                              href={data.link}
+                            >
+                              {data.name}
+                            </a>
+                          </li>
+                        );
+                      })}
+                    </ul>
+                  </div>
+                </li>
 
           <li className="py-4 hover:text-sky-500">
             <NavLink
