@@ -1,26 +1,14 @@
-
-
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import logo from "../components/assets/logo.png";
 import { HiMenuAlt1, HiMenuAlt3 } from "react-icons/hi";
 import { FaPhoneSquareAlt } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
-import {
-  FaFacebook,
-  FaInstagram,
-  FaLinkedin,
-  
-} from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 import ResponsiveMenu from "./ResponsiveMenu";
 import { FaCaretDown } from "react-icons/fa";
 
-
 const dropdownLinks = [
-  {
-    name: "Study Abroad",
-    link: "/#studyAbroad",
-  },
   {
     name: "Study in UK",
     link: "/#studyinUK",
@@ -53,10 +41,9 @@ const dropdownLinks = [
     name: "Study in BELGIUM",
     link: "/#studyinBELGIUM",
   },
-
 ];
 
-const Navbar = ({handleOrderPopup}) => {
+const Navbar = ({ handleOrderPopup }) => {
   const [showMenu, setShowMenu] = useState(false);
 
   const toggleMenu = () => {
@@ -64,106 +51,99 @@ const Navbar = ({handleOrderPopup}) => {
   };
   return (
     <>
-<nav className="fixed top-0 right-0 w-full z-50 bg-white backdrop-blur-sm text-black shadow-md z-[99999]">
-  <div className="bg-sky-500 text-white ">
-    <div className="container py-[2px] sm:block hidden">
-  
-      <div className="flex items-center">
-        <div className="flex flex-row ">
-      <FaPhoneSquareAlt className="mt-1"/>
-        <p className=" mr-4">+91123456789</p>
-        <IoMdMail className="ml-3 mt-1"/>
-        <p>hr@firstladder.com</p>
-      </div>
-      <div className="container py-[2px] sm:block hidden ">
-        <div className="flex items-center  justify-center ml-[90%] cursor-pointer">
-        <FaInstagram className="mx-1 "/>
-        <FaFacebook className="mx-1"/>
-        <FaLinkedin className="mx-1"/>
-        </div> 
+      <nav className="fixed top-0 right-0 w-full z-50 bg-white backdrop-blur-sm text-black shadow-md z-[99999]">
+        <div className="bg-sky-500 text-white ">
+          <div className="container py-[2px] sm:block hidden">
+            <div className="flex items-center">
+              <div className="flex flex-row ">
+                <FaPhoneSquareAlt className="mt-1" />
+                <p className=" mr-4">+91123456789</p>
+                <IoMdMail className="ml-3 mt-1" />
+                <p>hr@firstladder.com</p>
+              </div>
+              <div className="container py-[2px] sm:block hidden ">
+                <div className="flex items-center  justify-center ml-[90%] cursor-pointer">
+                  <FaInstagram className="mx-1 " />
+                  <FaFacebook className="mx-1" />
+                  <FaLinkedin className="mx-1" />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  </div>
-  <div className="container py-3 sm:py-0">
-    <div className="flex justify-between items-center">
-      {/* Logo section */}
-      <div>
-        <Link to="/" onClick={() => window.scrollTo(0, 0)}>
-          <img src={logo} alt="" className="" />
-        </Link>
-      </div>
-      {/* Navlinks section */}
-      <div className="md:hidden block">
-        {/* Mobile Hamburger Menu */}
-        {showMenu ? (
-          <HiMenuAlt1
-            onClick={toggleMenu}
-            className="cursor-pointer transition-all"
-            size={30}
-          />
-        ) : (
-          <HiMenuAlt3
-            onClick={toggleMenu}
-            className="cursor-pointer transition-all"
-            size={30}
-          />
-        )}
-      </div>
-      <div className="hidden md:block">
-        {/* Navigation Links for medium and larger screens */}
-        <ul className="flex items-center gap-6">
-          <li className="py-4 hover:text-sky-500">
-            <NavLink
-              to="/"
-              activeClassName="active"
-              onClick={() => window.scrollTo(0, 0)}
-            >
-              Home
-            </NavLink>
-          </li>
-          <li className="py-4 hover:text-sky-500">
-            <NavLink
-              activeClassName="active"
-              to="/aboutUs"
-              onClick={() => window.scrollTo(0, 0)}
-            >
-              About Us
-            </NavLink>
-          </li>
-          <li className="py-4 hover:text-sky-500">
-            <NavLink
-              activeClassName="active"
-              to="/trainingPrograms"
-              onClick={() => window.scrollTo(0, 0)}
-            >
-             Training Programs
-            </NavLink>
-          </li>
-          {/* <li className="py-4 hover:text-sky-500">
-            <NavLink
-              activeClassName="active"
-              to="/studyAbroad"
-              onClick={() => window.scrollTo(0, 0)}
-            >
-              Study Abroad
-            </NavLink>
-          </li> */}
-           {/* Dropdown section */}
-          <li className="py-4 relative group cursor-pointer">
+        <div className="container py-3 sm:py-0">
+          <div className="flex justify-between items-center">
+            {/* Logo section */}
+            <div>
+              <Link to="/" onClick={() => window.scrollTo(0, 0)}>
+                <img src={logo} alt="" className="" />
+              </Link>
+            </div>
+            {/* Navlinks section */}
+            <div className="md:hidden block">
+              {/* Mobile Hamburger Menu */}
+              {showMenu ? (
+                <HiMenuAlt1
+                  onClick={toggleMenu}
+                  className="cursor-pointer transition-all"
+                  size={30}
+                />
+              ) : (
+                <HiMenuAlt3
+                  onClick={toggleMenu}
+                  className="cursor-pointer transition-all"
+                  size={30}
+                />
+              )}
+            </div>
+            <div className="hidden md:block">
+              {/* Navigation Links for medium and larger screens */}
+              <ul className="flex items-center gap-6">
+                <li className="py-4 hover:text-sky-500">
+                  <NavLink
+                    to="/"
+                    activeClassName="active"
+                    onClick={() => window.scrollTo(0, 0)}
+                  >
+                    Home
+                  </NavLink>
+                </li>
+                <li className="py-4 hover:text-sky-500">
+                  <NavLink
+                    activeClassName="active"
+                    to="/aboutUs"
+                    onClick={() => window.scrollTo(0, 0)}
+                  >
+                    About Us
+                  </NavLink>
+                </li>
+                <li className="py-4 hover:text-sky-500">
+                  <NavLink
+                    activeClassName="active"
+                    to="/trainingPrograms"
+                    onClick={() => window.scrollTo(0, 0)}
+                  >
+                    Training Programs
+                  </NavLink>
+                </li>
+
+                {/* Dropdown section */}
+
+                <li className="py-4 relative group cursor-pointer hover:text-sky-500">
                   <div className="dropdown flex items-center">
                     <span>Study Abroad</span>
                     <span>
                       <FaCaretDown className="transition-all duration-200 group-hover:rotate-180" />
                     </span>
                   </div>
-                  <div className="absolute -left-9 z-[9999] hidden group-hover:block shadow-md text-black w-[150px] bg-white p-2">
-                    <ul>
+                  <div className="absolute -left-9 z-[9999] hidden group-hover:block shadow-md text-black bg-white p-2">
+                    <ul className="w-64 h-70">
+                      {" "}
                       {dropdownLinks.map((data) => {
                         return (
                           <li key={data.name}>
                             <a
-                              className="inline-block w-full rounded-md p-2 hover:bg-primary/20"
+                              className="inline-block w-full rounded-md p-2 hover:bg-sky-500 hover:text-white"
                               href={data.link}
                             >
                               {data.name}
@@ -175,46 +155,44 @@ const Navbar = ({handleOrderPopup}) => {
                   </div>
                 </li>
 
-          <li className="py-4 hover:text-sky-500">
-            <NavLink
-              activeClassName="active"
-              to="/immigration"
-              onClick={() => window.scrollTo(0, 0)}
-            >
-              Immigration
-            </NavLink>
-          </li>
-          <li className="py-4 hover:text-sky-500">
-            <NavLink
-              activeClassName="active"
-              to="/blog"
-              onClick={() => window.scrollTo(0, 0)}
-            >
-              Blog
-            </NavLink>
-          </li>
-          <li className="py-4 hover:text-sky-500">
-            <NavLink
-              activeClassName="active"
-              to="/contactUs"
-              onClick={() => window.scrollTo(0, 0)}
-            >
-              Contact Us
-            </NavLink>
-          </li>
-        </ul>
-      </div>
-      <Link to="/contactUs">
-            <button className="bg-sky-500 text-white hover:bg-transparent hover:border-sky-500 hover:text-sky-500 font-size-2 border border-sky-500 px-3 py-1 rounded-full">
-            Explore Now
-            </button>
-      </Link>
-
-    </div>
-  </div>
-  <ResponsiveMenu setShowMenu={setShowMenu} showMenu={showMenu} />
-</nav>
-
+                <li className="py-4 hover:text-sky-500">
+                  <NavLink
+                    activeClassName="active"
+                    to="/immigration"
+                    onClick={() => window.scrollTo(0, 0)}
+                  >
+                    Immigration
+                  </NavLink>
+                </li>
+                <li className="py-4 hover:text-sky-500">
+                  <NavLink
+                    activeClassName="active"
+                    to="/blog"
+                    onClick={() => window.scrollTo(0, 0)}
+                  >
+                    Blog
+                  </NavLink>
+                </li>
+                <li className="py-4 hover:text-sky-500">
+                  <NavLink
+                    activeClassName="active"
+                    to="/contactUs"
+                    onClick={() => window.scrollTo(0, 0)}
+                  >
+                    Contact Us
+                  </NavLink>
+                </li>
+              </ul>
+            </div>
+            <Link to="/contactUs">
+              <button className="bg-sky-500 text-white hover:bg-transparent hover:border-sky-500 hover:text-sky-500 font-size-2 border border-sky-500 px-3 py-1 rounded-full">
+                Explore Now
+              </button>
+            </Link>
+          </div>
+        </div>
+        <ResponsiveMenu setShowMenu={setShowMenu} showMenu={showMenu} />
+      </nav>
     </>
   );
 };
