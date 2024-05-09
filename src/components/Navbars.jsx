@@ -139,6 +139,7 @@ const Navbar = ({ handleOrderPopup }) => {
                   <div className="absolute -left-9 z-[9999] hidden group-hover:block shadow-md text-black bg-white p-2">
                     <ul className="w-64 h-70">
                       {" "}
+                      {/* Adjust width and height here */}
                       {dropdownLinks.map((data) => {
                         return (
                           <li key={data.name}>
