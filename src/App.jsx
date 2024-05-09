@@ -19,6 +19,7 @@ import StudyAus from './components/studyAus';
 
 
 
+
 function App() {
  
 
@@ -31,7 +32,7 @@ function App() {
       <Route path="/aboutUs" element={<AboutUs/>}/>
       <Route path="/trainingPrograms" element={<TrainingPrograms/>}/>
       <Route path="/studyAbroad" element={<StudyAbroad/>}/>
-      <Route path="/studyAustralia" element={<StudyAus/>}/>
+      <Route path="/studyinAUSTRALIA" element={<StudyAus/>}/>
       <Route path="/immigration" element={<Immigration/>}/>
       <Route path="/blog" element={<Blog/>}/>
       <Route path="/Blogs/:id" element={<BlogsDetails/>}/>
