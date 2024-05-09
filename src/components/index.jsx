@@ -12,7 +12,7 @@ import logo6 from "./assets/guidance.png";
 import logo7 from "./assets/teaching.png";
 import indeximage1 from "./assets/studentsimag7.png";
 import indeximage2 from "./assets/studentsimag2.png";
-
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Satisfy&family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet"></link>
 const Home = () => {
   const [imageindex, setimageindes] = useState(0)
   const imagearray = [indeximage1, indeximage2]
@@ -117,7 +117,7 @@ const Home = () => {
       </div>
     </div>
 
-    <div className="flex mb-0 flex-col justify-center items-center  mt-4 ml-9 mr-9 bg-gray-100 rounded-lg shadow-lg md:scroll-sm">
+    <div className="flex flex-col justify-center items-center  mt-4 ml-9 mr-9 bg-gray-100 rounded-lg shadow-lg md:scroll-sm">
       <p className="text-md text-gray-700 mt-12 mb-2 text-center">
         We are a leading global career consulting firm, providing innovative and customized solutions to students, job seekers and employers.
       </p>

@@ -74,26 +74,29 @@ const Immigration = () => {
       <div className=' flex-row flex justify-evenly'>
         <div className='relative w-[80%] '>
           <img src={iman} alt="iman" className='w-[80%] h-[80%] rounded-xl ml-24' />
-
           <div className='absolute flex  items-end left-0 top-0 w-[80%] h-[80%] '>
             <h1 className='rounded-b-lg absolute h-10 ml-24 bg-gray-500 text-white justify-center items-center text-center w-[100%] pt-2' >Welcome to Our London!</h1>
           </div>
-
         </div>
         <div className='relative w-[80%] '>
           <img src={mans} alt="iman" className='w-[80%] h-[80%] rounded-xl ml-12' />
-
           <div className='absolute flex  items-end left-0 top-0 w-[80%] h-[80%] '>
-
             <h1 className='bg-gray-500 text-white rounded-b-lg absolute h-10 ml-12 justify-center items-center text-center w-[100%] pt-2' >Welcome to Our Australia!</h1>
           </div>
 
         </div>
       </div>
     </div>
-    <div className='absolute bg-gray-500 h-[6%] w-[90%] mb-10 flex justify-center items-center ml-20 border-sky-500 rounded-lg'>
-    <h1 className='font-semibold text-2xl text-white'>Change Your Life Now!</h1>
-
+    <div className="flex flex-col justify-center items-center ml-9 mr-9 bg-gray-100 rounded-lg shadow-lg md:scroll-sm">
+      <p className="text-4xl text-gray-700 mt-5 mb-2 text-center">
+      Need a Consultation?      </p>
+      <p className="text-md text-gray-700 mb-4 text-center">
+      Reach out to us today and book an appointment for a free counselling session to clarify all your queries with our team.      </p>
+      <Link to="/contactUs">
+        <button className="text-md font-semibold text-white bg-sky-500 py-3 px-8 mb-4 rounded-lg shadow-lg hover:bg-sky-600">
+        Make On Appointment
+        </button>
+      </Link>
     </div>
   </>
 
