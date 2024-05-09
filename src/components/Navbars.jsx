@@ -11,11 +11,8 @@ import { FaCaretDown } from "react-icons/fa";
 const dropdownLinks = [
   {
     name: "Study in UK",
-<<<<<<< HEAD
     link: "/studyAus",
-=======
-    link: "/studyUK",
->>>>>>> 8acd04b8432825e88d5831501874e39bbe2eff7d
+    
   },
   {
     name: "Study in AUSTRALIA",
