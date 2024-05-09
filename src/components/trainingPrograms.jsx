@@ -121,7 +121,7 @@ const TrainingPrograms = () => {
               </p>
               <Link to={'/enrolledAgent'}>
               <button className="px-4 py-2 border border-sky-400 rounded-lg bg-white text-sky-500 transition duration-300 hover:bg-sky-900 hover:text-white">
-                Join
+                Learn
               </button>
               </Link>
             </div>
