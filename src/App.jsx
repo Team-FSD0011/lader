@@ -37,8 +37,6 @@ function App() {
       <Route path="/blognext" element={<BlogsCompNext/>}/>
       <Route path="/blog" element={<BlogsComp/>}/>
     </Routes>
-    <br/>
-
     <Footer/>
     </>
   )
