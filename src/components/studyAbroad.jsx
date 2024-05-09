@@ -97,6 +97,7 @@ const StudyAbroad = () =>
             </div>
             <div className="text-center">
                 <h3 className="text-white text-xl mt-2 font-semibold bg-black w-full italic p-2"><Link to="/studyAustralia">{country.text}</Link></h3>
+                <h3 className="text-white text-xl mt-2 font-semibold bg-black w-full italic p-2"><Link to="/studyCanada">{country.text}</Link></h3>
             </div>
         </div>
     ))}
