@@ -4,6 +4,7 @@ import React from 'react'
 import Home from './components/index'
 import ContactUs from './components/contactUs';
 import AboutUs from './components/aboutUs';
+import StudyAbroad from './components/studyAbroad';
 import Blog from './components/blog';
 import BlogsDetails from './components/BlogsDetails';
 import TrainingPrograms from './components/trainingPrograms';
