@@ -6,7 +6,6 @@ import ContactUs from './components/contactUs';
 import AboutUs from './components/aboutUs';
 import Blog from './components/blog';
 import BlogsDetails from './components/BlogsDetails';
-import StudyAbroad from './components/studyAbroad';
 import TrainingPrograms from './components/trainingPrograms';
 import Immigration from './components/immigration';
 import { Route, Routes } from 'react-router-dom';
@@ -24,7 +23,7 @@ function App() {
   return (
     <>
     <Navbars/>
-    <StudyAbroad/>
+   
     <Routes>   
       <Route path="/" element={<Home/>}/>
       <Route path="/aboutUs" element={<AboutUs/>}/>
