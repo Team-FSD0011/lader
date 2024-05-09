@@ -14,9 +14,17 @@ import Footer from './components/Footer/Footer';
 import Navbars from './components/Navbars'
 import BlogsCompNext from './components/Blogs/BlogsCompNext';
 import BlogsComp from './components/Blogs/BlogsComp';
+
 import ETA from './components/enrolledAgent';
 
 import StudyAus from './components/studyAus';
+
+
+import ETA from './components/enrolledAgent';
+
+import StudyAus from './components/studyAus';
+
+
 
 
 
@@ -42,8 +50,6 @@ function App() {
       <Route path="/blognext" element={<BlogsCompNext/>}/>
       <Route path="/blog" element={<BlogsComp/>}/>
     </Routes>
-    <br/>
-
     <Footer/>
     </>
   )

@@ -117,7 +117,7 @@ const Home = () => {
       </div>
     </div>
 
-    <div className="flex mb-0 flex-col justify-center items-center  mt-4 ml-9 mr-9 bg-gray-100 rounded-lg shadow-lg md:scroll-sm">
+    <div className="flex flex-col justify-center items-center  mt-4 ml-9 mr-9 bg-gray-100 rounded-lg shadow-lg md:scroll-sm">
       <p className="text-md text-gray-700 mt-12 mb-2 text-center">
         We are a leading global career consulting firm, providing innovative and customized solutions to students, job seekers and employers.
       </p>
