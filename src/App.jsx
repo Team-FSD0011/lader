@@ -14,7 +14,6 @@ import Footer from './components/Footer/Footer';
 import Navbars from './components/Navbars'
 import BlogsCompNext from './components/Blogs/BlogsCompNext';
 import BlogsComp from './components/Blogs/BlogsComp';
-import StudyAus from './components/studyAus';
 
 
 
@@ -25,15 +24,13 @@ function App() {
   return (
     <>
     <Navbars/>
-   
+    
     <Routes>   
       <Route path="/" element={<Home/>}/>
       <Route path="/aboutUs" element={<AboutUs/>}/>
       <Route path="/trainingPrograms" element={<TrainingPrograms/>}/>
       <Route path="/studyAbroad" element={<StudyAbroad/>}/>
-       <Route path="studyAbroad">
-            <Route path="/StudyAbroad" element={<StudyAus/>}/>
-        </Route>
+        
       <Route path="/immigration" element={<Immigration/>}/>
       <Route path="/blog" element={<Blog/>}/>
       <Route path="/Blogs/:id" element={<BlogsDetails/>}/>
