@@ -30,10 +30,10 @@ function App() {
       <Route path="/" element={<Home/>}/>
       <Route path="/aboutUs" element={<AboutUs/>}/>
       <Route path="/trainingPrograms" element={<TrainingPrograms/>}/>
-      <Route path="studyAbroad" >
+      <Routes path="studyAbroad" >
            <Route path="/studyAbroad" element={<StudyAbroad/>}/>
            <Route path="/StudyAustralia" element={<StudyAus/>}/>
-      </Route>
+      </Routes>
      
       <Route path="/immigration" element={<Immigration/>}/>
       <Route path="/blog" element={<Blog/>}/>
