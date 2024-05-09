@@ -31,10 +31,17 @@ function App() {
       <Route path="/" element={<Home/>}/>
       <Route path="/aboutUs" element={<AboutUs/>}/>
       <Route path="/trainingPrograms" element={<TrainingPrograms/>}/>
-      <Route path="/studyAbroad">
+      {/* <Route path="/studyAbroad">
     
          <Route path="/studyAUSTRALIA" element={<StudyAus/>}/>
-         </Route>
+         </Route> */}
+     <Route element={<RootComponent />}>
+        <Route path="/studyAbroad">
+        <Route path="/studyAUSTRALIA" element={<StudyAus />} />
+         {/* Other nested routes under /studyAbroad */}
+      </Route>
+    </Route>
+
       <Route path="/immigration" element={<Immigration/>}/>
       <Route path="/blog" element={<Blog/>}/>
       <Route path="/Blogs/:id" element={<BlogsDetails/>}/>
