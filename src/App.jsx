@@ -35,7 +35,7 @@ function App() {
     
          <Route path="/studyAUSTRALIA" element={<StudyAus/>}/>
          </Route> */}
-     <Route element={<RootComponent />}>
+     <Route element={<StudyAbroad />}>
         <Route path="/studyAbroad">
         <Route path="/studyAUSTRALIA" element={<StudyAus />} />
          {/* Other nested routes under /studyAbroad */}
