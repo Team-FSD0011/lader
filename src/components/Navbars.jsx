@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+
+=======
+>>>>>>> 68859edec50e6c9cc0a297dc1299cf8b47dc0226
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import logo from "../components/assets/logo.png";
@@ -140,6 +144,7 @@ const Navbar = ({ handleOrderPopup }) => {
                   <div className="absolute -left-9 z-[9999] hidden group-hover:block shadow-md text-black bg-white p-2">
                     <ul className="w-64 h-70">
                       {" "}
+                      {/* Adjust width and height here */}
                       {dropdownLinks.map((data) => {
                         return (
                           <li key={data.name}>
