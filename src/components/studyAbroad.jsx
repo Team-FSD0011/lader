@@ -11,7 +11,8 @@ import swizer from "../components/assets/swizer.jpg";
 import germany from "../components/assets/germany.jpeg";
 import belgium from "../components/assets/belgium.jpeg";
 import malaysia from "../components/assets/malaysia.jpeg";
-import { Link } from "react-router-dom";
+
+
 const StudyAbroad = () => 
 {
     return(
@@ -81,8 +82,8 @@ const StudyAbroad = () =>
       <div className="flex flex-wrap justify-center mt-10">
         {/* Country Cards */}
         {[
-          { img: uk, alt: "UK", text: "Study in UK" },
-          { img: australia, alt: "Australia", text: "Study in AUSTRALIA" },
+          { img: uk, alt: "UK", text: "Study in UK",},
+          { img: australia, alt: "Australia", text: "Study in AUSTRALIA", },
           { img: canada, alt: "Canada", text: "Study in CANADA" },
           { img: usa, alt: "USA", text: "Study in USA" },
           { img: singapore, alt: "Singapore", text: "Study in SINGAPORE" },
@@ -96,7 +97,7 @@ const StudyAbroad = () =>
               <img src={country.img} alt={country.alt} className="h-60 w-full sm:h-40 md:h-60 object-cover shadow-xl" />
             </div>
             <div className="text-center">
-                <h3 className="text-white text-xl mt-2 font-semibold bg-black w-full italic p-2"><Link to={country.text}>{country.text}</Link></h3>
+                <h3 className="text-white text-xl mt-2 font-semibold bg-black w-full italic p-2">{country.text}</h3>
            
             </div>
           </div>

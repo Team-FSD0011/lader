@@ -11,35 +11,39 @@ import { FaCaretDown } from "react-icons/fa";
 const dropdownLinks = [
   {
     name: "Study in UK",
+<<<<<<< HEAD
     link: "/studyAus",
+=======
+    link: "/studyUK",
+>>>>>>> 8acd04b8432825e88d5831501874e39bbe2eff7d
   },
   {
     name: "Study in AUSTRALIA",
-    link: "/#studyinAUSTRALIA",
+    link: "/studyinAUSTRALIA",
   },
   {
     name: "Study in CANADA",
-    link: "/#studyinCANADA",
+    link: "/studyinCANADA",
   },
   {
     name: "Study in USA",
-    link: "/#studyinUSA",
+    link: "/studyinUSA",
   },
   {
     name: "Study in SINGAPORE",
-    link: "/#studyinSINGAPORE",
+    link: "/studyinSINGAPORE",
   },
   {
     name: "Study in SWIZERLAND",
-    link: "/#studyinSWIZERLAND",
+    link: "/studyinSWIZERLAND",
   },
   {
     name: "Study in GERMANY",
-    link: "/#studyinGERMANY",
+    link: "/studyinGERMANY",
   },
   {
     name: "Study in BELGIUM",
-    link: "/#studyinBELGIUM",
+    link: "/studyinBELGIUM",
   },
 ];
 
@@ -131,7 +135,7 @@ const Navbar = ({ handleOrderPopup }) => {
 
                 <li className="py-4 relative group cursor-pointer hover:text-sky-500">
                   <div className="dropdown flex items-center">
-                    <span>Study Abroad</span>
+                    <span ><NavLink activeClassName="active" to="/studyAbroad" onClick={()=>window.scrollTo(0,0)}>Study Abroad</NavLink></span>
                     <span>
                       <FaCaretDown className="transition-all duration-200 group-hover:rotate-180" />
                     </span>
