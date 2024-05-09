@@ -91,11 +91,10 @@ const Immigration = () => {
       <p className="text-4xl text-gray-700 mt-5 mb-2 text-center">
       Need a Consultation?      </p>
       <p className="text-md text-gray-700 mb-4 text-center">
-        Our process starts with developing an accurate profile of each candidate and using that as our database to match them with the available opportunities in terms of education and jobs.
-      </p>
+      Reach out to us today and book an appointment for a free counselling session to clarify all your queries with our team.      </p>
       <Link to="/contactUs">
         <button className="text-md font-semibold text-white bg-sky-500 py-3 px-8 mb-4 rounded-lg shadow-lg hover:bg-sky-600">
-          Know More
+        Make On Appointment
         </button>
       </Link>
     </div>
