@@ -18,6 +18,7 @@ import BlogsComp from './components/Blogs/BlogsComp';
 // import NewsNext from './components/news';
 import StudyAus from './components/studyAus';
 import Datascience from './components/datascience';
+import Fullstack from './components/Fullstack';
 
 // import ETA from './components/enrolledAgent';
 
@@ -51,6 +52,8 @@ function App() {
       {/* <Route path="/news" element={<NewsNext/>}/> */}
       <Route path="/blog" element={<BlogsComp/>}/>
       <Route path="/Datascience" element={<Datascience/>}/>
+      <Route path="/Fullstack" element={<Fullstack/>}/>
+
 
     </Routes>
     <Footer/>

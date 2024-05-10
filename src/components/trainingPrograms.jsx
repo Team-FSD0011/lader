@@ -99,9 +99,11 @@ const TrainingPrograms = () => {
                 Learn the ins and outs of full-stack web development. Build
                 modern websites with cutting-edge technology.
               </p>
+              <Link to="/Fullstack">
               <button className="px-4 py-2 border border-sky-400 rounded-lg text-sky-500 bg-white transition duration-300 transform hover:scale-110 hover:bg-sky-900 hover:text-white">
                 Learn
               </button>
+              </Link>
             </div>
           </div>
 
