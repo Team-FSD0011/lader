@@ -50,6 +50,8 @@ function App() {
       <Route path="/blogns" element={<BlogsComp/>}/>
       {/* <Route path="/news" element={<NewsNext/>}/> */}
       <Route path="/blog" element={<BlogsComp/>}/>
+      <Route path="/Datascience" element={<Datascience/>}/>
+
     </Routes>
     <Footer/>
     </>
