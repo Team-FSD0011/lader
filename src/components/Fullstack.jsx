@@ -120,7 +120,7 @@ const Fullstack = () => {
         <h1 className="my-8 border-l-8 border-sky-600 py-2 pl-2 text-3xl font-bold ml-[650px]">
           Key Frams
         </h1>
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-10 mb-20">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-10 mb-10">
           <div className="flex items-center bg-sky-200 p-8 rounded-lg">
             <FaHtml5 className="h-40 mr-2 " />
             <p className="text-md">Interview Preparation</p>
