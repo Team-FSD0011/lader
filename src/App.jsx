@@ -49,7 +49,6 @@ function App() {
       <Route path="/blognext" element={<BlogsCompNext/>}/>
       <Route path="/blogns" element={<BlogsComp/>}/>
       {/* <Route path="/news" element={<NewsNext/>}/> */}
-=======
       <Route path="/blog" element={<BlogsComp/>}/>
     </Routes>
     <Footer/>
