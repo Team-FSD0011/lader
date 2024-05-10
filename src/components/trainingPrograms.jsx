@@ -139,7 +139,7 @@ const TrainingPrograms = () => {
                 Dive into data science and learn how to work with large datasets
                 to extract valuable insights.
               </p>
-              <Link to="/datascience">
+              <Link to="/Datascience">
               <button
                 className="px-4 py-2 border border-sky-400 rounded-lg text-sky-500 bg-white transition duration-300 hover:bg-sky-900 hover:text-white"
               >
