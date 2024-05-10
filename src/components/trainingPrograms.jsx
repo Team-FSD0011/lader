@@ -1,4 +1,4 @@
-
+import { Link } from "react-router-dom";
 import React from "react";
 import { RiComputerLine } from "react-icons/ri";
 import { IoBookSharp } from "react-icons/io5";
@@ -8,8 +8,7 @@ import rec from "../components/assets/ic2.png";
 import fsd from "../components/assets/fsd.png";
 import datas from "../components/assets/datas.png";
 import ent from "../components/assets/ent.png";
-import { Link } from "react-router-dom";
-import ETA from "./enrolledAgent";
+
 
 const TrainingPrograms = () => {
   return (
@@ -140,11 +139,12 @@ const TrainingPrograms = () => {
                 Dive into data science and learn how to work with large datasets
                 to extract valuable insights.
               </p>
+              <Link to="/datascience">
               <button
                 className="px-4 py-2 border border-sky-400 rounded-lg text-sky-500 bg-white transition duration-300 hover:bg-sky-900 hover:text-white"
               >
                 Join
-              </button>
+              </button></Link>
             </div>
           </div>
         </div>

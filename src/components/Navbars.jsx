@@ -1,7 +1,4 @@
-<<<<<<< HEAD
 
-=======
->>>>>>> 68859edec50e6c9cc0a297dc1299cf8b47dc0226
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import logo from "../components/assets/logo.png";
@@ -11,6 +8,7 @@ import { IoMdMail } from "react-icons/io";
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 import ResponsiveMenu from "./ResponsiveMenu";
 import { FaCaretDown } from "react-icons/fa";
+
 
 const dropdownLinks = [
   {
