@@ -49,11 +49,9 @@ function App() {
       <Route path="/blognext" element={<BlogsCompNext/>}/>
       <Route path="/blogns" element={<BlogsComp/>}/>
       {/* <Route path="/news" element={<NewsNext/>}/> */}
+=======
       <Route path="/blog" element={<BlogsComp/>}/>
-      <Route path="/datascience" element={<Datascience/>}/>
-
-
-
+>>>>>>> 68859edec50e6c9cc0a297dc1299cf8b47dc0226
     </Routes>
     <Footer/>
     </>
