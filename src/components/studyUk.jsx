@@ -34,20 +34,20 @@ const StudyUk = () => {
   return (
     <>
     <div className='sm:mt'>
-    <div className='bg-blue-50 pb-5'>
+    <div className='bg-blue-50 pb-5 '>
   <div>
     {/* <img style={{ width: "100%" }} src={uk} alt="" className='h-64 opacity-80' /> */}
     {/* <img style={{ width: "100%" }} src={imagearray[imageindex]} alt="" className='scroll-smooth w-full h-[300px]' /> */}
   </div>
 
-  <div className="container-fluid bg-img" id="home">
-         <div className="container home relative">
+  <div className="container-fluid bg-img " id="home">
+         <div className="container home relative ">
             {/* <img src={aus01} alt="Background" className="absolute inset-0 w-full h-full object-cover" /> */}
             <img
               style={{ width: "100%" }}
               src={imagearray[imageindex]}
               alt=""
-              className="scroll-smooth w-full h-[400px] relative   object-cover"
+              className="scroll-smooth w-full h-[400px] relative   object-cover mt-28"
             />
                 <div className="row absolute  inset-0">
                     <div className="col-lg-12 heading text-center text-white text-7xl mt-20">

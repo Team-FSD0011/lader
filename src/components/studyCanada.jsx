@@ -49,7 +49,7 @@ const StudyCanada = () => {
               style={{ width: "100%" }}
               src={imagearray[imageindex]}
               alt=""
-              className="scroll-smooth w-full h-[400px] relative   object-cover"
+              className="scroll-smooth w-full h-[400px] relative   object-cover mt-28"
             />
                 <div className="row absolute  inset-0">
                     <div className="col-lg-12 heading text-center text-white text-7xl mt-20">

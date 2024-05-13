@@ -44,10 +44,10 @@ const StudyUsa = () => {
                
                 src={imagearray[imageindex]}
                 alt=""
-                className="scroll-smooth  h-[400px] w-full relative object-cover mt-10"
+                className="scroll-smooth  h-[400px] w-full relative object-cover mt-28"
               />
               <div className="row absolute  inset-0">
-                <div className="col-lg-12 heading text-center text-white text-7xl mt-20">
+                <div className="col-lg-12 heading text-center text-white text-7xl ">
                   <h6 data-aos="fade-up">STUDY </h6>
                 </div>
                 <div className="col-lg-12 heading text-center text-white mt-5">

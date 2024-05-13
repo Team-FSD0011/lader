@@ -43,7 +43,7 @@ const StudyGer = () => {
             />
           </div>
           <div className="row absolute  inset-0">
-                    <div className="col-lg-12 heading text-center text-white text-7xl mt-20">
+                    <div className="col-lg-12 heading text-center text-white text-7xl mt-28">
                         <h6 data-aos="fade-up">STUDY </h6>
                      </div>
                      <div className="col-lg-12 heading text-center text-white mt-5">
