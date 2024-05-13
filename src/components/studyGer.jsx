@@ -1,19 +1,18 @@
 import React from "react";
-import ukGrp from "../components/assets/s1.jpeg";
-import grp1 from "../components/assets/grp1.png";
-import aus from "../components/assets/aus aus.jpeg";
-import unsw from "../components/assets/unsw aus.jpeg";
-import vienna from "../components/assets/vienna aus.jpeg";
-import v2 from "../components/assets/v2.png";
-import unsw3 from "../components/assets/unsw3.png";
-import aus01 from "../components/assets/aus01.png";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import { useState, useEffect } from "react";
 
-const StudyAus = () => {
+import ukGrp from "../component/image/s1.jpeg";
+import grp1 from "../component/image/grp1.png";
+import heidelberg from "../component/image/heidelberg ger.jpeg";
+import ludwigh from "../component/image/ludwig ger.jpeg";
+import freiburg from "../component/image/friburg swizer.jpeg";
+import g2 from "../component/image/g2.png";
+import { useState, useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+const StudyGer = () => {
   const [imageindex, setimageindes] = useState(0);
-  const imagearray = [unsw3, v2, aus01];
+  const imagearray = [ grp1, g2];
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -23,47 +22,44 @@ const StudyAus = () => {
     }, 3000);
     return () => clearInterval(interval);
   }, [imagearray]);
+
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Change duration as per your requirement
+        duration: 1000 // Change duration as per your requirement
     });
-  }, []);
+}, []);
 
   return (
     <>
       <div className="sm:mt">
-      
+        <div className="bg-blue-50 pb-5">
           <div>
-            {/* <img style={{ width: "100%" }} src={aus1} alt="" className='h-64 ' /> */}
-            {/* <img style={{ width: "100%" }} src={imagearray[imageindex]} alt="" className='scroll-smooth w-full h-[300px]' /> */}
+            {/* <img style={{ width: "100%" }} src={uk} alt="" className='h-64 opacity-80' /> */}
+            <img
+              style={{ width: "100%" }}
+              src={imagearray[imageindex]}
+              alt=""
+              className="scroll-smooth w-full h-[400px]"
+            />
           </div>
-
-          <div className="container-fluid bg-img" id="home">
-            <div className="container home relative">
-               <img
-               
-                src={imagearray[imageindex]}
-                alt=""
-                className="scroll-smooth  h-[400px] w-full relative object-cover mt-10"
-              />
-              <div className="row absolute  inset-0">
-                <div className="col-lg-12 heading text-center text-white text-7xl mt-20">
-                  <h6 data-aos="fade-up">STUDY </h6>
-                </div>
-                <div className="col-lg-12 heading text-center text-white mt-5">
-                  <h6 data-aos="fade-up">IN</h6>
-                </div>
-                <div className="col-lg-12 heading text-center mt-10 text-blue-500 font-bold text-7xl">
-                  <h1 data-aos="fade-up">AUSTRALIA!!!</h1>
-                </div>
-                {/* <div className="col-lg-12 heading text-center text-white">
+          <div className="row absolute  inset-0">
+                    <div className="col-lg-12 heading text-center text-white text-7xl mt-20">
+                        <h6 data-aos="fade-up">STUDY </h6>
+                     </div>
+                     <div className="col-lg-12 heading text-center text-white mt-5">
+                        <h6 data-aos="fade-up">IN</h6>
+                    </div>
+                    <div className="col-lg-12 heading text-center mt-10 text-blue-500 font-bold text-7xl">
+                        <h1 data-aos="fade-up">GERMANY!!!</h1>
+                    </div>
+                    {/* <div className="col-lg-12 heading text-center text-white">
                         <h3 data-aos="fade-up">front-end developer</h3>
                     </div> */}
-              </div>
+                  
+                </div>
             </div>
-          </div>
-          <div className="bg-blue-50 h-60">
-          <div className="flex">
+        {/* </div> */}
+          <div className="flex flex-col sm:flex-row items-center">
             <div className="sm:mr-4 pt-10 pb-5">
               <img
                 src={ukGrp}
@@ -73,7 +69,7 @@ const StudyAus = () => {
             </div>
             <div className="sm:mr-4 sm:mt-0">
               <h2 className="text-blue-500 flex justify-center mr-40 font-bold text-3xl font-italic  sm:mt-10 text-center sm:text-left font-serif">
-                Study in AUSTRALIA
+                Study in GERMANY
               </h2>
               <p className="text-lg mt-3 pl-20  text-justify sm:mt-5 text-center sm:text-left">
                 At First-Ladder, we take pride in offering a comprehensive
@@ -93,51 +89,51 @@ const StudyAus = () => {
         </div>
 
         <h2 className="text-blue-500 font-bold text-3xl font-italic mt-5 sm:mt-10 text-center font-serif">
-          Australia Study Options
+          GERMANY Study Options
         </h2>
 
         <div className="flex flex-col sm:flex-row pl-10">
           <div className="flex flex-wrap justify-center sm:justify-start sm:w-full">
-            <h3 className="bg-blue-400 text-lg p-2 font-serif w-80 mt-5 sm:mt-10 ml-0 sm:mr-10 text-center sm:text-left hover:text-white cursor-pointer">
+            <h3 className="bg-blue-400 text-lg p-2 font-serif w-80 mt-5 sm:mt-10 ml-0 sm:mr-10 text-center sm:text-left hover:text-indigo-900 cursor-pointer">
               Foundation Courses London
             </h3>
-            <h3 className="bg-blue-400 text-lg p-2 font-serif w-80 mt-5 sm:mt-10 ml-0 sm:mr-10 text-center sm:text-left hover:text-white cursor-pointer">
+            <h3 className="bg-blue-400 text-lg p-2 font-serif w-80 mt-5 sm:mt-10 ml-0 sm:mr-10 text-center sm:text-left hover:text-indigo-900 cursor-pointer">
               Undergraduate
             </h3>
-            <h3 className="bg-blue-400 text-lg p-2 font-serif w-80 mt-5 sm:mt-10 ml-0 sm:mr-10 text-center sm:text-left hover:text-white cursor-pointer">
+            <h3 className="bg-blue-400 text-lg p-2 font-serif w-80 mt-5 sm:mt-10 ml-0 sm:mr-10 text-center sm:text-left hover:text-indigo-900 cursor-pointer">
               Pre-Masters
             </h3>
           </div>
           <div className="flex flex-wrap justify-center sm:justify-start sm:w-full">
-            <h3 className="bg-blue-400 text-lg p-2 font-serif w-80 mt-5 sm:mt-10 ml-0 sm:mr-10 text-center sm:text-left hover:text-white cursor-pointer">
+            <h3 className="bg-blue-400 text-lg p-2 font-serif w-80 mt-5 sm:mt-10 ml-0 sm:mr-10 text-center sm:text-left hover:text-indigo-900 cursor-pointer">
               Postgraduate and Master's
             </h3>
-            <h3 className="bg-blue-400 text-lg p-2 font-serif w-80 mt-5 sm:mt-10 ml-0 sm:mr-10 text-center sm:text-left hover:text-white cursor-pointer">
+            <h3 className="bg-blue-400 text-lg p-2 font-serif w-80 mt-5 sm:mt-10 ml-0 sm:mr-10 text-center sm:text-left hover:text-indigo-900 cursor-pointer">
               PhD and Research Degrees
             </h3>
-            <h3 className="bg-blue-400 text-lg p-2 font-serif w-80 mt-5 sm:mt-10 ml-0 sm:mr-10 text-center sm:text-left hover:text-white cursor-pointer">
+            <h3 className="bg-blue-400 text-lg p-2 font-serif w-80 mt-5 sm:mt-10 ml-0 sm:mr-10 text-center sm:text-left hover:text-indigo-900 cursor-pointer">
               Two-year Degree
             </h3>
           </div>
           <div className="flex flex-wrap justify-center sm:justify-start sm:w-full">
-            <h3 className="bg-blue-400 text-lg p-2 font-serif w-80 mt-5 sm:mt-10 ml-0 sm:mr-10 text-center sm:text-left hover:text-white cursor-pointer">
+            <h3 className="bg-blue-400 text-lg p-2 font-serif w-80 mt-5 sm:mt-10 ml-0 sm:mr-10 text-center sm:text-left hover:text-indigo-900 cursor-pointer">
               English Courses
             </h3>
-            <h3 className="bg-blue-400 text-lg p-2 font-serif w-80 mt-5 sm:mt-10 ml-0 sm:mr-10 text-center sm:text-left hover:text-white cursor-pointer">
+            <h3 className="bg-blue-400 text-lg p-2 font-serif w-80 mt-5 sm:mt-10 ml-0 sm:mr-10 text-center sm:text-left hover:text-indigo-900 cursor-pointer">
               A-Levels
             </h3>
-            <h3 className="bg-blue-400 text-lg p-2 font-serif w-80 mt-5 sm:mt-10 ml-0 sm:mr-10 text-center sm:text-left hover:text-white cursor-pointer">
+            <h3 className="bg-blue-400 text-lg p-2 font-serif w-80 mt-5 sm:mt-10 ml-0 sm:mr-10 text-center sm:text-left hover:text-indigo-900 cursor-pointer">
               Colleges
             </h3>
           </div>
           <div className="flex flex-wrap justify-center sm:justify-start sm:w-full">
-            <h3 className="bg-blue-400 text-lg p-2 font-serif w-80 mt-5 sm:mt-10 ml-0 sm:mr-10 text-center sm:text-left hover:text-white cursor-pointer">
+            <h3 className="bg-blue-400 text-lg p-2 font-serif w-80 mt-5 sm:mt-10 ml-0 sm:mr-10 text-center sm:text-left hover:text-indigo-900 cursor-pointer">
               Study Abroad
             </h3>
-            <h3 className="bg-blue-400 text-lg p-2 font-serif w-80 mt-5 sm:mt-10 ml-0 sm:mr-10 text-center sm:text-left hover:text-white cursor-pointer">
+            <h3 className="bg-blue-400 text-lg p-2 font-serif w-80 mt-5 sm:mt-10 ml-0 sm:mr-10 text-center sm:text-left hover:text-indigo-900 cursor-pointer">
               Distance-Learning
             </h3>
-            <h3 className="bg-blue-400 text-lg p-2 font-serif w-80 mt-5 sm:mt-10 ml-0 text-center sm:text-left hover:text-white cursor-pointer">
+            <h3 className="bg-blue-400 text-lg p-2 font-serif w-80 mt-5 sm:mt-10 ml-0 text-center sm:text-left hover:text-indigo-900 cursor-pointer">
               Boarding Schools
             </h3>
           </div>
@@ -233,83 +229,79 @@ const StudyAus = () => {
         </h2>
         <div className="mt-10">
           <h2 className=" bg-blue-200 font-bold py-5 text-3xl flex justify-center items-center">
-           AUSTRALIA
+            Malayia
           </h2>
         </div>
         <div className="pl-20 pb-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:mr-10">
-          {/* uk university  */}
+          {/* malayisa university  */}
           <div className="">
-            <div className="max-w-sm rounded-lg overflow-hidden shadow-xl h-auto sm:h-[420px] w-auto sm:w-[400px] mt-5 sm:mt-12">
+            <div className="max-w-sm rounded-lg overflow-hidden shadow-xl  sm:h-[490px] w-auto sm:w-[400px] mt-5 sm:mt-12 hover:p-5">
               <img
-                src={aus}
+                src={heidelberg}
                 alt=""
                 className="w-full h-48 sm:h-[200px] object-cover rounded-t-lg"
               />
-              <div className="px-6 py-4">
-                <h1 className="font-bold text-blue-500 text-2xl text-center">
-                  Cambridge University
+              <div className="px-6 py-4 ">
+                <h1 className="font-bold text-blue-500 text-2xl text-center ">
+                  Heidelberg University
                 </h1>
                 <p className="text-center mt-3">
-                  Arts and Humanities
-                  <br />
-                  Biological Sciences
-                  <br />
-                  Clinical Medicine
-                  <br />
-                  Humanities and Social Sciences
-                  <br />
-                  Physical Sciences
-                  <br />
-                  Technology
+                  Founded in 1386 on instruction of Pope Urban VI, Heidelberg is
+                  Germany's oldest university and one of the world's oldest
+                  surviving universities; it was the third university
+                  established in the Holy Roman Empire after Vienna and Prague.
+                  Since 1899, it has been a coeducational institution.
                 </p>
               </div>
             </div>
           </div>
 
-          <div className="max-w-sm rounded-lg overflow-hidden shadow-xl h-auto sm:h-[420px] w-auto sm:w-[400px] mt-5 sm:mt-12">
+          <div className="max-w-sm rounded-lg overflow-hidden shadow-xl h-auto sm:h-[490px] w-auto sm:w-[400px] mt-5 sm:mt-12 hover:p-3">
             <img
-              src={unsw}
+              src={ludwigh}
               alt=""
               className="w-full h-48 sm:h-[200px] object-cover rounded-t-lg"
             />
             <div className="px-6 py-4">
               <h1 className="font-bold text-blue-500 text-2xl text-center">
-                London University
+                Ludwigh University
               </h1>
               <p className="text-center mt-3">
-                University of London International Programmes
-                <br />
-                Between 1946 and 1970, the university entered into 'schemes of
-                special relation' with university colleges in the Commonwealth
-                of Nations.
+                The Ludwig Maximilian University of Munich (simply University of
+                Munich or LMU; German: Ludwig-Maximilians-Universität München)
+                is a public research university in Munich, Germany. Originally
+                established as the University of Ingolstadt in 1472 by Duke
+                Ludwig IX of Bavaria-Landshut, it is Germany's sixth-oldest
+                university in continuous operation.
               </p>
             </div>
           </div>
 
           <div className=" ">
-            <div className="max-w-sm rounded-lg overflow-hidden shadow-xl h-auto sm:h-[420px] w-auto sm:w-[400px] mt-5 sm:mt-12">
+            <div className="max-w-sm rounded-lg overflow-hidden shadow-xl h-auto sm:h-[490px] w-auto sm:w-[400px] mt-5 sm:mt-12 hover:p-5">
               <img
-                src={vienna}
-                alt=""
+                src={freiburg}
+                alt0
                 className="w-full h-48 sm:h-[200px] object-cover rounded-t-lg"
               />
               <div className="px-6 py-4">
                 <h1 className="font-bold text-blue-500 text-2xl text-center">
-                  Oxford University
+                  Freiburg University
                 </h1>
                 <p className="text-center mt-3">
-                  In common with most British universities, prospective
-                  undergraduate students apply through the UCAS application
-                  system, but prospective applicants for the University of
-                  Oxford, along with those for medicine.
+                  The University of Freiburg (colloquially German: Uni
+                  Freiburg), officially the Albert Ludwig University of Freiburg
+                  (German: Albert-Ludwigs-Universität Freiburg), is a public
+                  research university located in Freiburg im Breisgau,
+                  Baden-Württemberg, Germany.
                 </p>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      {/* </div> */}
     </>
   );
 };
 
-export default StudyAus;
+export default StudyGer;

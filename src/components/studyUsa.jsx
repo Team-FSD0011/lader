@@ -233,7 +233,7 @@ const StudyUsa = () => {
         </h2>
         <div className="mt-10">
           <h2 className=" bg-blue-200 font-bold py-5 text-3xl flex justify-center items-center">
-            UK (United Kingdom)
+            USA
           </h2>
         </div>
         <div className="pl-20 pb-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:mr-10">
