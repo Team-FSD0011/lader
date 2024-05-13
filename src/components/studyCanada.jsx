@@ -1,10 +1,10 @@
 import React from "react";
-import ukGrp from "../component/image/s1.jpeg";
-import grp1 from "../component/image/grp1.png";
-import tornoto from "../component/image/tornonto canada.jpeg";
-import mcgill from "../component/image/mcgill cana.jpeg";
-import montreal from "../component/image/montreal canada.jpeg";
-import g2 from "../component/image/g2.png";
+import ukGrp from "../components/assets/s1.jpeg";
+import grp1 from "../components/assets/grp1.png";
+import tornoto from "../components/assets/tornonto canada.jpeg";
+import mcgill from "../components/assets/mcgill cana.jpeg";
+import montreal from "../components/assets/montreal canada.jpeg";
+import g2 from "../components/assets/g2.png";
 import { useState, useEffect } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';

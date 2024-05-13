@@ -1,11 +1,11 @@
 import React from "react";
 
-import ukGrp from "../component/image/s1.jpeg";
-import grp1 from "../component/image/grp1.png";
-import heidelberg from "../component/image/heidelberg ger.jpeg";
-import ludwigh from "../component/image/ludwig ger.jpeg";
-import freiburg from "../component/image/friburg swizer.jpeg";
-import g2 from "../component/image/g2.png";
+import ukGrp from "../components/assets/s1.jpeg";
+import grp1 from "../components/assets/grp1.png";
+import heidelberg from "../components/assets/heidelberg ger.jpeg";
+import ludwigh from "../components/assets/ludwig ger.jpeg";
+import freiburg from "../components/assets/friburg swizer.jpeg";
+import g2 from "../components/assets/g2.png";
 import { useState, useEffect } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';

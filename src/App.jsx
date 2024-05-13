@@ -17,6 +17,13 @@ import BlogsCompNext from './components/Blogs/BlogsCompNext';
 import BlogsComp from './components/Blogs/BlogsComp';
 // import NewsNext from './components/news';
 import StudyAus from './components/studyAus';
+import StudyUk from './components/studyUk';
+import StudyUsa from './components/studyUsa';
+import StudyCanada from './components/studyCanada';
+import StudyGer from './components/studyGer';
+import StudySing from './components/studySing';
+import StudyMala from './components/studyMala';
+import StudySwizer from './components/studySwizer';
 import Datascience from './components/datascience';
 import Fullstack from './components/Fullstack';
 
@@ -45,6 +52,11 @@ function App() {
       <Route path="/studyAUSTRALIA" element={<StudyAus/>}/>
       <Route path="/studyUK" element={<StudyUk/>}/>
       <Route path="/studyUSA" element={<StudyUsa/>}/>
+      <Route path="/studyGERMANY" element={<StudyGer/>}/>
+      <Route path="/studyMALAYSIA" element={<StudyMala/>}/>
+      <Route path="/studySINGAPORE" element={<StudySing/>}/>
+      <Route path="/studySWIZERLAND" element={<StudySwizer/>}/>
+      <Route path="/studyCANADA" element={<StudyCanada/>}/>
       <Route path="/immigration" element={<Immigration/>}/>
       <Route path="/blog" element={<Blog/>}/>
       <Route path="/Blogs/:id" element={<BlogsDetails/>}/>

@@ -1,13 +1,13 @@
 import React from "react";
 
-import ukGrp from "../component/image/s1.jpeg";
-import grp1 from "../component/image/grp1.png";
-import bern from "../component/image/bern swizer.jpeg";
-import friburg from "../component/image/friburg swizer.jpeg";
-import geneva from "../component/image/geneva swizer.jpeg";
-import s5 from '../component/image/s5.png';
-import s6 from '../component/image/s6.png';
-import s3 from '../component/image/s3.png';
+import ukGrp from "../components/assets/s1.jpeg";
+import grp1 from "../components/assets/grp1.png";
+import bern from "../components/assets/bern swizer.jpeg";
+import friburg from "../components/assets/friburg swizer.jpeg";
+import geneva from "../components/assets/geneva swizer.jpeg";
+import s5 from '../components/assets/s5.png';
+import s6 from '../components/assets/s6.png';
+import s3 from '../components/assets/s3.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useState,useEffect } from 'react';

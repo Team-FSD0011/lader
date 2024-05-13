@@ -1,19 +1,19 @@
 import React from 'react';
 
-import ukGrp from '../component/image/s1.jpeg';
-import grp1 from '../component/image/grp1.png';
-import cambridge from '../component/image/cambridge uk.jpeg';
-import london from '../component/image/london uk.jpeg';
-import oxford from '../component/image/oxford uk.jpeg';
-import uk2 from '../component/image/uk2.png';
-import lon2 from '../component/image/lon2.png';
-import uk3 from '../component/image/uk3.png';
+import ukGrp from '../components/assets/s1.jpeg';
+import grp1 from '../components/assets/grp1.png';
+import cambridge from '../components/assets/cambridge uk.jpeg';
+import london from '../components/assets/london uk.jpeg';
+import oxford from '../components/assets/oxford uk.jpeg';
+import uk2 from '../components/assets/uk2.png';
+import lon2 from '../components/assets/lon2.png';
+import uk3 from '../components/assets/uk3.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 import { useState,useEffect } from 'react';
 
-const studyUk = () => {
+const StudyUk = () => {
   const [imageindex, setimageindes] = useState(0)
     const imagearray = [uk2, lon2,uk3]
   
@@ -200,4 +200,4 @@ const studyUk = () => {
   )
 }
 
-export default studyUk;
+export default StudyUk;

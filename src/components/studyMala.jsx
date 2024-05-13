@@ -1,11 +1,11 @@
 import React from "react";
-import nilai from "../component/image/nilai.jpg";
-import utm from "../component/image/UTM.jpg";
-import ums from "../component/image/ums.jpg";
-import grp1 from "../component/image/grp1.png";
-import utm2 from "../component/image/utm2.png";
-import mala2 from "../component/image/mala2.png";
-import ukGrp from "../component/image/s1.jpeg";
+import nilai from "../components/assets/nilai.jpg";
+import utm from "../components/assets/UTM.jpg";
+import ums from "../components/assets/ums.jpg";
+import grp1 from "../components/assets/grp1.png";
+import utm2 from "../components/assets/utm2.png";
+import mala2 from "../components/assets/mala2.png";
+import ukGrp from "../components/assets/s1.jpeg";
 import { useState, useEffect } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
