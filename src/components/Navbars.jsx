@@ -13,36 +13,36 @@ import { FaCaretDown } from "react-icons/fa";
 const dropdownLinks = [
   {
     name: "Study in UK",
-    link: "/studyAus",
+    link: "/studyUK",
     
   },
   {
     name: "Study in AUSTRALIA",
-    link: "/studyinAUSTRALIA",
+    link: "/studyAUSTRALIA",
   },
   {
     name: "Study in CANADA",
-    link: "/studyinCANADA",
+    link: "/studyCANADA",
   },
   {
     name: "Study in USA",
-    link: "/studyinUSA",
+    link: "/studyUSA",
   },
   {
     name: "Study in SINGAPORE",
-    link: "/studyinSINGAPORE",
+    link: "/studySINGAPORE",
   },
   {
     name: "Study in SWIZERLAND",
-    link: "/studyinSWIZERLAND",
+    link: "/studySWIZERLAND",
   },
   {
     name: "Study in GERMANY",
-    link: "/studyinGERMANY",
+    link: "/studyGERMANY",
   },
   {
-    name: "Study in BELGIUM",
-    link: "/studyinBELGIUM",
+    name: "Study in Malaysia",
+    link: "/studyMALAYSIA",
   },
 ];
 
