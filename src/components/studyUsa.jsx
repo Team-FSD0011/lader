@@ -11,7 +11,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useState, useEffect } from "react";
 
-const StudyAus = () => {
+const StudyUsa = () => {
   const [imageindex, setimageindes] = useState(0);
   const imagearray = [unsw3, v2, aus01];
 
@@ -54,7 +54,7 @@ const StudyAus = () => {
                   <h6 data-aos="fade-up">IN</h6>
                 </div>
                 <div className="col-lg-12 heading text-center mt-10 text-blue-500 font-bold text-7xl">
-                  <h1 data-aos="fade-up">AUSTRALIA!!!</h1>
+                  <h1 data-aos="fade-up">USA!!!</h1>
                 </div>
                 {/* <div className="col-lg-12 heading text-center text-white">
                         <h3 data-aos="fade-up">front-end developer</h3>
@@ -73,7 +73,7 @@ const StudyAus = () => {
             </div>
             <div className="sm:mr-4 sm:mt-0">
               <h2 className="text-blue-500 flex justify-center mr-40 font-bold text-3xl font-italic  sm:mt-10 text-center sm:text-left font-serif">
-                Study in AUSTRALIA
+                Study in USA
               </h2>
               <p className="text-lg mt-3 pl-20  text-justify sm:mt-5 text-center sm:text-left">
                 At First-Ladder, we take pride in offering a comprehensive
@@ -93,7 +93,7 @@ const StudyAus = () => {
         </div>
 
         <h2 className="text-blue-500 font-bold text-3xl font-italic mt-5 sm:mt-10 text-center font-serif">
-          Australia Study Options
+          USA Study Options
         </h2>
 
         <div className="flex flex-col sm:flex-row pl-10">
@@ -312,4 +312,4 @@ const StudyAus = () => {
   );
 };
 
-export default StudyAus;
+export default StudyUsa;
