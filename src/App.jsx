@@ -16,10 +16,9 @@ import Navbars from './components/Navbars'
 import BlogsCompNext from './components/Blogs/BlogsCompNext';
 import BlogsComp from './components/Blogs/BlogsComp';
 // import NewsNext from './components/news';
-
-
 import StudyAus from './components/studyAus';
-
+import Datascience from './components/datascience';
+import Fullstack from './components/Fullstack';
 
 // import ETA from './components/enrolledAgent';
 
@@ -38,22 +37,34 @@ function App() {
     <Navbars/>
 
     <Routes>   
-      <Route path="/" element={<Home/>}/>
+      <Route index Component={Home}/>
       <Route path="/aboutUs" element={<AboutUs/>}/>
       <Route path="/trainingPrograms" element={<TrainingPrograms/>}/>
       <Route path="/enrolledAgent" element={<ETA/>}/>
       <Route path="/studyAbroad" element={<StudyAbroad/>}/>
-      <Route path="/studyinAUSTRALIA" element={<StudyAus/>}/>
+      <Route path="/studyAUSTRALIA" element={<StudyAus/>}/>
+      <Route path="/studyUK" element={<StudyUk/>}/>
+      <Route path="/studyUSA" element={<StudyUsa/>}/>
       <Route path="/immigration" element={<Immigration/>}/>
       <Route path="/blog" element={<Blog/>}/>
       <Route path="/Blogs/:id" element={<BlogsDetails/>}/>
       <Route path="/contactUs" element={<ContactUs/>}/>
       <Route path="/blognext" element={<BlogsCompNext/>}/>
 
+
       <Route path="/blogns" element={<BlogsComp/>}/>
       {/* <Route path="/news" element={<NewsNext/>}/> */}
 
       <Route path="/blog" element={<BlogsComp/>}/>
+
+      <Route path="/blogns" element={<BlogsComp/>}/>
+      {/* <Route path="/news" element={<NewsNext/>}/> */}
+      <Route path="/blog" element={<BlogsComp/>}/>
+      <Route path="/Datascience" element={<Datascience/>}/>
+      <Route path="/Fullstack" element={<Fullstack/>}/>
+
+
+
     </Routes>
     <Footer/>
     </>

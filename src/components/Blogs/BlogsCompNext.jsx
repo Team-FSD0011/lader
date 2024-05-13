@@ -76,12 +76,12 @@ const BlogsCompNext = () => {
          </div>
          <div className='flex flex-row ml-[1000px]'>
   <Link to="/blog">
-    <button className='mb-5 inline-block bg-sky-500 text-white hover:bg-transparent hover:border-sky-500 hover:text-sky-500 font-size-2 border border-sky-500 px-3 py-1 ml-0 mt-6'>
+    <button className='mb-5 inline-block bg-sky-500 text-white hover:bg-transparent hover:border-sky-500 hover:text-sky-500 font-size-2 border border-sky-500 px-3 py-1 ml-20 mt-6'>
       Previous
     </button>
   </Link>
   <Link to="/blognext">
-    <button className='mb-5 inline-block bg-sky-500 text-white hover:bg-transparent hover:border-sky-500 hover:text-sky-500 font-size-2 border border-sky-500 px-3 py-1 ml-2 mt-6'>
+    <button className='mb-5 inline-block bg-sky-500 text-white hover:bg-transparent hover:border-sky-500 hover:text-sky-500 font-size-2 border border-sky-500 px-3 py-1 ml-4 mt-6'>
       Next
     </button>
   </Link>
