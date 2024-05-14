@@ -23,7 +23,7 @@ const StudyAbroad = () =>
       </div>
       <div className="px-4 md:px-0 md:max-w-2xl md:mx-auto">
         <h2 className="text-blue-500 font-bold text-2xl md:text-3xl text-center mt-5 font-serif">
-          Study Abroad / Overseas Education
+          Study Abroad / Overseas Education vicky
         </h2>
         <h4 className="mt-5 text-lg md:text-base text-black text-center">
           Are you looking for reliable immigration consultants to handle your
