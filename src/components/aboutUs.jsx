@@ -5,6 +5,7 @@ import missionvision from '../components/assets/missionvision.png';
 import n1 from "./assets/n1.jpeg";
 import studentsimag4 from "./assets/studentsimag4.png";
 import aaaasd from "./assets/aaaasd.jpg";
+import { Link } from "react-router-dom";
 
 
 const AboutUs = () => {
@@ -80,6 +81,19 @@ const AboutUs = () => {
         </div>
 
       </div>
+      <div className="flex flex-col justify-center items-center  mt-4 ml-9 mb-4 mr-9 bg-gray-100 rounded-lg shadow-lg md:scroll-sm">
+      <p className="text-md text-gray-700 mt-12 mb-2 text-center">
+        We are a leading global career consulting firm, providing innovative and customized solutions to students, job seekers and employers.
+      </p>
+      <p className="text-md text-gray-700 mb-4 text-center">
+        Our process starts with developing an accurate profile of each candidate and using that as our database to match them with the available opportunities in terms of education and jobs.
+      </p>
+      <Link to="/contactUs">
+        <button className="text-md font-semibold text-white bg-sky-500 py-3 px-8 mb-4 rounded-lg shadow-lg hover:bg-sky-600">
+          Know More
+        </button>
+      </Link>
+    </div>
           </>
   )
 }
