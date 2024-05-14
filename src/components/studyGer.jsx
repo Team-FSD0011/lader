@@ -59,7 +59,7 @@ const StudyGer = () => {
                 </div>
             </div>
         {/* </div> */}
-          <div className="flex flex-col sm:flex-row items-center">
+          <div className="flex flex-col sm:flex-row items-center  bg-blue-50 h-[250px]">
             <div className="sm:mr-4 pt-10 pb-5">
               <img
                 src={ukGrp}
@@ -68,7 +68,7 @@ const StudyGer = () => {
               />
             </div>
             <div className="sm:mr-4 sm:mt-0">
-              <h2 className="text-blue-500 flex justify-center mr-40 font-bold text-3xl font-italic  sm:mt-10 text-center sm:text-left font-serif">
+              <h2 className="text-blue-500 flex justify-center mr-40 font-bold text-3xl font-italic   text-center sm:text-left font-serif">
                 Study in GERMANY
               </h2>
               <p className="text-lg mt-3 pl-20  text-justify sm:mt-5 text-center sm:text-left">

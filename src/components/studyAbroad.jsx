@@ -11,6 +11,7 @@ import swizer from "../components/assets/swizer.jpg";
 import germany from "../components/assets/germany.jpeg";
 import belgium from "../components/assets/belgium.jpeg";
 import malaysia from "../components/assets/malaysia.jpeg";
+import { Link } from "react-router-dom";
 
 
 const StudyAbroad = () => 
@@ -104,17 +105,28 @@ const StudyAbroad = () =>
         ))}
       </div>
 
+      <div className="flex flex-col justify-center items-center mb-4 ml-9 mt-10 mr-9 bg-gray-100 rounded-lg shadow-lg md:scroll-sm">
+      <p className="text-4xl text-gray-700 mt-5 mb-2 text-center">
+      Need a Consultation?      </p>
+      <p className="text-md text-gray-700 mb-4 text-center">
+      Reach out to us today and book an appointment for a free counselling session to clarify all your queries with our team.      </p>
+      <Link to="/contactUs">
+        <button className="text-md font-semibold text-white bg-sky-500 py-3 px-8 mb-4 rounded-lg shadow-lg hover:bg-sky-600">
+        Make On Appointment
+        </button>
+      </Link>
+    </div>
 
 
 
       {/* CHANGE YOUR LIFE  */}
-      <div class="text-blue-500 font-bold text-3xl text-center mt-20 font-serif md:mt-10 md:text-4xl">
+      {/* <div class="text-blue-500 font-bold text-3xl text-center mt-20 font-serif md:mt-10 md:text-4xl">
         <h2>Change Your Life Now!</h2>
         <p class="text-black mt-5">Reach out to us</p>
       </div>
 
       {/* SUBMIT */}
-      <div class="bg-gray-100 mt-10 md:mt-5 h-80">
+      {/* <div class="bg-gray-100 mt-10 md:mt-5 h-80">
         <form action="" class="flex flex-col items-center">
           <div class="flex flex-col md:flex-row justify-center items-center">
             <label for="name" class="ml-5 md:ml-20 mt-5 md:mt-10 p-2 text-2xl font-serif">Name</label>
@@ -141,8 +153,8 @@ const StudyAbroad = () =>
               <input type="button" value="Submit" class="mt-2 text-2xl" />
             </div>
           </div>
-        </form>
-      </div>
+        </form> */} 
+      {/* </div> */}
 
       <br />
     </>

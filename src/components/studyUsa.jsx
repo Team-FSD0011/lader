@@ -38,7 +38,7 @@ const StudyUsa = () => {
             {/* <img style={{ width: "100%" }} src={imagearray[imageindex]} alt="" className='scroll-smooth w-full h-[300px]' /> */}
           </div>
 
-          <div className="container-fluid bg-img" id="home">
+          <div className="container-fluid " id="home">
             <div className="container home relative">
                <img
                
@@ -62,8 +62,8 @@ const StudyUsa = () => {
               </div>
             </div>
           </div>
-          <div className="bg-blue-50 h-60">
-          <div className="flex">
+          <div className=" h-60">
+          <div className="flex bg-blue-50 mt-4 h-[250px]">
             <div className="sm:mr-4 pt-10 pb-5">
               <img
                 src={ukGrp}
@@ -239,7 +239,7 @@ const StudyUsa = () => {
         <div className="pl-20 pb-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:mr-10">
           {/* uk university  */}
           <div className="">
-            <div className="max-w-sm rounded-lg overflow-hidden shadow-xl h-auto sm:h-[420px] w-auto sm:w-[400px] mt-5 sm:mt-12">
+            <div className="max-w-sm rounded-lg overflow-hidden shadow-xl h-auto hover:p-3 sm:h-[420px] w-auto sm:w-[400px] mt-5 sm:mt-12">
               <img
                 src={aus}
                 alt=""
@@ -266,7 +266,7 @@ const StudyUsa = () => {
             </div>
           </div>
 
-          <div className="max-w-sm rounded-lg overflow-hidden shadow-xl h-auto sm:h-[420px] w-auto sm:w-[400px] mt-5 sm:mt-12">
+          <div className="max-w-sm rounded-lg overflow-hidden shadow-xl hover:p-3 h-auto sm:h-[420px] w-auto sm:w-[400px] mt-5 sm:mt-12">
             <img
               src={unsw}
               alt=""
@@ -287,7 +287,7 @@ const StudyUsa = () => {
           </div>
 
           <div className=" ">
-            <div className="max-w-sm rounded-lg overflow-hidden shadow-xl h-auto sm:h-[420px] w-auto sm:w-[400px] mt-5 sm:mt-12">
+            <div className="max-w-sm rounded-lg overflow-hidden shadow-xl h-auto sm:h-[420px] w-auto sm:w-[400px] mt-5 sm:mt-12 hover:p-3">
               <img
                 src={vienna}
                 alt=""

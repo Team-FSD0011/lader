@@ -32,7 +32,7 @@ const StudyCanada = () => {
   return (
     <>
       <div className="sm:mt">
-        <div className="bg-blue-50 pb-5">
+        <div className=" pb-5">
           <div>
             {/* <img style={{ width: "100%" }} src={uk} alt="" className='h-64 opacity-80' /> */}
             {/* <img
@@ -68,7 +68,7 @@ const StudyCanada = () => {
                 </div>
             </div>
         </div>
-          <div className="flex flex-col sm:flex-row items-center">
+          <div className="flex flex-col sm:flex-row items-center bg-blue-50 mt-4 h-[300px]">
             <div className="sm:mr-4 pt-10 pb-5">
               <img
                 src={ukGrp}
@@ -77,7 +77,7 @@ const StudyCanada = () => {
               />
             </div>
             <div className="sm:mr-4 sm:mt-0">
-              <h2 className="text-blue-500 flex justify-center mr-40 font-bold text-3xl font-italic  sm:mt-10 text-center sm:text-left font-serif">
+              <h2 className="text-blue-500 flex justify-center mr-40 font-bold text-3xl font-italic   text-center sm:text-left font-serif">
                 Study in CANADA
               </h2>
               <p className="text-lg mt-3 pl-20  text-justify sm:mt-5 text-center sm:text-left">

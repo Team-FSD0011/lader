@@ -1,22 +1,19 @@
-
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import logo from "../components/assets/logo.png";
 import { HiMenuAlt1, HiMenuAlt3 } from "react-icons/hi";
 import { FaPhoneSquareAlt } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
-import {FaInstagram } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
 import ResponsiveMenu from "./ResponsiveMenu";
 import { FaCaretDown } from "react-icons/fa";
 import { RiFacebookBoxLine } from "react-icons/ri";
 import { CiLinkedin } from "react-icons/ci";
 
-
 const dropdownLinks = [
   {
     name: "Study in UK",
     link: "/studyAbroad/studyUK",
-    
   },
   {
     name: "Study in AUSTRALIA",
@@ -120,11 +117,20 @@ const Navbar = () => {
 
                 <li className="py-4 relative group cursor-pointer hover:text-sky-500">
                   <div className="dropdown flex items-center">
-                    <span ><NavLink activeClassName="active" to="/studyAbroad" onClick={()=>window.scrollTo(0,0)}>Study Abroad</NavLink></span>
+                    <span>
+                      <NavLink
+                        activeClassName="active"
+                        to="/studyAbroad"
+                        onClick={() => window.scrollTo(0, 0)}
+                      >
+                        Study Abroad
+                      </NavLink>
+                    </span>
                     <span>
                       <FaCaretDown className="transition-all duration-200 group-hover:rotate-180" />
                     </span>
                   </div>
+
                 <div className="absolute -left-9 z-[9999] hidden group-hover:block shadow-md text-black bg-white p-2">
       <ul className="w-64 h-70">
         {dropdownLinks.map((data, index) => {
@@ -141,6 +147,25 @@ const Navbar = () => {
         })}
       </ul>
     </div>
+
+                  <div className="absolute -left-9 z-[9999] hidden group-hover:block shadow-md text-black bg-white p-2">
+                    <ul className="w-64 h-70">
+                      {" "}
+                      {/* Adjust width and height here */}
+                      {dropdownLinks.map((data) => {
+                        return (
+                          <li key={data.name}>
+                            <Link to=   {data.link}  className="inline-block w-full rounded-md p-2 hover:bg-sky-500 hover:text-white">
+                             
+                              {data.name}
+                              </Link>
+                            
+                            
+                          </li>
+                        );
+                      })}
+                    </ul>
+                  </div>
                 </li>
 
                 <li className="py-4 hover:text-sky-500">
@@ -202,4 +227,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
