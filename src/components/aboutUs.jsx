@@ -13,7 +13,7 @@ const AboutUs = () => {
   return (
     <>
       <div className="relative">
-        <img src={lkjhj} alt="" className=" h-full ounded-xl object-cover opacity-90 w-full" />
+        <img src={lkjhj} alt="" className=" h-full rounded-xl object-cover opacity-90 w-full" />
         <div className="absolute inset-0 text-center font-bold text-5xl md:mt-56">
           <h1 className="font-serif block rounded-lg p-2 text-white pt-30">ABOUT US</h1>
         </div>
@@ -21,8 +21,8 @@ const AboutUs = () => {
       <div className="flex flex-col md:flex-row">
         <img src={welcome1} alt="" className="md:ml-14 h-64 w-80 rounded-xl md:mt-20" />
         <div className="md:ml-4 md:mr-10">
-          <h1 className="text-3xl font-bold text-center italic md:mt-10 text-sky-500">Welcome to Fisrt Ladder</h1>
-          <p className="text-lg md:mt-5 md:mr-20 md:mr-10 md:ml-20 font-serif text-justify">First-Ladder is an International Education, Immigration, and Recruitment Consulting Company headquartered in Chennai, India. We are a leading global career consulting firm, providing innovative and customized solutions to students, job seekers, and employers. Our process starts with developing an accurate profile of each candidate and using that as our database to match them with the available opportunities in terms of education and jobs. Our aim is to help students and professionals from all over the world to find opportunities that match their requirements, skills, interests, and aspirations, so that they can pursue their while achieving higher returns on investment.</p>
+          <h1 className="text-3xl font-bold text-center italic md:mt-10 text-sky-500">Welcome to First Ladder</h1>
+          <p className="text-lg md:mt-5 md:mr-20  md:ml-20 font-serif text-justify">First-Ladder is an International Education, Immigration, and Recruitment Consulting Company headquartered in Chennai, India. We are a leading global career consulting firm, providing innovative and customized solutions to students, job seekers, and employers. Our process starts with developing an accurate profile of each candidate and using that as our database to match them with the available opportunities in terms of education and jobs. Our aim is to help students and professionals from all over the world to find opportunities that match their requirements, skills, interests, and aspirations, so that they can pursue their while achieving higher returns on investment.</p>
         </div>
       </div>
 
@@ -42,7 +42,7 @@ const AboutUs = () => {
 
 
 
-      <div className="grid grid-cols-1 flex md:grid-cols-3 gap-8 mt-16 ml-14 mr-9 md:cursor-pointer md:scroll-sm">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16 ml-14 mr-9 md:cursor-pointer md:scroll-sm">
         <div className="flex flex-col items-center rounded-lg p-4 shadow-md max-w-xs">
           <img
             src={n1}
