@@ -6,6 +6,7 @@ import vision from '../components/assets/vision.jpg';
 import n1 from "./assets/n1.jpeg";
 import studentsimag4 from "./assets/studentsimag4.png";
 import aaaasd from "./assets/aaaasd.jpg";
+import { Link } from "react-router-dom";
 
 const AboutUs = () => {
 
@@ -24,24 +25,6 @@ const AboutUs = () => {
           <p className="text-lg md:mt-5 md:mr-4 md:mr-10 md:ml-5 font-serif text-justify">First-Ladder is an International Education, Immigration, and Recruitment Consulting Company headquartered in Chennai, India. We are a leading global career consulting firm, providing innovative and customized solutions to students, job seekers, and employers. Our process starts with developing an accurate profile of each candidate and using that as our database to match them with the available opportunities in terms of education and jobs. Our aim is to help students and professionals from all over the world to find opportunities that match their requirements, skills, interests, and aspirations, so that they can pursue their while achieving higher returns on investment.</p>
         </div>
       </div>
-
-    {/* return (
-        <>
-            <div className="relative">
-                <img src={grpp} alt="" className=" h-full rounded-xl  opacity-90 w-full" />
-                <div className="absolute inset-0 text-center font-bold text-5xl md:mt-56">
-                    <h1 className="font-serif block rounded-lg p-2 text-white pt-30">ABOUT US</h1>
-                </div>
-            </div>
-            <div className="flex flex-col md:flex-row">
-                <img src={welcome1} alt="" className="md:ml-14 h-64 w-80 rounded-xl md:mt-20" />
-                <div className="md:ml-4 md:mr-10">
-                    <h1 className="text-3xl font-bold text-center italic md:mt-10 text-sky-500">Welcome to Fisrt Ladder</h1>
-                    <p className="text-lg md:mt-5 md:mr-4  md:ml-5 font-serif text-justify">First-Ladder is an International Education, Immigration, and Recruitment Consulting Company headquartered in Chennai, India. We are a leading global career consulting firm, providing innovative and customized solutions to students, job seekers, and employers. Our process starts with developing an accurate profile of each candidate and using that as our database to match them with the available opportunities in terms of education and jobs. Our aim is to help students and professionals from all over the world to find opportunities that match their requirements, skills, interests, and aspirations, so that they can pursue their while achieving higher returns on investment.</p>
-                </div>
-            </div> */}
-
-
       <div className="bg-grey-400">
         <div className="flex">
           <img src={vision} alt="" className="md:ml-14 h-64 w-80 rounded-xl md:mt-20" />
@@ -56,18 +39,6 @@ const AboutUs = () => {
         </div>
 
       </div>
-      {/* <div className="flex justify-center">
-        <Link to="/news">
-          <button className=" bg-sky-500 p-2 rounded-lg pl-2">NEWS</button>
-        </Link>
-
-        <h1 className="ml-5">&</h1>
-        <button className="ml-5 bg-sky-500 rounded-lg pl-2">EVENTS</button>
-      </div>  */}
-    
-     
-      
-       
   <div className="grid grid-cols-1 flex md:grid-cols-3 gap-8 mt-16 ml-14 mr-9 md:cursor-pointer md:scroll-sm">
     <div className="flex flex-col items-center rounded-lg p-4 shadow-md max-w-xs">
       <img
@@ -104,6 +75,19 @@ const AboutUs = () => {
         </div>
        
       </div>
+      <div className="flex flex-col justify-center items-center  mt-4 ml-9 mb-4 mr-9 bg-gray-100 rounded-lg shadow-lg md:scroll-sm">
+      <p className="text-md text-gray-700 mt-12 mb-2 text-center">
+        We are a leading global career consulting firm, providing innovative and customized solutions to students, job seekers and employers.
+      </p>
+      <p className="text-md text-gray-700 mb-4 text-center">
+        Our process starts with developing an accurate profile of each candidate and using that as our database to match them with the available opportunities in terms of education and jobs.
+      </p>
+      <Link to="/contactUs">
+        <button className="text-md font-semibold text-white bg-sky-500 py-3 px-8 mb-4 rounded-lg shadow-lg hover:bg-sky-600">
+          Know More
+        </button>
+      </Link>
+    </div>
       
       
       

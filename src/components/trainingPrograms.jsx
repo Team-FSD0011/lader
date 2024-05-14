@@ -153,7 +153,7 @@ const TrainingPrograms = () => {
       </div>
 
     {/* Key features section */}
-<div className="mt-20 flex justify-center">
+<div className="mt-16 mb-4 flex justify-center">
   <fieldset className="border border-4 border-sky-300 rounded-3xl w-full max-w-6xl p-8">
     <legend className="text-4xl font-bold text-sky-400 font-mono font-semibold">Key Features</legend>
     <div className="flex flex-col sm:flex-row lg:flex-row justify-evenly items-center mt-8 space-y-8 sm:space-y-0">
