@@ -11,7 +11,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useState, useEffect } from "react";
 
-const StudyAus = () => {
+const StudyUsa = () => {
   const [imageindex, setimageindes] = useState(0);
   const imagearray = [unsw3, v2, aus01];
 
@@ -31,7 +31,7 @@ const StudyAus = () => {
 
   return (
     <>
-      <div className="sm:mt ">
+      <div className="sm:mt">
       
           <div>
             {/* <img style={{ width: "100%" }} src={aus1} alt="" className='h-64 ' /> */}
@@ -39,22 +39,22 @@ const StudyAus = () => {
           </div>
 
           <div className="container-fluid bg-img" id="home">
-            <div className="container home relative ">
+            <div className="container home relative">
                <img
                
                 src={imagearray[imageindex]}
                 alt=""
-                className="scroll-smooth  h-[400px] w-full relative object-cover mt-20"
+                className="scroll-smooth  h-[400px] w-full relative object-cover mt-28"
               />
               <div className="row absolute  inset-0">
-                <div className="col-lg-12 heading text-center text-white text-7xl mt-20">
+                <div className="col-lg-12 heading text-center text-white text-7xl ">
                   <h6 data-aos="fade-up">STUDY </h6>
                 </div>
                 <div className="col-lg-12 heading text-center text-white mt-5">
                   <h6 data-aos="fade-up">IN</h6>
                 </div>
                 <div className="col-lg-12 heading text-center mt-10 text-blue-500 font-bold text-7xl">
-                  <h1 data-aos="fade-up">AUSTRALIA!!!</h1>
+                  <h1 data-aos="fade-up">USA!!!</h1>
                 </div>
                 {/* <div className="col-lg-12 heading text-center text-white">
                         <h3 data-aos="fade-up">front-end developer</h3>
@@ -73,7 +73,7 @@ const StudyAus = () => {
             </div>
             <div className="sm:mr-4 sm:mt-0">
               <h2 className="text-blue-500 flex justify-center mr-40 font-bold text-3xl font-italic  sm:mt-10 text-center sm:text-left font-serif">
-                Study in AUSTRALIA
+                Study in USA
               </h2>
               <p className="text-lg mt-3 pl-20  text-justify sm:mt-5 text-center sm:text-left">
                 At First-Ladder, we take pride in offering a comprehensive
@@ -93,7 +93,7 @@ const StudyAus = () => {
         </div>
 
         <h2 className="text-blue-500 font-bold text-3xl font-italic mt-5 sm:mt-10 text-center font-serif">
-          Australia Study Options
+          USA Study Options
         </h2>
 
         <div className="flex flex-col sm:flex-row pl-10">
@@ -233,7 +233,7 @@ const StudyAus = () => {
         </h2>
         <div className="mt-10">
           <h2 className=" bg-blue-200 font-bold py-5 text-3xl flex justify-center items-center">
-           AUSTRALIA
+            USA
           </h2>
         </div>
         <div className="pl-20 pb-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:mr-10">
@@ -312,4 +312,4 @@ const StudyAus = () => {
   );
 };
 
-export default StudyAus;
+export default StudyUsa;

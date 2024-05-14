@@ -13,36 +13,36 @@ import { FaCaretDown } from "react-icons/fa";
 const dropdownLinks = [
   {
     name: "Study in UK",
-    link: "/studyAus",
+    link: "/studyUK",
     
   },
   {
     name: "Study in AUSTRALIA",
-    link: "/studyinAUSTRALIA",
+    link: "/studyAUSTRALIA",
   },
   {
     name: "Study in CANADA",
-    link: "/studyinCANADA",
+    link: "/studyCANADA",
   },
   {
     name: "Study in USA",
-    link: "/studyinUSA",
+    link: "/studyUSA",
   },
   {
     name: "Study in SINGAPORE",
-    link: "/studyinSINGAPORE",
+    link: "/studySINGAPORE",
   },
   {
     name: "Study in SWIZERLAND",
-    link: "/studyinSWIZERLAND",
+    link: "/studySWIZERLAND",
   },
   {
     name: "Study in GERMANY",
-    link: "/studyinGERMANY",
+    link: "/studyGERMANY",
   },
   {
-    name: "Study in BELGIUM",
-    link: "/studyinBELGIUM",
+    name: "Study in Malaysia",
+    link: "/studyMALAYSIA",
   },
 ];
 
@@ -83,8 +83,8 @@ const Navbar = ({ handleOrderPopup }) => {
               </Link>
             </div>
             {/* Navlinks section */}
-            <div className="md:hidden block">
-              {/* Mobile Hamburger Menu */}
+            {/* <div className="md:hidden block">
+              Mobile Hamburger Menu
               {showMenu ? (
                 <HiMenuAlt1
                   onClick={toggleMenu}
@@ -98,7 +98,7 @@ const Navbar = ({ handleOrderPopup }) => {
                   size={30}
                 />
               )}
-            </div>
+            </div> */}
             <div className="hidden md:block">
               {/* Navigation Links for medium and larger screens */}
               <ul className="flex items-center gap-6">
@@ -193,6 +193,22 @@ const Navbar = ({ handleOrderPopup }) => {
                 Explore Now
               </button>
             </Link>
+            <div className="md:hidden block">
+              {/* Mobile Hamburger Menu */}
+              {showMenu ? (
+                <HiMenuAlt1
+                  onClick={toggleMenu}
+                  className="cursor-pointer transition-all"
+                  size={30}
+                />
+              ) : (
+                <HiMenuAlt3
+                  onClick={toggleMenu}
+                  className="cursor-pointer transition-all"
+                  size={30}
+                />
+              )}
+            </div>
           </div>
         </div>
         <ResponsiveMenu setShowMenu={setShowMenu} showMenu={showMenu} />
@@ -202,3 +218,4 @@ const Navbar = ({ handleOrderPopup }) => {
 };
 
 export default Navbar;
+

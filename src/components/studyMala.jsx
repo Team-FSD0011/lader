@@ -1,19 +1,19 @@
 import React from "react";
-import ukGrp from "../components/assets/s1.jpeg";
+import nilai from "../components/assets/nilai.jpg";
+import utm from "../components/assets/UTM.jpg";
+import ums from "../components/assets/ums.jpg";
 import grp1 from "../components/assets/grp1.png";
-import aus from "../components/assets/aus aus.jpeg";
-import unsw from "../components/assets/unsw aus.jpeg";
-import vienna from "../components/assets/vienna aus.jpeg";
-import v2 from "../components/assets/v2.png";
-import unsw3 from "../components/assets/unsw3.png";
-import aus01 from "../components/assets/aus01.png";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import utm2 from "../components/assets/utm2.png";
+import mala2 from "../components/assets/mala2.png";
+import ukGrp from "../components/assets/s1.jpeg";
 import { useState, useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
-const StudyAus = () => {
+
+const StudyMala = () => {
   const [imageindex, setimageindes] = useState(0);
-  const imagearray = [unsw3, v2, aus01];
+  const imagearray = [utm2, grp1, mala2];
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -23,47 +23,53 @@ const StudyAus = () => {
     }, 3000);
     return () => clearInterval(interval);
   }, [imagearray]);
+
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Change duration as per your requirement
+        duration: 1000 // Change duration as per your requirement
     });
-  }, []);
+}, []);
 
   return (
     <>
-      <div className="sm:mt ">
-      
+      <div className="sm:mt">
+        <div className="bg-blue-50 pb-5">
           <div>
-            {/* <img style={{ width: "100%" }} src={aus1} alt="" className='h-64 ' /> */}
-            {/* <img style={{ width: "100%" }} src={imagearray[imageindex]} alt="" className='scroll-smooth w-full h-[300px]' /> */}
+            {/* <img style={{ width: "100%" }} src={uk} alt="" className='h-64 opacity-80' /> */}
+            {/* <img
+              style={{ width: "100%" }}
+              src={imagearray[imageindex]}
+              alt=""
+              className="scroll-smooth w-full h-[400px]"
+            /> */}
           </div>
 
           <div className="container-fluid bg-img" id="home">
-            <div className="container home relative ">
-               <img
-               
-                src={imagearray[imageindex]}
-                alt=""
-                className="scroll-smooth  h-[400px] w-full relative object-cover mt-20"
-              />
-              <div className="row absolute  inset-0">
-                <div className="col-lg-12 heading text-center text-white text-7xl mt-20">
-                  <h6 data-aos="fade-up">STUDY </h6>
-                </div>
-                <div className="col-lg-12 heading text-center text-white mt-5">
-                  <h6 data-aos="fade-up">IN</h6>
-                </div>
-                <div className="col-lg-12 heading text-center mt-10 text-blue-500 font-bold text-7xl">
-                  <h1 data-aos="fade-up">AUSTRALIA!!!</h1>
-                </div>
-                {/* <div className="col-lg-12 heading text-center text-white">
+         <div className="container home relative">
+            {/* <img src={aus01} alt="Background" className="absolute inset-0 w-full h-full object-cover" /> */}
+            <img
+              style={{ width: "100%" }}
+              src={imagearray[imageindex]}
+              alt=""
+              className="scroll-smooth w-full h-[400px] relative   object-cover mt-28"
+            />
+                <div className="row absolute  inset-0">
+                    <div className="col-lg-12 heading text-center text-white text-7xl mt-20">
+                        <h6 data-aos="fade-up">STUDY </h6>
+                     </div>
+                     <div className="col-lg-12 heading text-center text-white mt-5">
+                        <h6 data-aos="fade-up">IN</h6>
+                    </div>
+                    <div className="col-lg-12 heading text-center mt-10 text-blue-500 font-bold text-7xl">
+                        <h1 data-aos="fade-up">MALAYSIA!!!</h1>
+                    </div>
+                    {/* <div className="col-lg-12 heading text-center text-white">
                         <h3 data-aos="fade-up">front-end developer</h3>
                     </div> */}
-              </div>
+                  
+                </div>
             </div>
-          </div>
-          <div className="bg-blue-50 h-60">
-          <div className="flex">
+          <div className="flex flex-col sm:flex-row items-center">
             <div className="sm:mr-4 pt-10 pb-5">
               <img
                 src={ukGrp}
@@ -73,7 +79,7 @@ const StudyAus = () => {
             </div>
             <div className="sm:mr-4 sm:mt-0">
               <h2 className="text-blue-500 flex justify-center mr-40 font-bold text-3xl font-italic  sm:mt-10 text-center sm:text-left font-serif">
-                Study in AUSTRALIA
+                Study in MALAYISIA
               </h2>
               <p className="text-lg mt-3 pl-20  text-justify sm:mt-5 text-center sm:text-left">
                 At First-Ladder, we take pride in offering a comprehensive
@@ -93,51 +99,51 @@ const StudyAus = () => {
         </div>
 
         <h2 className="text-blue-500 font-bold text-3xl font-italic mt-5 sm:mt-10 text-center font-serif">
-          Australia Study Options
+          MALAYSIA Study Options
         </h2>
 
         <div className="flex flex-col sm:flex-row pl-10">
           <div className="flex flex-wrap justify-center sm:justify-start sm:w-full">
-            <h3 className="bg-blue-400 text-lg p-2 font-serif w-80 mt-5 sm:mt-10 ml-0 sm:mr-10 text-center sm:text-left hover:text-white cursor-pointer">
+            <h3 className="bg-blue-400 text-lg p-2 font-serif w-80 mt-5 sm:mt-10 ml-0 sm:mr-10 text-center sm:text-left hover:text-indigo-900 cursor-pointer">
               Foundation Courses London
             </h3>
-            <h3 className="bg-blue-400 text-lg p-2 font-serif w-80 mt-5 sm:mt-10 ml-0 sm:mr-10 text-center sm:text-left hover:text-white cursor-pointer">
+            <h3 className="bg-blue-400 text-lg p-2 font-serif w-80 mt-5 sm:mt-10 ml-0 sm:mr-10 text-center sm:text-left hover:text-indigo-900 cursor-pointer">
               Undergraduate
             </h3>
-            <h3 className="bg-blue-400 text-lg p-2 font-serif w-80 mt-5 sm:mt-10 ml-0 sm:mr-10 text-center sm:text-left hover:text-white cursor-pointer">
+            <h3 className="bg-blue-400 text-lg p-2 font-serif w-80 mt-5 sm:mt-10 ml-0 sm:mr-10 text-center sm:text-left hover:text-indigo-900 cursor-pointer">
               Pre-Masters
             </h3>
           </div>
           <div className="flex flex-wrap justify-center sm:justify-start sm:w-full">
-            <h3 className="bg-blue-400 text-lg p-2 font-serif w-80 mt-5 sm:mt-10 ml-0 sm:mr-10 text-center sm:text-left hover:text-white cursor-pointer">
+            <h3 className="bg-blue-400 text-lg p-2 font-serif w-80 mt-5 sm:mt-10 ml-0 sm:mr-10 text-center sm:text-left hover:text-indigo-900 cursor-pointer">
               Postgraduate and Master's
             </h3>
-            <h3 className="bg-blue-400 text-lg p-2 font-serif w-80 mt-5 sm:mt-10 ml-0 sm:mr-10 text-center sm:text-left hover:text-white cursor-pointer">
+            <h3 className="bg-blue-400 text-lg p-2 font-serif w-80 mt-5 sm:mt-10 ml-0 sm:mr-10 text-center sm:text-left hover:text-indigo-900 cursor-pointer">
               PhD and Research Degrees
             </h3>
-            <h3 className="bg-blue-400 text-lg p-2 font-serif w-80 mt-5 sm:mt-10 ml-0 sm:mr-10 text-center sm:text-left hover:text-white cursor-pointer">
+            <h3 className="bg-blue-400 text-lg p-2 font-serif w-80 mt-5 sm:mt-10 ml-0 sm:mr-10 text-center sm:text-left hover:text-indigo-900 cursor-pointer">
               Two-year Degree
             </h3>
           </div>
           <div className="flex flex-wrap justify-center sm:justify-start sm:w-full">
-            <h3 className="bg-blue-400 text-lg p-2 font-serif w-80 mt-5 sm:mt-10 ml-0 sm:mr-10 text-center sm:text-left hover:text-white cursor-pointer">
+            <h3 className="bg-blue-400 text-lg p-2 font-serif w-80 mt-5 sm:mt-10 ml-0 sm:mr-10 text-center sm:text-left hover:text-indigo-900 cursor-pointer">
               English Courses
             </h3>
-            <h3 className="bg-blue-400 text-lg p-2 font-serif w-80 mt-5 sm:mt-10 ml-0 sm:mr-10 text-center sm:text-left hover:text-white cursor-pointer">
+            <h3 className="bg-blue-400 text-lg p-2 font-serif w-80 mt-5 sm:mt-10 ml-0 sm:mr-10 text-center sm:text-left hover:text-indigo-900 cursor-pointer">
               A-Levels
             </h3>
-            <h3 className="bg-blue-400 text-lg p-2 font-serif w-80 mt-5 sm:mt-10 ml-0 sm:mr-10 text-center sm:text-left hover:text-white cursor-pointer">
+            <h3 className="bg-blue-400 text-lg p-2 font-serif w-80 mt-5 sm:mt-10 ml-0 sm:mr-10 text-center sm:text-left hover:text-indigo-900 cursor-pointer">
               Colleges
             </h3>
           </div>
           <div className="flex flex-wrap justify-center sm:justify-start sm:w-full">
-            <h3 className="bg-blue-400 text-lg p-2 font-serif w-80 mt-5 sm:mt-10 ml-0 sm:mr-10 text-center sm:text-left hover:text-white cursor-pointer">
+            <h3 className="bg-blue-400 text-lg p-2 font-serif w-80 mt-5 sm:mt-10 ml-0 sm:mr-10 text-center sm:text-left hover:text-indigo-900 cursor-pointer">
               Study Abroad
             </h3>
-            <h3 className="bg-blue-400 text-lg p-2 font-serif w-80 mt-5 sm:mt-10 ml-0 sm:mr-10 text-center sm:text-left hover:text-white cursor-pointer">
+            <h3 className="bg-blue-400 text-lg p-2 font-serif w-80 mt-5 sm:mt-10 ml-0 sm:mr-10 text-center sm:text-left hover:text-indigo-900 cursor-pointer">
               Distance-Learning
             </h3>
-            <h3 className="bg-blue-400 text-lg p-2 font-serif w-80 mt-5 sm:mt-10 ml-0 text-center sm:text-left hover:text-white cursor-pointer">
+            <h3 className="bg-blue-400 text-lg p-2 font-serif w-80 mt-5 sm:mt-10 ml-0 text-center sm:text-left hover:text-indigo-900 cursor-pointer">
               Boarding Schools
             </h3>
           </div>
@@ -233,83 +239,83 @@ const StudyAus = () => {
         </h2>
         <div className="mt-10">
           <h2 className=" bg-blue-200 font-bold py-5 text-3xl flex justify-center items-center">
-           AUSTRALIA
+            Malayia
           </h2>
         </div>
         <div className="pl-20 pb-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:mr-10">
-          {/* uk university  */}
+          {/* malayisa university  */}
           <div className="">
-            <div className="max-w-sm rounded-lg overflow-hidden shadow-xl h-auto sm:h-[420px] w-auto sm:w-[400px] mt-5 sm:mt-12">
+            <div className="max-w-sm rounded-lg overflow-hidden shadow-xl h-auto sm:h-[500px]] w-auto sm:w-[400px] mt-5 sm:mt-12">
               <img
-                src={aus}
+                src={nilai}
                 alt=""
                 className="w-full h-48 sm:h-[200px] object-cover rounded-t-lg"
               />
               <div className="px-6 py-4">
                 <h1 className="font-bold text-blue-500 text-2xl text-center">
-                  Cambridge University
+                  Nilai University
                 </h1>
                 <p className="text-center mt-3">
-                  Arts and Humanities
-                  <br />
-                  Biological Sciences
-                  <br />
-                  Clinical Medicine
-                  <br />
-                  Humanities and Social Sciences
-                  <br />
-                  Physical Sciences
-                  <br />
-                  Technology
+                  Founded in 1998, Nilai University has been notably excelling
+                  generally and especially in teaching & learning. This
+                  commitment is proven with a 5-star rating in 6 categories
+                  awarded by QS University Ratings. Affiliated with Nilai
+                  University, Malaysia, our BIT program is meticulously designed
+                  to equip you with the skills and knowledge essential for a
+                  thriving career in IT.
                 </p>
               </div>
             </div>
           </div>
 
-          <div className="max-w-sm rounded-lg overflow-hidden shadow-xl h-auto sm:h-[420px] w-auto sm:w-[400px] mt-5 sm:mt-12">
+          <div className="max-w-sm rounded-lg overflow-hidden shadow-xl h-auto sm:h-[490px] w-auto sm:w-[400px] mt-5 sm:mt-12">
             <img
-              src={unsw}
+              src={ums}
               alt=""
               className="w-full h-48 sm:h-[200px] object-cover rounded-t-lg"
             />
             <div className="px-6 py-4">
               <h1 className="font-bold text-blue-500 text-2xl text-center">
-                London University
+                UMS University
               </h1>
               <p className="text-center mt-3">
-                University of London International Programmes
-                <br />
-                Between 1946 and 1970, the university entered into 'schemes of
-                special relation' with university colleges in the Commonwealth
-                of Nations.
+                UMS was recently ranked among the top 200 in QS World Ranking by
+                Subject in Agriculture and Forestry. UMS is one of the most
+                beautiful university campuses in the country, with fascinating
+                landscape, lush greeneries and impressive structures. Indeed,
+                UMS is the only University in Malaysia with its own beach and
+                jetty.
               </p>
             </div>
           </div>
 
           <div className=" ">
-            <div className="max-w-sm rounded-lg overflow-hidden shadow-xl h-auto sm:h-[420px] w-auto sm:w-[400px] mt-5 sm:mt-12">
+            <div className="max-w-sm rounded-lg overflow-hidden shadow-xl h-auto sm:h-[500px] w-auto sm:w-[400px] mt-5 sm:mt-12">
               <img
-                src={vienna}
-                alt=""
+                src={utm}
+                alt0
                 className="w-full h-48 sm:h-[200px] object-cover rounded-t-lg"
               />
               <div className="px-6 py-4">
                 <h1 className="font-bold text-blue-500 text-2xl text-center">
-                  Oxford University
+                  UTM University
                 </h1>
                 <p className="text-center mt-3">
-                  In common with most British universities, prospective
-                  undergraduate students apply through the UCAS application
-                  system, but prospective applicants for the University of
-                  Oxford, along with those for medicine.
+                  Established in 1904, the Universiti Teknologi Malaysia is a
+                  public research-intensive university in Malaysia. With
+                  campuses in Skudai and Johor, the university is home to 24,780
+                  students. Out of these, 4,987 students are international. UTM
+                  in Malaysia has been Officially recognized by the Kementerian
+                  Pendidikan Tinggi (Ministry of Higher Education of Malaysia)
                 </p>
               </div>
             </div>
           </div>
         </div>
       </div>
+      </div>
     </>
   );
 };
 
-export default StudyAus;
+export default StudyMala;
