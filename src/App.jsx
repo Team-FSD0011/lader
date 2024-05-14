@@ -15,7 +15,6 @@ import Footer from './components/Footer/Footer';
 import Navbars from './components/Navbars'
 import BlogsCompNext from './components/Blogs/BlogsCompNext';
 import BlogsComp from './components/Blogs/BlogsComp';
-// import NewsNext from './components/news';
 import StudyAus from './components/studyAus';
 import StudyUk from './components/studyUk';
 import StudyUsa from './components/studyUsa';
@@ -70,8 +69,8 @@ function App() {
       <Route path="/blog" element={<BlogsComp/>}/>
 
       <Route path="/blogns" element={<BlogsComp/>}/>
-      {/* <Route path="/news" element={<NewsNext/>}/> */}
-      <Route path="/blog" element={<BlogsComp/>}/>
+      
+      {/* <Route path="/blog" element={<BlogsComp/>}/> */}
       <Route path="/Datascience" element={<Datascience/>}/>
       <Route path="/Fullstack" element={<Fullstack/>}/>
 
