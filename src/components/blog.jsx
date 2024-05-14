@@ -5,6 +5,7 @@ import Img1 from "../components/assets/studentsimag1.png";
 import Img2 from "../components/assets/studentsimag11.png";
 import Img7 from "../components/assets/studentsimag7.png";
 import Img4 from "../components/assets/studentsimag10.png";
+import { Link } from 'react-router-dom';
 
 
 
@@ -32,6 +33,18 @@ const Blog = () => {
     <div className='min-h-[650px] pt-20 '>
       <BlogsComp/>
       {/* <BlogsCompNext/> */}
+
+    </div>
+    <div className="flex flex-col justify-center items-center mb-4 ml-9 mr-9 bg-gray-100 rounded-lg shadow-lg md:scroll-sm">
+      <p className="text-4xl text-gray-700 mt-5 mb-2 text-center">
+      Need a Consultation?      </p>
+      <p className="text-md text-gray-700 mb-4 text-center">
+      Reach out to us today and book an appointment for a free counselling session to clarify all your queries with our team.      </p>
+      <Link to="/contactUs">
+        <button className="text-md font-semibold text-white bg-sky-500 py-3 px-8 mb-4 rounded-lg shadow-lg hover:bg-sky-600">
+        Make On Appointment
+        </button>
+      </Link>
     </div>
     </>
   )
