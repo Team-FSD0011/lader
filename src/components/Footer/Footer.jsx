@@ -55,7 +55,7 @@ const Footer = () => {
                   <h1 className="text-xl font-bold text-justify sm:text-left mb-3 text-sky-600">
                     Important Links
                   </h1>
-                  <ul className="flex flex-col gap-3">
+                  <ul className="flex flex-col gap-3 cursor-pointer">
                     {FooterLinks.map((link) => (
                       <li className="cursor-pointer hover:translate-x-1 duration-300 hover:!text-primary space-x-1 text-gray-700 dark:text-gray-200">
                         <Link
@@ -95,15 +95,15 @@ const Footer = () => {
                   <Link to="/contactUs"><h1 className="text-xl font-bold text-justify sm:text-left mb-3 text-sky-600">
                     Contact Us
                   </h1></Link>
-                  <div className="flex items-center gap-3 ">
+                  <div className="flex items-center gap-3 cursor-pointer">
                 <FaEnvelope size={20}/>
                 <p>hr@firstladder.com</p>
               </div>
-              <div className="flex items-center gap-3 mt-3">
+              <div className="flex items-center gap-3 mt-3 cursor-pointer">
                 <FaMobileAlt size={25} />
-                <p>+91 123456789</p>
+                <p>+91 8300941219</p>
               </div>
-              <div className="flex items-center gap-3 mt-3">
+              <div className="flex items-center gap-3 mt-3 cursor-pointer">
                 <FaMapMarkedAlt  size={50}/>
                 <p>714A, 7th floor, Phase II, Spencer Plaza, Anna Salai, Chennai 600
                   002.</p>
