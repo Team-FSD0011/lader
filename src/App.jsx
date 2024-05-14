@@ -55,7 +55,7 @@ function App() {
          <Route path="/studyMALAYSIA" element={<StudyMala/>}/>
          <Route path="/studySINGAPORE" element={<StudySing/>}/>
          <Route path="/studySWIZERLAND" element={<StudySwizer/>}/>
-         <Route path="/studyCANADA" element={<StudyCanada/>}/>
+      <Route path="/studyCANADA" element={<StudyCanada/>}/>
       <Route path="/immigration" element={<Immigration/>}/>
       <Route path="/blog" element={<Blog/>}/>
       <Route path="/Blogs/:id" element={<BlogsDetails/>}/>
