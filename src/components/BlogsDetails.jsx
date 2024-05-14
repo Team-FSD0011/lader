@@ -11,8 +11,8 @@ const BlogsDetails = () => {
     <div className='min-h-[550px] pt-20'>
       <div className='h-[300px overflow-hidden]'>
         <img src={image} alt="" 
-        className='mx-auto w-full object-cover
-        transition duration-700 hover:scale-110'/>
+        className='mx-auto w-full object-cover h-[600px]
+        transition duration-700 '/>
       </div>
       <div className='container'>
         <p className='text-slate-600 text-sm py-3'>
