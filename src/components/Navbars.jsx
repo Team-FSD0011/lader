@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import logo from "../components/assets/logo.png";
@@ -8,39 +9,40 @@ import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 import ResponsiveMenu from "./ResponsiveMenu";
 import { FaCaretDown } from "react-icons/fa";
 
+
 const dropdownLinks = [
   {
     name: "Study in UK",
-    link: "/studyAus",
+    link: "/studyUK",
     
   },
   {
     name: "Study in AUSTRALIA",
-    link: "/studyinAUSTRALIA",
+    link: "/studyAUSTRALIA",
   },
   {
     name: "Study in CANADA",
-    link: "/studyinCANADA",
+    link: "/studyCANADA",
   },
   {
     name: "Study in USA",
-    link: "/studyinUSA",
+    link: "/studyUSA",
   },
   {
     name: "Study in SINGAPORE",
-    link: "/studyinSINGAPORE",
+    link: "/studySINGAPORE",
   },
   {
     name: "Study in SWIZERLAND",
-    link: "/studyinSWIZERLAND",
+    link: "/studySWIZERLAND",
   },
   {
     name: "Study in GERMANY",
-    link: "/studyinGERMANY",
+    link: "/studyGERMANY",
   },
   {
-    name: "Study in BELGIUM",
-    link: "/studyinBELGIUM",
+    name: "Study in Malaysia",
+    link: "/studyMALAYSIA",
   },
 ];
 
@@ -57,10 +59,10 @@ const Navbar = ({ handleOrderPopup }) => {
           <div className="container py-[2px] sm:block hidden">
             <div className="flex items-center">
               <div className="flex flex-row ">
-                <FaPhoneSquareAlt className="mt-1" />
-                <p className=" mr-4">+91123456789</p>
-                <IoMdMail className="ml-3 mt-1" />
-                <p>hr@firstladder.com</p>
+                <FaPhoneSquareAlt className="mt-1 cursor-pointer" />
+                <p className=" mr-4 cursor-pointer">+918300941219</p>
+                <IoMdMail className="ml-3 mt-1 cursor-pointer" />
+                <p className="cursor-pointer">hr@firstladder.com</p>
               </div>
               <div className="container py-[2px] sm:block hidden ">
                 <div className="flex items-center  justify-center ml-[90%] cursor-pointer">
@@ -77,12 +79,12 @@ const Navbar = ({ handleOrderPopup }) => {
             {/* Logo section */}
             <div>
               <Link to="/" onClick={() => window.scrollTo(0, 0)}>
-                <img src={logo} alt="" className="h-18 w-[200px]" />
+                <img src={logo} alt="" className=" h-18 w-[200px]" />
               </Link>
             </div>
             {/* Navlinks section */}
-            <div className="md:hidden block">
-              {/* Mobile Hamburger Menu */}
+            {/* <div className="md:hidden block">
+              Mobile Hamburger Menu
               {showMenu ? (
                 <HiMenuAlt1
                   onClick={toggleMenu}
@@ -96,7 +98,7 @@ const Navbar = ({ handleOrderPopup }) => {
                   size={30}
                 />
               )}
-            </div>
+            </div> */}
             <div className="hidden md:block">
               {/* Navigation Links for medium and larger screens */}
               <ul className="flex items-center gap-6">
@@ -191,6 +193,22 @@ const Navbar = ({ handleOrderPopup }) => {
                 Explore Now
               </button>
             </Link>
+            <div className="md:hidden block">
+              {/* Mobile Hamburger Menu */}
+              {showMenu ? (
+                <HiMenuAlt1
+                  onClick={toggleMenu}
+                  className="cursor-pointer transition-all"
+                  size={30}
+                />
+              ) : (
+                <HiMenuAlt3
+                  onClick={toggleMenu}
+                  className="cursor-pointer transition-all"
+                  size={30}
+                />
+              )}
+            </div>
           </div>
         </div>
         <ResponsiveMenu setShowMenu={setShowMenu} showMenu={showMenu} />
@@ -200,3 +218,4 @@ const Navbar = ({ handleOrderPopup }) => {
 };
 
 export default Navbar;
+

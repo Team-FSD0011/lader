@@ -5,6 +5,7 @@ import missionvision from '../components/assets/missionvision.png';
 import n1 from "./assets/n1.jpeg";
 import studentsimag4 from "./assets/studentsimag4.png";
 import aaaasd from "./assets/aaaasd.jpg";
+import { Link } from "react-router-dom";
 
 const AboutUs = () => {
 
@@ -23,9 +24,6 @@ const AboutUs = () => {
           <p className="text-lg md:mt-5 md:mr-20 md:mr-10 md:ml-20 font-serif text-justify">First-Ladder is an International Education, Immigration, and Recruitment Consulting Company headquartered in Chennai, India. We are a leading global career consulting firm, providing innovative and customized solutions to students, job seekers, and employers. Our process starts with developing an accurate profile of each candidate and using that as our database to match them with the available opportunities in terms of education and jobs. Our aim is to help students and professionals from all over the world to find opportunities that match their requirements, skills, interests, and aspirations, so that they can pursue their while achieving higher returns on investment.</p>
         </div>
       </div>
-
-
-
 
       <div className="bg-grey-400">
         <div className="flex">
@@ -55,6 +53,9 @@ const AboutUs = () => {
           Exploring the world one classroom at a time
           </p>
         </div>
+
+  
+
         <div className="flex flex-col items-center  rounded-lg p-4 shadow-md max-w-xs"> {/* Added max-w-xs */}
           <img
             src={studentsimag4}
@@ -79,7 +80,7 @@ const AboutUs = () => {
         </div>
 
       </div>
-    </>
+          </>
   )
 }
 

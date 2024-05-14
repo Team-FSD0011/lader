@@ -31,7 +31,7 @@ const StudyAus = () => {
 
   return (
     <>
-      <div className="sm:mt">
+      <div className="sm:mt ">
       
           <div>
             {/* <img style={{ width: "100%" }} src={aus1} alt="" className='h-64 ' /> */}
@@ -39,11 +39,12 @@ const StudyAus = () => {
           </div>
 
           <div className="container-fluid bg-img" id="home">
-            <div className="container home relative">
+            <div className="container home relative ">
                <img
+               
                 src={imagearray[imageindex]}
                 alt=""
-                className="scroll-smooth  h-[400px] relative w-full object-cover mt-10"
+                className="scroll-smooth  h-[400px] w-full relative object-cover mt-20"
               />
               <div className="row absolute  inset-0">
                 <div className="col-lg-12 heading text-center text-white text-7xl mt-20">
@@ -61,7 +62,7 @@ const StudyAus = () => {
               </div>
             </div>
           </div>
-          <div className="bg-blue-50 ">
+          <div className="bg-blue-50 h-60">
           <div className="flex">
             <div className="sm:mr-4 pt-10 pb-5">
               <img
@@ -232,7 +233,7 @@ const StudyAus = () => {
         </h2>
         <div className="mt-10">
           <h2 className=" bg-blue-200 font-bold py-5 text-3xl flex justify-center items-center">
-            UK (United Kingdom)
+           AUSTRALIA
           </h2>
         </div>
         <div className="pl-20 pb-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:mr-10">

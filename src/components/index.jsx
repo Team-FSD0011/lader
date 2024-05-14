@@ -28,22 +28,22 @@ const Home = () => {
   return (
     <>
      <div className="gap-10 flex items-center justify-center w-full relative">
-      <img src={imagearray[imageindex]} alt="images" className='scroll-smooth  w-full h-[600px]' />
-      <div className='w-full h-[600px] absolute flex justify-center items-center top-0 left-0 flex-col backdrop-brightness-50'>
-        <h1 className='text-5xl font-bold mt-20 text-gray-50'>Welcome to First Ladder Company!</h1> <br />
+      <img src={imagearray[imageindex]} alt="images" className='scroll-smooth  w-full h-[650px]' />
+      <div className='w-full h-[650px] absolute flex justify-center items-center top-0 left-0 flex-col backdrop-brightness-50'>
+        <h1 className='text-5xl font-bold mt-20 text-gray-50'>Welcome to First Ladder </h1> <br />
       </div>
     </div>
       
     <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-8 md:scroll-sm ml-9 mr-9 ">
-      <div className="bg-gray-200 p-4 rounded-lg">
+      <div className=" bg-gray-100 p-4 rounded-lg">
         <img src={bg} alt="" className="max-w-full h-auto rounded-lg" />
       </div>   
-      <div className="bg-gray-200 p-5 flex flex-col justify-center rounded-lg">
+      <div className="bg-gray-100 p-5 flex flex-col justify-center rounded-lg">
         <h3 className="text-3xl font-semibold text-center md:text-left">Planning to Study Abroad?</h3>
         <p className="text-md mb-6 mt-6 ml-2 mr-2 text-center md:text-left">
           Study abroad is becoming more common but the students are increasingly overwhelmed. You see lots of ads in magazines, social media and on TV, but do you know if they are the right places for you? The process of studying abroad is not as simple as it seems. It can be a confusing, intimidating and expensive process. What you choose to study and where you study will affect your college career, and possibly the rest of your life! Our team provides a comprehensive study abroad assistance to help you make the right choices when applying for higher education programs. Our services will help you with every step of your study abroad journey from application to arrival all under one roof!
         </p>
-        <Link to="/">
+        <Link to="/contactUs">
           <button className="text-md font-semibold text-white bg-sky-500 py-3 px-8 rounded-lg shadow-lg hover:bg-sky-600 self-center md:self-start">
             Enquire Now for Training Programs
           </button>
@@ -54,27 +54,27 @@ const Home = () => {
     <div className="container md:scroll-sm">
       <h3 className="text-2xl font-semibold mt-12 text-center md:ml-36 mb-8">Why Choose First Ladder for Study Abroad?</h3>
       <div className="grid grid-cols-2 md:grid-cols-3 gap-10">
-        <div className="flex items-center bg-sky-200 p-8 rounded-lg">
+        <div className="flex items-center bg-sky-200 p-8 rounded-lg cursor-pointer">
           <img src={logo3} alt="" className="h-12 mr-2 " /> 
           <p className="text-md">Interview Preparation</p>
         </div>
-        <div className="flex items-center bg-sky-200 p-8 rounded-lg">
+        <div className="flex items-center bg-sky-200 p-8 rounded-lg cursor-pointer">
           <img src={logo4} alt="" className="h-12 mr-2" />
           <p className="text-md">University & Program Shortlist</p>
         </div>
-        <div className="flex items-center bg-sky-200 p-8 rounded-lg">
+        <div className="flex items-center bg-sky-200 p-8 rounded-lg cursor-pointer">
           <img src={logo6} alt="" className="h-12 mr-2" />
           <p className="text-md">Letter of Recommendation Guidance</p>
         </div>
-        <div className="flex items-center bg-sky-200 p-8 rounded-lg">
+        <div className="flex items-center bg-sky-200 p-8 rounded-lg cursor-pointer">
           <img src={logo2} alt="" className="h-12 mr-2" />
           <p className="text-md">Profile Analysis</p>
         </div>
-        <div className="flex items-center bg-sky-200 p-8 rounded-lg">
+        <div className="flex items-center bg-sky-200 p-8 rounded-lg cursor-pointer">
           <img src={logo5} alt="" className="h-12 mr-2" />
           <p className="text-md">Scholarship & Financial Aid Advice</p>
         </div>
-        <div className="flex items-center bg-sky-200 p-8 rounded-lg">
+        <div className="flex items-center bg-sky-200 p-8 rounded-lg cursor-pointer">
           <img src={logo7} alt="" className="h-12 mr-2" />
           <p className="text-md">SAT & IELTS Prep</p>
         </div>
@@ -117,7 +117,7 @@ const Home = () => {
       </div>
     </div>
 
-    <div className="flex flex-col justify-center items-center  mt-4 ml-9 mr-9 bg-gray-100 rounded-lg shadow-lg md:scroll-sm">
+    <div className="flex flex-col justify-center items-center  mt-4 ml-9 mb-4 mr-9 bg-gray-100 rounded-lg shadow-lg md:scroll-sm">
       <p className="text-md text-gray-700 mt-12 mb-2 text-center">
         We are a leading global career consulting firm, providing innovative and customized solutions to students, job seekers and employers.
       </p>

@@ -19,7 +19,7 @@ const StudyAbroad = () =>
         <>     
               {/* study abroad  */}
       <div className="relative">
-        <img src={study} alt="" className="w-full h-[500px] object-cover mt-24" />
+        <img src={study} alt="" className="w-full h-[400px] object-cover mt-24" />
       </div>
       <div className="px-4 md:px-0 md:max-w-2xl md:mx-auto">
         <h2 className="text-blue-500 font-bold text-2xl md:text-3xl text-center mt-5 font-serif">
@@ -44,11 +44,11 @@ const StudyAbroad = () =>
           <h2 className="text-blue-500 font-bold text-2xl md:text-3xl font-italic mt-5 md:mt-0 text-center md:text-left font-serif">
             Our Vision And Mission
           </h2>
-          <h4 className="mt-5 text-lg md:text-base text-center md:text-left">
+          <h4 className="mt-5 text-2xl md:text-base text-center md:text-left">
             Empower through education. First Ladder envisions fostering tax
             expertise.
           </h4>
-          <h4 className="mt-2 text-lg md:text-base   text-center md:text-left">
+          <h4 className="mt-2 text-2xl md:text-base   text-center md:text-left">
             Our mission is to shape Enrolled Agents, fueling their success in
             the field of taxation.
           </h4>
