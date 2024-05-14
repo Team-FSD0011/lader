@@ -4,7 +4,6 @@ import { RiFacebookBoxLine } from "react-icons/ri";
 import { CiLinkedin } from "react-icons/ci";
 
 import {
-  FaLinkedin,
   FaEnvelope,
   FaMobileAlt,
   FaMapMarkedAlt,

@@ -142,7 +142,7 @@ const ContactUs = () => {
           </a>
         </div>
       </div>
-      <div className="map mt-8">
+      <div className="map mt-8 mb-8">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d62186.64274524278!2d80.1792213!3d13.056972!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5267e0c38c5381%3A0x405ededf7e643c76!2sFirst-Ladder%20Management%20Solutions%20Private%20Limited!5e0!3m2!1sen!2sin!4v1714646303749!5m2!1sen!2sin"
           width="100%"

@@ -33,7 +33,7 @@ const Immigration = () => {
   const icon5 = (<PiPlanet size={40} className=" text-backgroundColor" />);
   const icon6 = (<MdContactEmergency size={40} className=" text-backgroundColor" />);
   return (<>
-    <div className="gap-10 flex items-center justify-center w-full relative">
+    <div className="gap-10 flex items-center justify-center mt-[2%] w-full relative">
       <img src={imagearray[imageindex]} alt="logo" className='scroll-smooth w-full h-[650px]' />
       <div className='w-full h-[650px] absolute flex justify-center items-center top-0 left-0 flex-col backdrop-brightness-50'>
         <h1 className='text-5xl font-bold text-gray-50'>Welcome to Our Company!</h1> <br />

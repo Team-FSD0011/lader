@@ -4,10 +4,10 @@ import "aos/dist/aos.css";
 import { Link } from "react-router-dom";
 import BlogsCard from "./BlogsCard.jsx";
 import Img1 from "../assets/studentsimag2.png";
-import Img2 from "../assets/studentsimag7.png";
+import Img2 from "../assets/bg.jpg";
 import Img3 from "../assets/studentsimag8.png";
 import Img4 from "../assets/studentsimag1.png";
-import Img5 from "../assets/studentsimag3.png";
+import Img5 from "../assets/full.png";
 import Img6 from "../assets/studentsimag5.png";
 
 const BlogsData = [

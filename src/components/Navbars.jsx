@@ -5,9 +5,11 @@ import logo from "../components/assets/logo.png";
 import { HiMenuAlt1, HiMenuAlt3 } from "react-icons/hi";
 import { FaPhoneSquareAlt } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
-import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
+import {FaInstagram } from "react-icons/fa";
 import ResponsiveMenu from "./ResponsiveMenu";
 import { FaCaretDown } from "react-icons/fa";
+import { RiFacebookBoxLine } from "react-icons/ri";
+import { CiLinkedin } from "react-icons/ci";
 
 
 const dropdownLinks = [
@@ -66,9 +68,9 @@ const Navbar = ({ handleOrderPopup }) => {
               </div>
               <div className="container py-[2px] sm:block hidden ">
                 <div className="flex items-center  justify-center ml-[90%] cursor-pointer">
-                  <FaInstagram className="mx-1 " />
-                  <FaFacebook className="mx-1" />
-                  <FaLinkedin className="mx-1" />
+                  <RiFacebookBoxLine size={33} className="mx-1 " />
+                  <FaInstagram size={27} className="mx-1" />
+                  <CiLinkedin size={33} className="mx-1" />
                 </div>
               </div>
             </div>
