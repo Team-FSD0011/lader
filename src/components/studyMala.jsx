@@ -33,7 +33,7 @@ const StudyMala = () => {
   return (
     <>
       <div className="sm:mt">
-        <div className="bg-blue-50 pb-5">
+        <div className=" pb-5">
           <div>
             {/* <img style={{ width: "100%" }} src={uk} alt="" className='h-64 opacity-80' /> */}
             {/* <img
@@ -69,8 +69,8 @@ const StudyMala = () => {
                   
                 </div>
             </div>
-          <div className="flex flex-col sm:flex-row items-center">
-            <div className="sm:mr-4 pt-10 pb-5">
+          <div className="flex flex-col sm:flex-row items-center bg-blue-50 mt-6 h-[250px]">
+            <div className="sm:mr-4 pt-10 pb-5  ">
               <img
                 src={ukGrp}
                 alt=""
@@ -78,7 +78,7 @@ const StudyMala = () => {
               />
             </div>
             <div className="sm:mr-4 sm:mt-0">
-              <h2 className="text-blue-500 flex justify-center mr-40 font-bold text-3xl font-italic  sm:mt-10 text-center sm:text-left font-serif">
+              <h2 className="text-blue-500 flex justify-center mr-40 font-bold text-3xl font-italic   text-center sm:text-left font-serif">
                 Study in MALAYISIA
               </h2>
               <p className="text-lg mt-3 pl-20  text-justify sm:mt-5 text-center sm:text-left">
@@ -245,7 +245,7 @@ const StudyMala = () => {
         <div className="pl-20 pb-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:mr-10">
           {/* malayisa university  */}
           <div className="">
-            <div className="max-w-sm rounded-lg overflow-hidden shadow-xl h-auto sm:h-[500px]] w-auto sm:w-[400px] mt-5 sm:mt-12">
+            <div className="max-w-sm rounded-lg overflow-hidden shadow-xl h-auto sm:h-[500px]] w-auto sm:w-[400px] mt-5 sm:mt-12 hover:p-3">
               <img
                 src={nilai}
                 alt=""
@@ -268,7 +268,7 @@ const StudyMala = () => {
             </div>
           </div>
 
-          <div className="max-w-sm rounded-lg overflow-hidden shadow-xl h-auto sm:h-[490px] w-auto sm:w-[400px] mt-5 sm:mt-12">
+          <div className="max-w-sm rounded-lg overflow-hidden shadow-xl h-auto sm:h-[490px] w-auto sm:w-[400px] mt-5 sm:mt-12 hover:p-3">
             <img
               src={ums}
               alt=""
@@ -290,7 +290,7 @@ const StudyMala = () => {
           </div>
 
           <div className=" ">
-            <div className="max-w-sm rounded-lg overflow-hidden shadow-xl h-auto sm:h-[500px] w-auto sm:w-[400px] mt-5 sm:mt-12">
+            <div className="max-w-sm rounded-lg overflow-hidden shadow-xl h-auto sm:h-[500px] w-auto sm:w-[400px] mt-5 sm:mt-12 hover:p-3">
               <img
                 src={utm}
                 alt0

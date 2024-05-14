@@ -11,6 +11,7 @@ import swizer from "../components/assets/swizer.jpg";
 import germany from "../components/assets/germany.jpeg";
 import belgium from "../components/assets/belgium.jpeg";
 import malaysia from "../components/assets/malaysia.jpeg";
+import { Link } from "react-router-dom";
 
 
 const StudyAbroad = () => 
@@ -104,7 +105,7 @@ const StudyAbroad = () =>
         ))}
       </div>
 
-      <div className="flex flex-col justify-center items-center mb-4 ml-9 mr-9 bg-gray-100 rounded-lg shadow-lg md:scroll-sm">
+      <div className="flex flex-col justify-center items-center mb-4 ml-9 mt-10 mr-9 bg-gray-100 rounded-lg shadow-lg md:scroll-sm">
       <p className="text-4xl text-gray-700 mt-5 mb-2 text-center">
       Need a Consultation?      </p>
       <p className="text-md text-gray-700 mb-4 text-center">

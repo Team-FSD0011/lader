@@ -34,7 +34,7 @@ const StudyUk = () => {
   return (
     <>
     <div className='sm:mt'>
-    <div className='bg-blue-50 pb-5 '>
+    <div className=' pb-5 '>
   <div>
     {/* <img style={{ width: "100%" }} src={uk} alt="" className='h-64 opacity-80' /> */}
     {/* <img style={{ width: "100%" }} src={imagearray[imageindex]} alt="" className='scroll-smooth w-full h-[300px]' /> */}
@@ -66,7 +66,7 @@ const StudyUk = () => {
                 </div>
             </div>
         </div>
-  <div className="flex flex-col sm:flex-row items-center">
+  <div className="flex flex-col sm:flex-row items-center bg-blue-50 mt-4 h-[250px]">
     <div className="sm:mr-4 pt-10 pb-5">
       <img src={ukGrp} alt="" className="w-full mr-10 sm:w-auto h-40 mx-auto sm:ml-10 shadow-lg rounded-lg" />
     </div>
@@ -162,8 +162,8 @@ const StudyUk = () => {
     <div className='pl-20 pb-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:mr-10'>
        {/* uk university  */}
        <div className="">
-    <div className="max-w-sm rounded-lg overflow-hidden shadow-xl h-auto sm:h-[420px] w-auto sm:w-[400px] mt-5 sm:mt-12">
-        <img src={cambridge} alt="" className="w-full h-48 sm:h-[200px] object-cover rounded-t-lg" />
+    <div className="max-w-sm rounded-lg overflow-hidden shadow-xl h-auto sm:h-[420px] w-auto sm:w-[400px] mt-5 sm:mt-12 hover:p-3">
+        <img src={cambridge} alt="" className="w-full h-48 sm:h-[200px] object-cover rounded-t-lg " />
         <div className="px-6 py-4">
             <h1 className="font-bold text-blue-500 text-2xl text-center">Cambridge University</h1>
             <p className="text-center mt-3">Arts and Humanities<br />Biological Sciences<br />Clinical Medicine<br />Humanities and Social Sciences<br />Physical Sciences<br />Technology</p>
@@ -172,7 +172,7 @@ const StudyUk = () => {
 </div>
 
 
-    <div className="max-w-sm rounded-lg overflow-hidden shadow-xl h-auto sm:h-[420px] w-auto sm:w-[400px] mt-5 sm:mt-12">
+    <div className="max-w-sm rounded-lg overflow-hidden shadow-xl h-auto sm:h-[420px] w-auto sm:w-[400px] mt-5 sm:mt-12 hover:p-3">
         <img src={london} alt="" className="w-full h-48 sm:h-[200px] object-cover rounded-t-lg" />
         <div className="px-6 py-4">
             <h1 className="font-bold text-blue-500 text-2xl text-center">London University</h1>
@@ -182,7 +182,7 @@ const StudyUk = () => {
 
 
     <div className=" ">
-    <div className="max-w-sm rounded-lg overflow-hidden shadow-xl h-auto sm:h-[420px] w-auto sm:w-[400px] mt-5 sm:mt-12">
+    <div className="max-w-sm rounded-lg overflow-hidden shadow-xl h-auto sm:h-[420px] w-auto sm:w-[400px] mt-5 sm:mt-12 hover:p-3">
         <img src={oxford} alt="" className="w-full h-48 sm:h-[200px] object-cover rounded-t-lg" />
         <div className="px-6 py-4">
             <h1 className="font-bold text-blue-500 text-2xl text-center">Oxford University</h1>
