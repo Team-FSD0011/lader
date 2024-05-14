@@ -43,7 +43,7 @@ const dropdownLinks = [
     link: "/studyAbroad/studyGERMANY",
   },
   {
-    name: "Study ",
+    name: "Study in MALAYSIA",
     link: "/studyAbroad/studyMALAYSIA",
   },
 ];
