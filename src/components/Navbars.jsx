@@ -59,10 +59,10 @@ const Navbar = ({ handleOrderPopup }) => {
           <div className="container py-[2px] sm:block hidden">
             <div className="flex items-center">
               <div className="flex flex-row ">
-                <FaPhoneSquareAlt className="mt-1" />
-                <p className=" mr-4">+91123456789</p>
-                <IoMdMail className="ml-3 mt-1" />
-                <p>hr@firstladder.com</p>
+                <FaPhoneSquareAlt className="mt-1 cursor-pointer" />
+                <p className=" mr-4 cursor-pointer">+918300941219</p>
+                <IoMdMail className="ml-3 mt-1 cursor-pointer" />
+                <p className="cursor-pointer">hr@firstladder.com</p>
               </div>
               <div className="container py-[2px] sm:block hidden ">
                 <div className="flex items-center  justify-center ml-[90%] cursor-pointer">
