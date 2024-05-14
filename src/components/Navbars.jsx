@@ -56,7 +56,7 @@ const Navbar = ({ handleOrderPopup }) => {
   };
   return (
     <>
-      <nav className="fixed top-0 right-0 w-full z-50 bg-white backdrop-blur-sm text-black shadow-md z-[99999]">
+      <nav className="fixed top-0 right-0 w-full bg-white backdrop-blur-sm text-black shadow-md z-[99999]">
         <div className="bg-sky-500 text-white ">
           <div className="container py-[2px] sm:block hidden">
             <div className="flex items-center">
