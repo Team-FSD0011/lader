@@ -5,7 +5,7 @@ import missionvision from '../components/assets/missionvision.png';
 import n1 from "./assets/n1.jpeg";
 import studentsimag4 from "./assets/studentsimag4.png";
 import aaaasd from "./assets/aaaasd.jpg";
-import { Link } from "react-router-dom";
+
 
 const AboutUs = () => {
 
