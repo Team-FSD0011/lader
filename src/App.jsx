@@ -48,14 +48,14 @@ function App() {
       <Route path="/trainingPrograms" element={<TrainingPrograms/>}/>
       <Route path="/enrolledAgent" element={<ETA/>}/>
       <Route path="/studyAbroad" element={<StudyAbroad/>}/>
-      <Route path="/studyAbroad/studyAUSTRALIA" element={<StudyAus/>}/>
-      <Route path="/studyUK" element={<StudyUk/>}/>
-      <Route path="/studyUSA" element={<StudyUsa/>}/>
-      <Route path="/studyGERMANY" element={<StudyGer/>}/>
-      <Route path="/studyMALAYSIA" element={<StudyMala/>}/>
-      <Route path="/studySINGAPORE" element={<StudySing/>}/>
-      <Route path="/studySWIZERLAND" element={<StudySwizer/>}/>
-      <Route path="/studyCANADA" element={<StudyCanada/>}/>
+         <Route path="/studyAbroad/studyAUSTRALIA" element={<StudyAus/>}/>
+         <Route path="/studyUK" element={<StudyUk/>}/>
+         <Route path="/studyUSA" element={<StudyUsa/>}/>
+         <Route path="/studyGERMANY" element={<StudyGer/>}/>
+         <Route path="/studyMALAYSIA" element={<StudyMala/>}/>
+         <Route path="/studySINGAPORE" element={<StudySing/>}/>
+         <Route path="/studySWIZERLAND" element={<StudySwizer/>}/>
+         <Route path="/studyCANADA" element={<StudyCanada/>}/>
       <Route path="/immigration" element={<Immigration/>}/>
       <Route path="/blog" element={<Blog/>}/>
       <Route path="/Blogs/:id" element={<BlogsDetails/>}/>
