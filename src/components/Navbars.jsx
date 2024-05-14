@@ -48,7 +48,7 @@ const dropdownLinks = [
   },
 ];
 
-const Navbar = ({ handleOrderPopup }) => {
+const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
 
   const toggleMenu = () => {
@@ -84,27 +84,11 @@ const Navbar = ({ handleOrderPopup }) => {
                 <img src={logo} alt="" className=" h-18 w-[200px]" />
               </Link>
             </div>
-            {/* Navlinks section */}
-            {/* <div className="md:hidden block">
-              Mobile Hamburger Menu
-              {showMenu ? (
-                <HiMenuAlt1
-                  onClick={toggleMenu}
-                  className="cursor-pointer transition-all"
-                  size={30}
-                />
-              ) : (
-                <HiMenuAlt3
-                  onClick={toggleMenu}
-                  className="cursor-pointer transition-all"
-                  size={30}
-                />
-              )}
-            </div> */}
+           
             <div className="hidden md:block">
               {/* Navigation Links for medium and larger screens */}
               <ul className="flex items-center gap-6">
-                <li className="py-4 hover:text-sky-500">
+                <li className="py-4 hover:text-sky-500 ">
                   <NavLink
                     to="/"
                     activeClassName="active"
@@ -141,24 +125,22 @@ const Navbar = ({ handleOrderPopup }) => {
                       <FaCaretDown className="transition-all duration-200 group-hover:rotate-180" />
                     </span>
                   </div>
-                  <div className="absolute -left-9 z-[9999] hidden group-hover:block shadow-md text-black bg-white p-2">
-                    <ul className="w-64 h-70">
-                      {" "}
-                      {/* Adjust width and height here */}
-                      {dropdownLinks.map((data) => {
-                        return (
-                          <li key={data.name}>
-                            <a
-                              className="inline-block w-full rounded-md p-2 hover:bg-sky-500 hover:text-white"
-                              href={data.link}
-                            >
-                              {data.name}
-                            </a>
-                          </li>
-                        );
-                      })}
-                    </ul>
-                  </div>
+                <div className="absolute -left-9 z-[9999] hidden group-hover:block shadow-md text-black bg-white p-2">
+      <ul className="w-64 h-70">
+        {dropdownLinks.map((data, index) => {
+          return (
+            <li key={index}>
+              <a
+                className="block w-full rounded-md p-2 hover:bg-sky-500 hover:text-white"
+                href={data.link}
+              >
+                {data.name}
+              </a>
+            </li>
+          );
+        })}
+      </ul>
+    </div>
                 </li>
 
                 <li className="py-4 hover:text-sky-500">
