@@ -27,7 +27,7 @@ const Home = () => {
   
   return (
     <>
-     <div className="gap-10 flex items-center justify-center w-full relative">
+     <div className="gap-10 flex items-center justify-center mt-[2%] w-full relative">
       <img src={imagearray[imageindex]} alt="images" className='scroll-smooth  w-full h-[650px]' />
       <div className='w-full h-[650px] absolute flex justify-center items-center top-0 left-0 flex-col backdrop-brightness-50'>
         <h1 className='text-5xl font-bold mt-20 text-gray-50'>Welcome to First Ladder </h1> <br />
