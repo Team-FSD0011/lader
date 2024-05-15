@@ -17,12 +17,12 @@ import BlogsCompNext from './components/Blogs/BlogsCompNext';
 import BlogsComp from './components/Blogs/BlogsComp';
 
 
-import StudyAus from './components/studyAus';
+// import StudyAus from './components/studyAus';
 
 
 // import ETA from './components/enrolledAgent';
 
-// import StudyAus from './components/studyAus';
+import StudyAus from './components/studyAus';
 
 
 
