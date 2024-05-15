@@ -9,7 +9,6 @@ import fsd from "../components/assets/fsd.png";
 import datas from "../components/assets/datas.png";
 import ent from "../components/assets/ent.png";
 import { Link } from "react-router-dom";
-import ETA from "./enrolledAgent";
 
 const TrainingPrograms = () => {
   return (
