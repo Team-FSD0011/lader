@@ -1,4 +1,4 @@
-
+import { Link } from "react-router-dom";
 import React from "react";
 import { RiComputerLine } from "react-icons/ri";
 import { IoBookSharp } from "react-icons/io5";
@@ -10,9 +10,7 @@ import datas from "../components/assets/datas.png";
 import ent from "../components/assets/ent.png";
 import { Link } from "react-router-dom";
 import ETA from "./enrolledAgent";
-<link href="https://fonts.googleapis.com/css2?family=Briem+Hand:wght@100..900&display=swap" rel="stylesheet">
 
-</link>
 const TrainingPrograms = () => {
   return (
     <div className="pt-24">
@@ -108,9 +106,11 @@ const TrainingPrograms = () => {
                 Learn the ins and outs of full-stack web development. Build
                 modern websites with cutting-edge technology.
               </p>
+              <Link to="/Fullstack">
               <button className="px-4 py-2 border border-sky-400 rounded-lg text-sky-500 bg-white transition duration-300 transform hover:scale-110 hover:bg-sky-900 hover:text-white">
                 Learn
               </button>
+              </Link>
             </div>
           </div>
 
@@ -148,18 +148,20 @@ const TrainingPrograms = () => {
                 Dive into data science and learn how to work with large datasets
                 to extract valuable insights.
               </p>
+              <Link to="/Datascience">
               <button
                 className="px-4 py-2 border border-sky-400 rounded-lg text-sky-500 bg-white transition duration-300 transform hover:scale-110 hover:bg-sky-900 hover:text-white"
               >
-                Learn
+                Join
               </button>
+              </Link>
             </div>
           </div>
         </div>
       </div>
 
     {/* Key features section */}
-<div className="mt-20 flex justify-center">
+<div className="mt-16 mb-4 flex justify-center">
   <fieldset className="border border-4 border-sky-300 rounded-3xl w-full max-w-6xl p-8">
     <legend className="text-4xl font-bold text-sky-400 font-mono font-semibold">Key Features</legend>
     <div className="flex flex-col sm:flex-row lg:flex-row justify-evenly items-center mt-8 space-y-8 sm:space-y-0">

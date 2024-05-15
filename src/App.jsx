@@ -17,12 +17,12 @@ import BlogsCompNext from './components/Blogs/BlogsCompNext';
 import BlogsComp from './components/Blogs/BlogsComp';
 
 
-// import StudyAus from './components/studyAus';
+import StudyAus from './components/studyAus';
 
 
 // import ETA from './components/enrolledAgent';
 
-import StudyAus from './components/studyAus';
+// import StudyAus from './components/studyAus';
 
 
 
@@ -30,29 +30,48 @@ import StudyAus from './components/studyAus';
 
 
 function App() {
- 
-
   return (
     <>
-    <Navbars/>
+      <Navbars />
 
-    <Routes>   
-      <Route path="/" element={<Home/>}/>
-      <Route path="/aboutUs" element={<AboutUs/>}/>
-      <Route path="/trainingPrograms" element={<TrainingPrograms/>}/>
-      <Route path="/enrolledAgent" element={<ETA/>}/>
-      <Route path="/studyAbroad" element={<StudyAbroad/>}/>
-      <Route path="/studyinAUSTRALIA" element={<StudyAus/>}/>
-      <Route path="/immigration" element={<Immigration/>}/>
-      <Route path="/blog" element={<Blog/>}/>
-      <Route path="/Blogs/:id" element={<BlogsDetails/>}/>
-      <Route path="/contactUs" element={<ContactUs/>}/>
-      <Route path="/blognext" element={<BlogsCompNext/>}/>
-      <Route path="/blog" element={<BlogsComp/>}/>
-    </Routes>
-    <Footer/>
+      <Routes>
+        <Route index Component={Home} />
+        <Route path="/aboutUs" element={<AboutUs />} />
+        <Route path="/trainingPrograms" element={<TrainingPrograms />} />
+        <Route path="/enrolledAgent" element={<ETA />} />
+        <Route path="/studyAbroad" element={<StudyAbroad />} />
+        <Route path="/immigration" element={<Immigration />} />
+        <Route path="/blog" element={<Blog />} /> 
+        <Route path="/Blogs/:id" element={<BlogsDetails />} />
+        <Route path="/contactUs" element={<ContactUs />} />
+        <Route path="/blognext" element={<BlogsCompNext />} />
+
+        <Route path="/blogns" element={<BlogsComp />} />
+        {/* <Route path="/news" element={<NewsNext/>}/> */}
+
+        <Route path="/blog" element={<BlogsComp />} />
+
+        <Route path="/blogns" element={<BlogsComp />} />
+
+        {/* <Route path="/blog" element={<BlogsComp/>}/> */}
+        <Route path="/Datascience" element={<Datascience />} />
+        <Route path="/Fullstack" element={<Fullstack />} />
+      </Routes>
+      <Routes>
+        <Route path="/studyAbroad">
+        <Route path="studyAUSTRALIA" element={<StudyAus />} />
+        <Route path="studyUK" element={<StudyUk />} />
+        <Route path="studyUSA" element={<StudyUsa />} />
+        <Route path="studyGERMANY" element={<StudyGer />} />
+        <Route path="studyMALAYSIA" element={<StudyMala />} />
+        <Route path="studySINGAPORE" element={<StudySing />} />
+        <Route path="studySWIZERLAND" element={<StudySwizer />} />
+        <Route path="studyCANADA" element={<StudyCanada />} />
+        </Route>
+      </Routes>
+      <Footer />
     </>
-  )
+  );
 }
 
 export default App;

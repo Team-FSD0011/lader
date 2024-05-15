@@ -33,9 +33,9 @@ const Immigration = () => {
   const icon5 = (<PiPlanet size={40} className=" text-backgroundColor" />);
   const icon6 = (<MdContactEmergency size={40} className=" text-backgroundColor" />);
   return (<>
-    <div className="gap-10 flex items-center justify-center w-full relative">
-      <img src={imagearray[imageindex]} alt="logo" className='scroll-smooth w-full h-[600px]' />
-      <div className='w-full h-[600px] absolute flex justify-center items-center top-0 left-0 flex-col backdrop-brightness-50'>
+    <div className="gap-10 flex items-center justify-center mt-[2%] w-full relative">
+      <img src={imagearray[imageindex]} alt="logo" className='scroll-smooth w-full h-[650px]' />
+      <div className='w-full h-[650px] absolute flex justify-center items-center top-0 left-0 flex-col backdrop-brightness-50'>
         <h1 className='text-5xl font-bold text-gray-50'>Welcome to Our Company!</h1> <br />
         <h4 className='text-lg text-gray-50 mt-6 text-center font-serif flex justify-center items-center w-[75%]'>Are you looking for reliable immigration consultants to handle your immigration case? Our certified and reliable Immigration Consultant professionals can help you get a positive decision on your case! We provide services in all different areas of immigration.</h4>
         <Link to="/contactUs">
@@ -87,15 +87,14 @@ const Immigration = () => {
         </div>
       </div>
     </div>
-    <div className="flex flex-col justify-center items-center ml-9 mr-9 bg-gray-100 rounded-lg shadow-lg md:scroll-sm">
+    <div className="flex flex-col justify-center items-center mb-4 ml-9 mr-9 bg-gray-100 rounded-lg shadow-lg md:scroll-sm">
       <p className="text-4xl text-gray-700 mt-5 mb-2 text-center">
       Need a Consultation?      </p>
       <p className="text-md text-gray-700 mb-4 text-center">
-        Our process starts with developing an accurate profile of each candidate and using that as our database to match them with the available opportunities in terms of education and jobs.
-      </p>
+      Reach out to us today and book an appointment for a free counselling session to clarify all your queries with our team.      </p>
       <Link to="/contactUs">
         <button className="text-md font-semibold text-white bg-sky-500 py-3 px-8 mb-4 rounded-lg shadow-lg hover:bg-sky-600">
-          Know More
+        Make On Appointment
         </button>
       </Link>
     </div>
