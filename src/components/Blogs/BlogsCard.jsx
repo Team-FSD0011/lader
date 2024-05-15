@@ -2,8 +2,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const BlogsCard = ({image, date, title, description,
-author}) => {
+const BlogsCard = ({image, date, title, description}) => {
   
   return (
    <Link
