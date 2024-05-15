@@ -8,7 +8,7 @@ import rec from "../components/assets/ic2.png";
 import fsd from "../components/assets/fsd.png";
 import datas from "../components/assets/datas.png";
 import ent from "../components/assets/ent.png";
-import { Link } from "react-router-dom";
+
 
 const TrainingPrograms = () => {
   return (
@@ -21,13 +21,7 @@ const TrainingPrograms = () => {
         <center>
           <h1 className=" md:text-4xl lg:text-5xl font-bold text-gray-800 ">
             
-            <span className="text-gray-800 flex items-center text-3xl font-BriemHand">
-              
-            
-                TRENDING
-              
-              
-               </span> <br />
+            <span className="text-gray-800 flex items-center text-3xl">Explore the Toppest </span> <br />
             
             <span className="text-white flex items-center font-mono text-gradient-to-r from-sky-500 to-black text-5xl">TRENDING</span>
            
@@ -149,11 +143,10 @@ const TrainingPrograms = () => {
               </p>
               <Link to="/Datascience">
               <button
-                className="px-4 py-2 border border-sky-400 rounded-lg text-sky-500 bg-white transition duration-300 transform hover:scale-110 hover:bg-sky-900 hover:text-white"
+                className="px-4 py-2 border border-sky-400 rounded-lg text-sky-500 bg-white transition duration-300 hover:bg-sky-900 hover:text-white"
               >
                 Join
-              </button>
-              </Link>
+              </button></Link>
             </div>
           </div>
         </div>
@@ -185,13 +178,10 @@ const TrainingPrograms = () => {
     <br />
     <br />
   </fieldset>
-  
 </div>
-<br />
-  <br />
+    
     </div>
   );
 };
 
 export default TrainingPrograms;
-
