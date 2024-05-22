@@ -44,7 +44,7 @@ const StudyAus = () => {
                
                 src={imagearray[imageindex]}
                 alt=""
-                className="scroll-smooth  h-[400px] w-full relative object-cover mt-20"
+                className="scroll-smooth  h-[400px] relative w-full mt-20"
               />
               <div className="row absolute  inset-0">
                 <div className="col-lg-12 heading text-center text-white text-7xl mt-20">
@@ -239,14 +239,14 @@ const StudyAus = () => {
         <div className="pl-20 pb-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:mr-10">
           {/* uk university  */}
           <div className="">
-            <div className="max-w-sm rounded-lg overflow-hidden shadow-xl h-auto sm:h-[420px] w-auto sm:w-[400px] mt-5 sm:mt-12">
+            <div className="max-w-sm rounded-lg overflow-hidden shadow-xl h-auto sm:h-[420px] w-auto sm:w-[400px] mt-5 sm:mt-12 hover:p-3">
               <img
                 src={aus}
                 alt=""
                 className="w-full h-48 sm:h-[200px] object-cover rounded-t-lg"
               />
-              <div className="px-6 py-4">
-                <h1 className="font-bold text-blue-500 text-2xl text-center">
+              <div className="px-6 py-4 ">
+                <h1 className="font-bold text-blue-500 text-2xl text-center ">
                   Cambridge University
                 </h1>
                 <p className="text-center mt-3">
@@ -266,7 +266,7 @@ const StudyAus = () => {
             </div>
           </div>
 
-          <div className="max-w-sm rounded-lg overflow-hidden shadow-xl h-auto sm:h-[420px] w-auto sm:w-[400px] mt-5 sm:mt-12">
+          <div className="max-w-sm rounded-lg overflow-hidden shadow-xl h-auto sm:h-[420px] w-auto sm:w-[400px] mt-5 sm:mt-12 hover:p-3">
             <img
               src={unsw}
               alt=""
@@ -287,7 +287,7 @@ const StudyAus = () => {
           </div>
 
           <div className=" ">
-            <div className="max-w-sm rounded-lg overflow-hidden shadow-xl h-auto sm:h-[420px] w-auto sm:w-[400px] mt-5 sm:mt-12">
+            <div className="max-w-sm rounded-lg overflow-hidden shadow-xl h-auto sm:h-[420px] w-auto sm:w-[400px] mt-5 sm:mt-12 hover:p-3 ">
               <img
                 src={vienna}
                 alt=""

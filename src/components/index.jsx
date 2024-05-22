@@ -27,7 +27,7 @@ const Home = () => {
   
   return (
     <>
-     <div className="gap-10 flex items-center justify-center w-full relative">
+     <div className="gap-10 flex items-center justify-center mt-[2%] w-full relative">
       <img src={imagearray[imageindex]} alt="images" className='scroll-smooth  w-full h-[650px]' />
       <div className='w-full h-[650px] absolute flex justify-center items-center top-0 left-0 flex-col backdrop-brightness-50'>
         <h1 className='text-5xl font-bold mt-20 text-gray-50'>Welcome to First Ladder </h1> <br />
@@ -82,6 +82,7 @@ const Home = () => {
     </div>
 
     <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16 ml-9 mr-9 md:cursor-pointer md:scroll-sm">
+     
       <div className="flex flex-col items-center rounded-lg shadow-md">
         <img
           src={bg4}
@@ -99,7 +100,7 @@ const Home = () => {
           alt="Ireland"
           className=" mb-4 rounded-md object-cover"
         />
-        <h3 className="text-xl font-semibold mb-4">Study in Ireland</h3>
+        <h3 className="text-xl font-semibold mb-4">Study in AUSTRALIA</h3>
         <p className="text-md text-gray-700">
           Explore education opportunities in Ireland.
         </p>
@@ -110,7 +111,7 @@ const Home = () => {
           alt="US"
           className="mb-4 rounded-md object-cover"
         />
-        <h3 className="text-xl font-semibold mb-4">Study in the US</h3>
+        <h3 className="text-xl font-semibold mb-4">Study in the USA</h3>
         <p className="text-md text-gray-700">
           Learn about studying in the United States.
         </p>

@@ -1,48 +1,47 @@
-
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import logo from "../components/assets/logo.png";
 import { HiMenuAlt1, HiMenuAlt3 } from "react-icons/hi";
 import { FaPhoneSquareAlt } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
-import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
 import ResponsiveMenu from "./ResponsiveMenu";
 import { FaCaretDown } from "react-icons/fa";
-
+import { RiFacebookBoxLine } from "react-icons/ri";
+import { CiLinkedin } from "react-icons/ci";
 
 const dropdownLinks = [
   {
     name: "Study in UK",
-    link: "/studyUK",
-    
+    link: "/studyAbroad/studyUK",
   },
   {
     name: "Study in AUSTRALIA",
-    link: "/studyAUSTRALIA",
+    link: "/studyAbroad/studyAUSTRALIA",
   },
   {
     name: "Study in CANADA",
-    link: "/studyCANADA",
+    link: "/studyAbroad/studyCANADA",
   },
   {
     name: "Study in USA",
-    link: "/studyUSA",
+    link: "/studyAbroad/studyUSA",
   },
   {
     name: "Study in SINGAPORE",
-    link: "/studySINGAPORE",
+    link: "/studyAbroad/studySINGAPORE",
   },
   {
     name: "Study in SWIZERLAND",
-    link: "/studySWIZERLAND",
+    link: "/studyAbroad/studySWIZERLAND",
   },
   {
     name: "Study in GERMANY",
-    link: "/studyGERMANY",
+    link: "/studyAbroad/studyGERMANY",
   },
   {
-    name: "Study in Malaysia",
-    link: "/studyMALAYSIA",
+    name: "Study in MALAYSIA",
+    link: "/studyAbroad/studyMALAYSIA",
   },
 ];
 
@@ -54,7 +53,7 @@ const Navbar = () => {
   };
   return (
     <>
-      <nav className="fixed top-0 right-0 w-full z-50 bg-white backdrop-blur-sm text-black shadow-md z-[99999]">
+      <nav className="fixed top-0 right-0 w-full bg-white backdrop-blur-sm text-black shadow-md z-[99999]">
         <div className="bg-sky-500 text-white ">
           <div className="container py-[2px] sm:block hidden">
             <div className="flex items-center">
@@ -66,9 +65,9 @@ const Navbar = () => {
               </div>
               <div className="container py-[2px] sm:block hidden ">
                 <div className="flex items-center  justify-center ml-[90%] cursor-pointer">
-                  <FaInstagram className="mx-1 " />
-                  <FaFacebook className="mx-1" />
-                  <FaLinkedin className="mx-1" />
+                  <RiFacebookBoxLine size={33} className="mx-1 " />
+                  <FaInstagram size={27} className="mx-1" />
+                  <CiLinkedin size={33} className="mx-1" />
                 </div>
               </div>
             </div>
@@ -82,27 +81,11 @@ const Navbar = () => {
                 <img src={logo} alt="" className=" h-18 w-[200px]" />
               </Link>
             </div>
-            {/* Navlinks section */}
-            {/* <div className="md:hidden block">
-              Mobile Hamburger Menu
-              {showMenu ? (
-                <HiMenuAlt1
-                  onClick={toggleMenu}
-                  className="cursor-pointer transition-all"
-                  size={30}
-                />
-              ) : (
-                <HiMenuAlt3
-                  onClick={toggleMenu}
-                  className="cursor-pointer transition-all"
-                  size={30}
-                />
-              )}
-            </div> */}
+           
             <div className="hidden md:block">
               {/* Navigation Links for medium and larger screens */}
               <ul className="flex items-center gap-6">
-                <li className="py-4 hover:text-sky-500">
+                <li className="py-4 hover:text-sky-500 ">
                   <NavLink
                     to="/"
                     activeClassName="active"
@@ -134,11 +117,37 @@ const Navbar = () => {
 
                 <li className="py-4 relative group cursor-pointer hover:text-sky-500">
                   <div className="dropdown flex items-center">
-                    <span ><NavLink activeClassName="active" to="/studyAbroad" onClick={()=>window.scrollTo(0,0)}>Study Abroad</NavLink></span>
+                    <span>
+                      <NavLink
+                        activeClassName="active"
+                        to="/studyAbroad"
+                        onClick={() => window.scrollTo(0, 0)}
+                      >
+                        Study Abroad
+                      </NavLink>
+                    </span>
                     <span>
                       <FaCaretDown className="transition-all duration-200 group-hover:rotate-180" />
                     </span>
                   </div>
+
+                <div className="absolute -left-9 z-[9999] hidden group-hover:block shadow-md text-black bg-white p-2">
+      <ul className="w-64 h-70">
+        {dropdownLinks.map((data, index) => {
+          return (
+            <li key={index}>
+              <a
+                className="block w-full rounded-md p-2 hover:bg-sky-500 hover:text-white"
+                href={data.link}
+              >
+                {data.name}
+              </a>
+            </li>
+          );
+        })}
+      </ul>
+    </div>
+
                   <div className="absolute -left-9 z-[9999] hidden group-hover:block shadow-md text-black bg-white p-2">
                     <ul className="w-64 h-70">
                       {" "}
@@ -146,12 +155,12 @@ const Navbar = () => {
                       {dropdownLinks.map((data) => {
                         return (
                           <li key={data.name}>
-                            <a
-                              className="inline-block w-full rounded-md p-2 hover:bg-sky-500 hover:text-white"
-                              href={data.link}
-                            >
+                            <Link to=   {data.link}  className="inline-block w-full rounded-md p-2 hover:bg-sky-500 hover:text-white">
+                             
                               {data.name}
-                            </a>
+                              </Link>
+                            
+                            
                           </li>
                         );
                       })}
@@ -218,4 +227,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-

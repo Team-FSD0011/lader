@@ -17,6 +17,9 @@ export default {
           "2xl":"6rem"
         },
       },
+      fontFamily: {
+        danfo: ['Danfo'],
+      },
       
     },
   },
